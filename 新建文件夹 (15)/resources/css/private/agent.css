@@ -1,0 +1,177 @@
+.Text{
+	margin-left:420px;
+}
+.channel-box a:hover{
+	color:#F3001D;
+}
+.channel-c a{
+	margin:0 25px;
+}
+.channel-l{
+	text-align: center;
+}
+
+.agent-cont{
+	padding-top:20px;
+	background: #F6F6F6;
+}
+.agent-main{
+	width:1152px;
+	margin:0 auto;
+	background: #fff;
+	padding:14px 14px;
+}
+
+.agent-main .tit{
+	height:32px;
+	width:100%;
+	border-bottom:1px solid #ddd;
+	line-height: 32px;
+	color:#848484;
+}
+.agent-main .tit a{
+	font-size:14px;
+	color:#848484;
+	vertical-align: middle;
+}
+.agent-main .tit img{
+	width:10px;
+	height:14px;
+}
+
+.agent-top-box{
+	margin-top:20px;
+}
+.fl-totl li{
+	float:left;
+	font-size:16px;
+}
+.fl-totl .dian{
+	color:#F3001C;
+}
+.fl-totl .qian{
+	color:#575757;
+	margin-left:14px;
+}
+.fl-totl .qian span{
+	color:#282828;
+}
+.fl-serach{
+	line-height: 30px;
+}
+
+.fl-serach input{
+	float:left;
+}
+
+.fl-serach .serach-txt{
+	width:290px;
+	height:30px;
+	line-height: 30px;
+	border:1px solid #F3001C;
+	padding-left:12px;
+	display: inline-block;
+}
+.fl-serach .serach-btn{
+	display: inline-block;
+	width:90px;
+	height:32px;
+	background: #F3001C;
+	border:none;
+	text-align: center;
+	color:#fff;
+	cursor:pointer;
+	vertical-align: middle;
+}
+.list-tit ul{
+	/*float:left;*/
+	margin-top:20px;
+	width:100%;
+	height:32px;
+	background: #ddd;
+	line-height:32px;
+	color:#575757;
+}
+.list-tit ul li,.list-item li{
+	float:left;
+}
+.list-tit li,.list-item li{
+	margin-left:24px;
+}
+.list-item {
+	padding:20px 0;
+	height:80px;
+	border-bottom:1px solid #ddd;
+}
+.list-item li{
+	color:#575757;
+	font-size:12px;
+}
+.list-item .info img{
+	float:left;
+	width:80px;
+	height:80px;
+}
+.list-item .info p{	
+	float:left;
+	margin:16px;
+	margin-left:20px;
+	width:134px;
+}
+.list-item .num,.list-tit .num{
+	width:86px;
+}
+.list-item .info,.list-tit .info{
+	width:316px;	
+}
+.list-item .city,.list-tit .city{
+	width:106px;
+}
+.list-item .stime,.list-tit .stime{
+	width:170px;
+}
+.list-item .sum,.list-tit .sum{
+	width:138px;
+}
+.list-item .num,.list-item .city,.list-item .stime,.list-item .sum,.list-item .etime{
+	margin-top:26px;
+}
+
+.page_warp {
+    width: 100%;
+    height: 30px;
+    /*float: left;*/
+    padding: 30px 0 18px 0;
+}
+.page_warp p {
+    width: 600px;
+    height: 30px;
+    float:right;
+}
+.page_warp a {
+    font-size: 12px;
+    padding: 8px 12px;
+    border: 1px solid #dddddd;
+}
+.page_warp i {
+    font-style: normal;
+}
+.page_input {
+    display: inline-block;
+    width: 30px;
+    height: 26px;
+    line-height: 26px;
+    border: 1px solid #dddddd;
+    font-size: 12px;
+}
+.page_warp button {
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background: #f2021c;
+    color: #FFFFFF;
+    border: 0;
+    cursor: pointer;
+}

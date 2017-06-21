@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> 三界宝 </title>
+		<link rel="stylesheet" type="text/css" href="../../css/common/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/private/mix.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/common/common.css"/> 
+	</head>
+	
+	
+	
+	<body>
+		
+		 
+		 		<!--头部用户导航-->
+		<div class="super_userNavi" id="super_userNavi">
+			<div class="userNavi">
+				
+				<div class="fun_location Location">
+					<p  class="fun_locationp Location">
+						<span>三界商城：</span><span > 北京 </span>
+						<img src="../../img/jiant_x.png"/>
+					</p>&nbsp; 
+					<ul class="fun_over_china over_China ">
+						 <h2> 已开辟分站 </h2>
+							 <div id="">
+							 	<a href=""> 北京 </a>
+								<a href=""> 上海 </a> 
+								<a href=""> 天津 </a>
+								<a href=""> 黑龙江 </a>
+								<a href=""> 河北 </a>
+								<a href=""> 北京 </a>
+								<a href=""> 上海 </a>
+								<a href=""> 天津 </a>
+								<a href=""> 重庆 </a>
+								<a href=""> 河北 </a>  
+							 </div> <br />
+				        <h2> 即将开辟 </h2> 
+							<a href=""> 北京 </a>
+							<a href=""> 上海 </a>
+							<a href=""> 天津 </a>
+							<a href=""> 重庆 </a>
+							<a href=""> 河北 </a>
+							<a href=""> 北京 </a>
+							<a href=""> 上海 </a>
+							<a href=""> 天津 </a>
+							<a href=""> 黑龙江 </a>
+							<a href=""> 河北 </a>
+							<a href=""> 北京 </a>
+							<a href=""> 上海 </a>
+							<a href=""> 天津 </a>
+							<a href=""> 黑龙江 </a>
+							<a href=""> 河北 </a>
+					</ul>
+
+				</div>
+									
+				<div class="navigation">
+					<li><a href="Diamond_index.html">   1031237422  </a></li>
+					<li><a href="login.html"> 退出 </a></li>
+					<li><a href=""> 我的订单 </a></li>
+					<li><a href="../others/Helpcenter.html"> 帮助中心 </a></li>
+					<li><a href="Newbie.html"> 新手上路 </a></li>
+					<li class="nav_li_wrap">
+						
+						<a class="" id="funLoca" href="../others/phone.html">手机版</a>
+						<ul>
+							<li>
+								<p class="nav_li_pleft">
+									<span class="nav_li_pleft_top">三界商城手机APP</span>
+									<span class="nav_li_pleft_bottom">
+										<a href="">
+											<img src="../../img/iphoneshouji.png"/>
+											<span>iphone</span>
+										</a>
+										<a class="nav_li_pleft_bottom1" href="">
+											<img src="../../img/anzhuoshouji.png"/>
+											<span>Android</span>
+										</a>
+									</span>
+								</p>
+								<p class="nav_li_prigh">
+									<img src="../../img/shoujiduanerweima.png"/>
+								</p>
+							</li>
+							<li>
+								<p class="nav_li_pleft nav_li_pleft_word">
+									<span>三界商城微信公众号</span>
+								</p>
+								<p class="nav_li_prigh">
+									<img src="../../img/weiixngongzhonghaoerweima.png"/>
+								</p>
+							</li>
+						</ul>
+						
+						
+					</li>
+				</div>
+				
+			</div>
+		</div>		
+		<!--搜索商品栏-->
+		<div class="super_Search">
+			<div class="Search" href=""> 
+			<img src="../../img/logo.png"/> 
+		  </div> 
+		</div>
+		
+		
+		
+		<!--创业会员—商城订单的导航-->
+		<div class="super_general_navi ">
+			<div class="general_navi">
+			  <a href="../../index.html" class="general_navi_a1"> 返回商城首页 </a>
+			  <a href=""> 三界会员 </a>
+			  <a href="order1.html"> 我的订单 </a>
+			  <a href="accountant.html"> 我的账房 </a>
+			  <a href="myrecommend.html"> 我的推荐 </a>
+			  <a href="accountsettings.html"> 账户设置 </a>
+			  <a href="../others/Share.html" class="end_two end_two_mar"> 分享邀请 </a>
+			  <a href="../others/sanjiebao.html" class="end_two  color_title_fist"> 三界宝 </a>
+			  <a href="../others/sanjietong.html" class="end_two"> 三界石 </a>
+			</div>
+		</div>
+		 
+		 
+		 
+		
+		<!--新手上路-->
+		<div class="super_Newbie_road">
+		   <div class="Newbie_road">
+		   	  <h3> 关于三界宝 </h3>
+		   	  <h6 style="margin-top: 20px;"> 1. 什么是三界宝？ </h6>
+		   	  <p> 本协议是您与京东网站（简称"本站"，网址：www.jd.com）所有者（以下简称为"京东"）之间就京东网站服务等相关事宜所订立的契约，请您仔细阅读本注册协议本协议是您与京东网站（简称"本站"，网址：www.jd.com）所有者（以下简称为"京东"）之间就京东网站服务等相关事宜所订立的契约，请您仔细阅读本注册协议本协议是您与京东网站（简称"本站"，网址：www.jd.com）所有者（以下简称为"京东"）之间就京东网站服务等相关事宜所订立的契约，请您仔细阅读本注册协议称为"京东"）之间就京东网站服务等相关事宜所订立的契约，请您仔细阅读本注册协，
+ </p>
+             <h6>  2.三界宝是怎么产生的？ </h6>
+             <p> 本协议是您与京东网站（简称"本站"，网址：www.jd.com）所有者（以下简称为"京东"）之间就京东网站服务等相关事宜所订立的契约，请您仔细阅读本注册协议本协议是您与京东网站（简称"本站"，网址：www.jd.com）所有者（以下简称为"京东"）之间就京东网站服务等相关事宜所订立的契约，请您仔细阅读本注册协议本协议是您与京东网站（简称"本站"，网址：www.jd.com）所有者（以下简称为"京东"）之间就京东网站服务等相关事宜所订立的契约，请您仔细阅读本注册协议称为"京东"）之间就京东网站服务等相关事宜所订立的契约，请您仔细阅读本注册协，
+ </p>
+		   	<h6>  3.前往R8交易所交易 </h6> 
+		   	<p> —通过推荐人获得邀请码。
+—通过分享所得二维码扫描后获得邀请码。
+—没有人推荐？输入系统默认的邀请码进行注册，直接复制此邀请码即可成功注册：524163
+		   	</p>
+		   </div>
+		</div>
+			<div class="footer" style="margin-top: 20px;">
+				<div class="data-width">
+					<div class="foot-mid">
+						<ul>
+							<li>
+								<h3>注册登录</h3>
+								<a href="">消费注册</a>
+								<a href="">正品保障</a>
+								<a href="">用户登录</a>
+								<a href="">忘记密码</a>
+								<a href="">商家入驻</a>
+							</li>
+							<li>
+								<h3>消费指南</h3>
+								<a href="">兑换流程</a>
+								<a href="">消费流程</a>
+								<a href="">货币与支付</a>
+								<a href="">配送方式</a>
+								<a href="">配送方式</a>
+								<a href="">物流查询</a>
+							</li>
+							<li>
+								<h3>购物指南</h3>
+								<a href="">7天退换货</a>
+								<a href="">退货流程</a>
+							</li>
+							<li>
+								<h3>订单问题</h3>
+								<a href="">订单查询</a>
+								<a href="">订单取消</a>
+								<a href=""></a>
+							</li>
+							<li class="kefuqu">
+								<h3>联系我们</h3>
+								<a href="">电话客服：9999999</a>
+								<a href="">QQ客服：999999999</a>
+								<a href="">邮箱：888888888</a>
+								<a href="">公众号：0000000000</a>
+							</li>
+						</ul>
+					</div>
+					<div class="foot-top">
+						<ul>
+							<li class="first"><img src="../../img/foot-icon1.png" alt="">
+								<p>闪电发货</p>
+							</li>
+							<li><img src="../../img/foot-icon1.png" alt=""><p>七天退换</p></li>
+							<li><img src="../../img/foot-icon1.png" alt=""><p>正品保证</p></li>
+							<li><img src="../../img/foot-icon1.png" alt=""><p>提供发票</p></li>
+							<li class="end"><img src="../../img/foot-icon1.png" alt=""><p>三界战略合作</p></li>
+						</ul>
+					</div>
+					<div class="foot-btm">
+						<div class="foot-btm-nav">					
+							<a href="">关于我们</a>
+							<a href="">品牌招商</a>
+							<a href="">集团采购</a>
+							<a href="">招贤纳士</a>
+							<a href="">联系我们</a>
+							<a href="">网站地图</a>
+							<a href="">网站资讯</a>
+							<a href="">商家联盟</a>
+							<a href="">友情链接</a>
+						</div>
+						<p>Copyright © 2011-2015 HaiHeShiDai Technology Co., Ltd. 京ICP备09070608号-4 增值电信业务经营许可证：京 B2-20090203 京公网安备：4403101910665</p>
+						<div class="foot-btm-btm"><img src="../../img/foot-icon7.jpg" alt="" /></div>
+					</div>
+				</div>
+			</div>
+			
+			
+		 
+	</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> 3登录页 </title>
+		<link rel="stylesheet" type="text/css" href="../../css/common/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/private/mix.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/common/common.css">
+		<script src="../../js/lib/html5shiv.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	
+	
+	
+	<body>
+		
+		
+		<!--登录头部-->
+		<div class="super_enroll_top">
+			<div class="enroll_top">
+				<img src="../../img/logo.png"/>
+				<span> 欢迎登录 </span>
+			</div>
+		</div>
+		
+		<!--登录页内容区-->
+		<div class="super_To_login">
+			<div class="To_login">
+				<img src="../../img/bg.png"/>
+				<div class="The_login">
+				   <h2> 账号登录 </h2>	
+				   
+				   <li class="Input_box"> 
+				   	<span> 账号 </span>
+				   	<font id="renTu"> <img src="../../img/zhanghu.png"/> </font>
+				   	<input type="text" name="" id="Enter_phone" placeholder="输入手机号" />
+				   </li>
+				   <li class="Input_box"> 
+				   	<span> 密码 </span>
+				   	<font id="suoTu"> <img src="../../img/denglu_denglumima.png"/> </font>
+				   	<input type="password" name="" id="Enter_psd" placeholder="输入登录密码" />
+				   </li>
+				   
+				   <li class="Input_box code1"> 
+				   	<span> 验证码 </span>
+				   	<input type="text" name="" id="" placeholder="输入验证码" />
+				   	<img src="../../img/yanzhengma.png"/>
+				   	<em> 换一张 </em>
+				   </li>
+				   
+				   <div class="in_mind" id="in_mind">
+				   	  <img src="../../img/juxing.png"/><span> 记住密码 </span>
+				   </div>
+				   <input  type="button" class="denglu" id="" value="登录" />
+				   <div class="has has1">
+			  	 	  <a href="repassword.html"> 忘记密码？ </a> <span> 免费登录 </span>
+			  	   </div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<!--尾部部分-->
+		<div class="footer" >
+				<div class="data-width">
+					<div class="foot-mid">
+						<ul>
+							<li>
+								<h3>注册登录</h3>
+								<a href="">消费注册</a>
+								<a href="">正品保障</a>
+								<a href="">用户登录</a>
+								<a href="">忘记密码</a>
+								<a href="">商家入驻</a>
+							</li>
+							<li>
+								<h3>消费指南</h3>
+								<a href="">兑换流程</a>
+								<a href="">消费流程</a>
+								<a href="">货币与支付</a>
+								<a href="">配送方式</a>
+								<a href="">配送方式</a>
+								<a href="">物流查询</a>
+							</li>
+							<li>
+								<h3>购物指南</h3>
+								<a href="">7天退换货</a>
+								<a href="">退货流程</a>
+							</li>
+							<li>
+								<h3>订单问题</h3>
+								<a href="">订单查询</a>
+								<a href="">订单取消</a>
+								<a href=""></a>
+							</li>
+							<li class="kefuqu">
+								<h3>联系我们</h3>
+								<a href="">电话客服：9999999</a>
+								<a href="">QQ客服：999999999</a>
+								<a href="">邮箱：888888888</a>
+								<a href="">公众号：0000000000</a>
+							</li>
+						</ul>
+					</div>
+					<div class="foot-top">
+						<ul>
+							<li class="first"><img src="../../img/foot-icon1.png" alt="">
+								<p>闪电发货</p>
+							</li>
+							<li><img src="../../img/foot-icon2.png" alt=""><p>七天退换</p></li>
+							<li><img src="../../img/foot-icon3.png" alt=""><p>正品保证</p></li>
+							<li><img src="../../img/foot-icon4.png" alt=""><p>提供发票</p></li>
+							<li class="end"><img src="../../img/foot-icon5.png" alt=""><p>三界战略合作</p></li>
+						</ul>
+					</div>
+					<div class="foot-btm">
+						<div class="foot-btm-nav">					
+							<a href="">关于我们</a>
+							<a href="">品牌招商</a>
+							<a href="">集团采购</a>
+							<a href="">招贤纳士</a>
+							<a href="">联系我们</a>
+							<a href="">网站地图</a>
+							<a href="">网站资讯</a>
+							<a href="">商家联盟</a>
+							<a href="">友情链接</a>
+						</div>
+						<p>Copyright © 2011-2015 HaiHeShiDai Technology Co., Ltd. 京ICP备09070608号-4 增值电信业务经营许可证：京 B2-20090203 京公网安备：4403101910665</p>
+						<div class="foot-btm-btm"><img src="../../img/foot-icon7.jpg" alt="" /></div>
+					</div>
+				</div>
+			</div>
+		
+		
+	<script src="../../js/lib/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/mix.js" type="text/javascript" charset="utf-8"></script>
+		
+	</body>
+</html>

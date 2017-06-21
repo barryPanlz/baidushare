@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>我的推荐</title>
+		  <link href="<?php echo $pc_style; ?>img/bitbug_favicon.ico" rel="shortcut icon" type="image/x-icon" /> 
+		<link rel="stylesheet" type="text/css" href="<?php echo $pc_style; ?>css/common/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="<?php echo $pc_style; ?>css/common/common.css"/>
+		<link rel="stylesheet" type="text/css" href="<?php echo $pc_style; ?>css/private/myrecommend.css"/>
+		<link rel="stylesheet" type="text/css" href="<?php echo $pc_style; ?>css/common/centerheader.css"/>
+
+		<link rel="stylesheet" type="text/css" href="<?php echo $pc_style; ?>css/common/jquery.datetimepicker.css"/>
+	</head>
+	<body>
+				<!--头部用户导航-->
+		<?php echo \Yii::$app->view->renderFile('@app/views/layouts/header.php'); ?>
+		<!--搜索商品栏-->
+		
+		<!--搜索商品栏-->
+			<div class="super_Search">
+			<div class="Search" href="">
+                <a href="<?php echo Yii::$app->urlManager->createUrl('index/index')?>"><img src="<?php echo $pc_style; ?>img/logo.png"/>	</a>
+			<!--<input type="text" class="kuang" id="" placeholder="输入你想查找的商品名字" />
+			<input type="button" class="suoSou" id="" value="搜索" />
+			<a class="shopping_cart_icon">
+				 <img src="../../img/gouwuche.png"/> 我的购物车（ <sapn> 0 </sapn> ）
+			</a>
+			<div class="Text">
+				<a href="">秋冬连衣裙</a>
+				<a href="">耐克跑步鞋</a>
+				<a href="">婴儿抱被</a>
+				<a href="">会员特供</a>
+				<a href="">买一送二</a>
+			</div>				-->
+			</div>			
+		</div>		
+		<!--频道跳转栏-->
+		<div class="local-channel fix">
+			<div class="data-width">
+				<div class="channel-box .fix">
+					<a class="channel-l ta_center" href="<?php echo \Yii::$app->urlManager->createUrl(['index/index']);?>">
+						<span>返回商城首页</span>
+					</a>
+					<div class="channel-c channel-d">
+						<a  href="<?php echo \Yii::$app->urlManager->createUrl(['user/diamond_index']);?>"> 三界会员 </a>
+						<a href="<?php echo \Yii::$app->urlManager->createUrl(['user/order']);?>"> 我的订单 </a>
+						<a href="<?php echo \Yii::$app->urlManager->createUrl(['user/accountant']);?>"> 我的账房 </a>
+						<a class="now_tab_red" href="<?php echo \Yii::$app->urlManager->createUrl(['user/myrecommend']);?>"> 我的推荐 </a>
+						<a href="<?php echo \Yii::$app->urlManager->createUrl(['user/accountsettings']);?>"> 账户设置 </a>
+					</div>
+					<div class="channel-r">
+						<a href="<?php echo \Yii::$app->urlManager->createUrl(['help/san_jie_tong']);?>"> 三界石 </a>
+						<a href="<?php echo \Yii::$app->urlManager->createUrl(['help/san_jie_bao']);?>"> 三界宝 </a>
+						<a href="<?php echo \Yii::$app->urlManager->createUrl(['help/share']);?>">分享邀请</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+		
+		<div class="w_wrap">
+			<div class="w">
+				
+		<!--创业会员—个人中心-->
+		<?php if(!empty($details1)){?>
+		   <div class="Personal_center">
+		   	<div class="Personal_title">
+		   		<div class="The_pictures">
+		   			<div class="photo_naodai">
+<!--						<img src="--><?php //echo $details1->data->user_img; ?><!-- alt="">-->
+                        <img src="<?php echo $pc_style; ?>img/touxiang1.png" alt="" />
+						<img class="circle_shadow" src="<?php echo $pc_style; ?>img/circle_shadow.png">
+					</div>
+		   		</div>
+			   	<div class="the_name">
+			   		<dt> <?php echo $details1->data->mobile_phone?> </dt>   
+		   	  	    <dd> 
+						<?php
+				   	  	    		if($details1->data->user_type ==1){
+				   	  	    			echo "普通会员";
+				   	  	    		}elseif($details1->data->user_type ==2){
+				   	  	    			echo "创业会员";
+				   	  	    		}elseif($details1->data->user_type ==3){
+				   	  	    			echo "店铺";
+				   	  	    		}elseif($details1->data->user_type ==4){
+				   	  	    			echo "供应商";
+				   	  	    		}elseif($details1->data->user_type ==5){
+				   	  	    			echo "代理商";
+				   	  	    		}
+				   	  	    	?>
+		   	  	     </dd>
+			   	</div>	
+			</div>
+	   		<div class="per_weilai">
+	   			<ul>
+	   				<li>
+	   					<img src="<?php echo $pc_style; ?>img/wodetuijianren.png"/>
+	   					<span>一级推荐人（人）</span>
+	   				</li>
+	   				<li class="colorF7"><?php echo empty($refnum->data->myRefNum->aNum) ? "0" : $refnum->data->myRefNum->aNum ?></li>
+	   			</ul>
+	   			<ul>
+	   				<li>
+	   					<img src="<?php echo $pc_style; ?>img/wodetuijianren.png"/>
+	   					<span>二级推荐人（人）</span>
+	   				</li>
+	   				<li class="colorF7"><?php echo empty($refnum->data->myRefNum->bNum) ? "0" : $refnum->data->myRefNum->bNum?></li>
+	   			</ul>
+	   			<ul>
+	   				<li>
+	   					<img src="<?php echo $pc_style; ?>img/wodetuijianren.png"/>
+	   					<span>三级推荐人（人）</span>
+	   				</li>
+	   				<li class="colorF7"><?php echo empty($refnum->data->myRefNum->cNum) ? "0" : $refnum->data->myRefNum->cNum?></li>
+	   				
+	   			</ul>
+	   			<ul>
+	   				<li>
+	   					<img src="<?php echo $pc_style; ?>img/wodetuijianren.png"/>
+	   					<span>累计贡献值</span>
+	   				</li>
+	   				<li class="colorF7"><?php echo empty($details1->data->score) ? "0" : $details1->data->score?></li>
+	   				
+	   			</ul>
+	   		</div>
+	   		
+		   	</div>
+		   	
+		   	<?php }?>
+			<!-- <div class="per_mingxi">
+				<div class="per_mingxi_top">
+					<div class="per_mingxi_top_title">
+						<span>推荐记录</span>
+					</div>
+				</div>
+				<div class="per_mingxi_content">
+					<ul>
+						<li class="ul_left">时间</li>
+						<li class="ul_right">
+							<input type="text" name="" id="" value="" class="per_input fun_per_input" placeholder="选择订单创建时间" />
+							<span>
+								—
+							</span>
+							<input type="text" name="" id="" value="" class="per_input fun_per_input" placeholder="选择订单创建时间"  />
+							<span>
+								<span><a href="###">今天</a>|<a href="###">近一周</a>|<a href="###">近一月</a></span>
+							</span>
+						</li>
+					</ul>
+					<ul>
+						<li class="ul_left">身份识别</li>
+						<li class="ul_right">
+							<p class="ul_right_p">
+								<span>
+									<span>
+										<a href="###">全部</a>|<a href="###">普通会员</a>|<a href="###">创业会员</a></span><a href="###">店铺</a>|<a href="###">供应商</a>
+									</span>
+								</span>
+							</p>
+						</li>
+					</ul>
+					<ul>
+						<li class="ul_left">推荐类型</li>
+						<li class="ul_right">
+							<p class="ul_right_p">
+								<span>
+									<span>
+										<a href="###">全部</a>|<a href="###">一级推荐</a>|<a href="###">二级推荐</a></span><a href="###">三级推荐</a>
+									</span>
+								</span>
+							</p>
+						</li>
+					</ul>
+					<ul>
+						<li class="ul_left">关键词</li>
+						<li class="ul_right">
+							<input type="tel" name="" id="" value="" class="per_input per_input_dingdan" placeholder="输入名称" />
+						</li>
+					</ul>
+					<ul>
+						<li class="ul_left"></li>
+						<li class="ul_right">
+							<p class="ul_right_p">
+								<button>订单查询</button>
+								<button id="acOrder">导出账单</button>
+								<button class="butn">重置</button>
+							</p>
+						</li>
+					</ul>
+				</div>
+			</div>	 -->
+			<div class="per_dingdan">
+				<table class="tab">
+		   	  		<tr> 
+		   	  			<th class="myre_tab_touxiang" style="width: 10%;"> 头像 </th> 
+		   	  			<th style="width: 25%;"> 名称 </th> 
+		   	  			<th style="width: 10%;"> 身份类别 </th> 
+		   	  			<th style="width: 15%;"> 推荐等级 </th>
+		   	  			<th style="width: 20%;"> 注册时间 </th> 
+		   	  			<th style="width: 20%;"> 详情 </th>
+		   	  		</tr>
+		   	 		<?php if(!empty($ref->data->myRef)){ 
+		   	 			foreach($ref->data->myRef as $val){ ?>
+
+		   	  		<tr>
+		   	  			<td class="myre_tab_touxiang">
+		   	  				<div class="photo_naodai">
+								<img src="<?php echo $pc_style; ?>img/touxiang.png" alt="">
+								<img class="circle_shadow" src="<?php echo $pc_style; ?>img/circle_shadow.png">
+							</div>
+						</td> 
+		   	  			<td class="myre_tab_name"><?php echo empty($val->account) ? "" : $val->account;?></td>
+		   	  			<td><?php echo empty($val->user_type)?'':$val->user_type?></td> 
+		   	  			<td><?php echo empty($val->level)?'':$val->level?></td> 
+		   	  			<td><?php echo empty($val->reg_time)?'':$val->reg_time?></td> 
+		   	  			<td>/</td>
+		   	  		</tr>
+		   	  		
+		   	  		<?php } }?>
+		   	  		
+		   	  	</table>
+                <div class="page_warp">
+
+                    
+						<span>
+                            <?php if($page->currentPage >1){ ?>
+                                <a href="<?php echo \Yii::$app->urlManager->createUrl(['user/myrecommend','currentPage' =>$page->currentPage - 1])?>">上一页</a>&nbsp;&nbsp;
+                            <?php } ?>
+
+
+
+
+                            <?php if ($page->currentPage <= 5 && $page->totalPage <= 5){ for($i=1;$i<= $page->totalPage;$i++) { ?>
+
+                                <a href="<?php echo \Yii::$app->urlManager->createUrl(['user/myrecommend','currentPage' =>$i])?>" <?php if($page->currentPage == $i){echo 'style="color:red;"';} ?>><?php echo $i;?></a>
+                           <?php } }elseif($page->currentPage >= 5){
+                            $startTag = $page->currentPage - 1;
+
+                            $endTag = $startTag + 4;
+                            for ($i = $startTag; $i <= $page->totalPage && $i <= $endTag; $i++) { ?>
+                                <a href="<?php echo \Yii::$app->urlManager->createUrl(['user/myrecommend','currentPage' =>$i])?>" <?php if($page->currentPage == $i){echo 'style="color:red;"';} ?>><?php echo $i;?></a>
+                        <?php  }  }else{
+                            for($i=1;$i<= 5;$i++) { ?>
+                                <a href="<?php echo \Yii::$app->urlManager->createUrl(['user/myrecommend','currentPage' =>$i])?>" <?php if($page->currentPage == $i){echo 'style="color:red;"';} ?>><?php echo $i;?></a>
+                        <?php    } }?>
+
+
+
+
+                            <?php if($page->currentPage < $page->totalPage){ ?>
+                                &nbsp;&nbsp;<a href="<?php echo \Yii::$app->urlManager->createUrl(['user/myrecommend','currentPage' =>$page->currentPage +1])?>">下一页</a>
+                            <?php } ?>
+						</span>
+						<span>
+							
+						<span>共</span>
+						<i><?php echo $page->totalPage;?></i>
+						<span>页</span>
+                            <i style="color:red;"><?php echo $page->currentPage;?></i>
+                            <span style="color:red;">页</span>
+                            <?php if($page->totalPage >1){ ?>
+                        <form action="<?php echo \Yii::$app->urlManager->createUrl(['user/myrecommend']);?>" method="get" >
+                            <span>跳转到</span>
+                            <input class="page_input" type="text" name="currentPage" value="2"  />
+                            <span>页</span>
+                            <input type="submit" value="确定">
+						</span>
+                        </form>
+                        <?php } ?>
+                    
+
+                </div>
+				
+			</div>	
+			
+			</div>
+		</div>
+		<div class="modal_order">
+			账单导出成功
+		</div>
+<?php echo \Yii::$app->view->renderFile('@app/views/layouts/bottom.php'); ?>
+		<script src="<?php echo $pc_style; ?>js/lib/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="<?php echo $pc_style; ?>js/lib/common.js"></script>
+		<script src="<?php echo $pc_style; ?>js/jquery.datetimepicker.full.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$('.fun_per_input').datetimepicker({
+		        format: "Y-m-d"
+		    });
+		    $('.fun_per_input').datetimepicker({
+		        format: "Y-m-d"
+		    });
+		    $("#acOrder").click(function(){
+//		    	$(".modal_order").css("display","block");
+				modal("modal_order");
+		    })
+		     
+		     
+//		     模态框显示,需完成时调用
+			    var time;
+				function modal(mod){
+					$("."+mod).show();
+					var timer = 3;
+					clearInterval(time);
+					var time=setInterval(function(){
+						timer--
+						if(timer==0){
+							$('.'+mod).hide();
+							clearInterval(time);
+						}
+					},1000);
+				}
+				
+		    
+		    
+		</script>
+	</body>
+</html>

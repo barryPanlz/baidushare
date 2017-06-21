@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> 店铺首页 </title>
+		<link href="<?php echo $pc_style; ?>img/bitbug_favicon.ico" rel="shortcut icon" type="image/x-icon" /> 
+		<link rel="stylesheet" type="text/css" href="<?php echo $pc_style; ?>css/common/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="<?php echo $pc_style; ?>css/common/common.css" />
+		<link rel="stylesheet" type="text/css" href="<?php echo $pc_style; ?>css/common/centerheader.css"/>
+		<link rel="stylesheet" type="text/css" href="<?php echo $pc_style; ?>css/private/mix.css"/>
+	</head>
+	<body>
+		
+       	<?php echo \Yii::$app->view->renderFile('@app/views/layouts/header.php'); ?>
+		<!--搜索商品栏-->
+		<div class="super_Search">
+			<div class="Search">				
+		    <a href="<?php echo \Yii::$app->urlManager->createUrl(['index/index']);?>"><img src="<?php echo $pc_style; ?>img/logo.png"/></a>	
+			<!--<input type="text" class="kuang" id="" placeholder="输入你想查找的商品名字" />
+			<input type="button" class="suoSou" id="" value="搜索" />
+			<a class="shopping_cart_icon">
+				 <img src="../../img/gouwuche.png"/> 我的购物车（ <sapn> 0 </sapn> ）
+			</a>
+			<div class="Text">
+				<a href="">秋冬连衣裙</a>
+				<a href="">耐克跑步鞋</a>
+				<a href="">婴儿抱被</a>
+				<a href="">会员特供</a>
+				<a href="">买一送二</a>
+			</div>				-->
+			</div>			
+		</div>		
+		<!--频道跳转栏-->
+		<div class="local-channel fix">
+			<div class="data-width">
+				<div class="channel-box .fix">
+					<a class="channel-l ta_center" href="<?php echo \Yii::$app->urlManager->createUrl(['index/index'])?>">
+						<span>返回商城首页</span>
+					</a>
+					<div class="channel-c channel-d">
+                        <a class="now_tab_red" href="<?php echo \Yii::$app->urlManager->createUrl(['storeuser/index']);?>"> 三界会员 </a>
+                        <a href="<?php echo \Yii::$app->urlManager->createUrl(['storeuser/order']);?>"> 我的订单 </a>
+                        <a href="<?php echo \Yii::$app->urlManager->createUrl(['storeuser/accountant']);?>"> 我的账房 </a>
+                        <a href="<?php echo \Yii::$app->urlManager->createUrl(['storeuser/accountsettings']);?>"> 账户设置 </a>
+					</div>
+					<div class="channel-r">
+                        <a href="<?php echo \Yii::$app->urlManager->createUrl(['help/san_jie_tong']);?>"> 三界石 </a>
+                        <a href="<?php echo \Yii::$app->urlManager->createUrl(['help/san_jie_bao']);?>"> 三界宝 </a>
+                        <a href="<?php echo \Yii::$app->urlManager->createUrl(['help/share']);?>">分享邀请</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--店铺首页—个人中心-->
+	   		<div class="super_Personal_center ">
+				   <div class="Personal_center">
+				   	<div class="Personal_title">
+				   		<div class="photo1">
+							<img src="<?php echo $pc_style; ?>img/touxiang1.png"  alt="" />
+							<img class="circle_shadow1" src="<?php echo $pc_style; ?>img/circle_shadow.png" />
+						</div>
+					   	<div class="the_name">
+					   		<span> <?php echo empty($user_name) ?  $mobile : $user_name?> </span>
+				   	  	    <font>
+                                <?php
+                                if($type ==1){
+                                    echo "普通会员";
+                                }elseif($type ==2){
+                                    echo "创业会员";
+                                }elseif($type ==3){
+                                    echo "店铺";
+                                }elseif($type ==4){
+                                    echo "供应商";
+                                }elseif($type ==5){
+                                    echo "代理商";
+                                }
+                                ?>
+                            </font>
+					   	</div>	
+					</div>
+			   		
+			        <div class="list_of ">
+			           <!--<ul> 
+			           	 <li> <img src="../../img/daifukuan.png"/> <span class="span_1">待付款</span>     <span> 211 </span> </li>
+			           	 <li> <img src="../../img/fahuo.png"/>  <span class="span_1">待发货</span>    <span> 58 </span> </li>
+			           </ul>-->
+			           
+			           <ul style="margin-top: 40px;">
+                           <li> <img src="<?php echo $pc_style; ?>img/xiaofei.png"/><span class="span_2"> 待消费  </span><span> <?php if(!empty($wait_receipt)){echo $wait_receipt;}else{echo "0";}?> </span> </li>
+                           <li> <img src="<?php echo $pc_style; ?>img/yijieshu.png"/><span class="span_1"> 已消费  </span><span> <?php if(!empty($complete)){echo $complete;}else{echo "0";} ?> </span> </li>
+                       </ul>
+			           
+			           <!--<ul> 
+			           	 <li> <img src="../../img/yijieshu.png"/><span class="span_1"> 已结束  </span><span> 23 </span> </li> 
+			           </ul>-->
+			        </div>
+			        <div class="per_money per_money1">
+			        	<ul>
+			        		<li>三界石</li>
+                            <li class="colorF7"><?php echo empty($future_currency) ? "0" : $future_currency ?></li>
+			        	</ul> 
+			        	<ul>
+			        		<li>人民币</li>
+			        		<li class="colorF7"><?php echo empty($money) ? "0": $money ?></li>
+			        	</ul>
+<!--			        	<a href="--><?php //echo \Yii::$app->urlManager->createUrl(['pay/centerpay']);?><!--">马上充值</a>-->
+			        </div>
+			        <div class="per_erwima">
+                        <img src="<?php echo empty($rcode) ? "" : $rcodes.$rcode; ?>"/>
+                        <ul>
+                            <li>收款二维码</li>
+                        </ul>
+			        </div>
+				   	  
+				   </div>
+				</div>
+		
+		<!--订单内容区-->
+		<div class="super_the_order">
+			
+		<!--商城订单-->
+		   <div class="the_order" id="store">
+		   	  <div class="the_order_left">
+		   	  	
+		   	  	 <ul class="order_Type" id="order_Type">
+		   	  	 	<li class="order_back">  我的订单  ( <span> <?php echo empty($total1) ? "0" : $total1 ;?> </span> )  </li>
+		   	  	  
+<!--		   	        <a style="margin-left: 580px;" class="last1" href="order.html"> 更多 <img src="../../img/jiantou-icon.png"/> </a>  -->
+		   	  	 </ul>
+		   	  	 
+		   	  	 <ol class="order_title">
+		   	  	    <li class="inquire1 order_title_DDD">  
+		   	  	 	   <!--&nbsp;<font class="changeContent"> 近三个月订单  </font> <span class="triangle_down"></span> 
+		   	  	 	   <dt class="liuYue">近六个月订单 </dt>
+		   	  	 	   <dt class="yinian"> 近一年订单 </dt>-->
+		   	  	 	</li > 
+		   	  	 	<li class="order_title_li2"> 订单内容 </li>
+		   	  	 	<li class="order_title_li3"> 数量 </li>
+		   	  	 	<li class="order_title_li4"> 金额(人民币) </li>
+		   	  	 	<li class="order_title_li5"> 消费码  </li>
+		   	  	 	<li class="order_title_li6"> 订单状态 </li>
+		   	  	 </ol>
+		   	  	 
+		   	  	 
+		   	  	 <div class="order_details1 ">
+                     <?php if(!empty($storeOrderList)){
+                         foreach($storeOrderList as $value){ ?>
+		   	  	 	<div class="number_time">
+		   	  	  <strong><?php echo empty($value->add_time) ? : $value->add_time?> </strong>  订单号：<font class="number_time_font1"><?php echo empty($value->store_order_sn) ? : $value->store_order_sn?>
+		   	  	 	</div>
+		   	  	 	<div class="box_list">
+
+		   	  	 		<ul class="specific specific2" id="specific">
+		   	  	 			<li>
+		   	  	 			   <a href="<?php echo \Yii::$app->urlManager->createUrl(['life/goodsdetails','goodsId'=>$value->store_goods_id]); ?>"><img src="http://futureshop.oss-cn-qingdao.aliyuncs.com/<?php echo empty($value->goods_img) ? : $value->goods_img; ?>"/></a>
+		   	  	 			   <div class="instru">
+		   	  	 			   	   <a> <a> <?php echo empty($value->goods_name) ? : $value->goods_name ; ?> </a> </a>
+
+		   	  	 			   </div>
+		   	  	 			   <div class="shuliang">
+		   	  	 			   	   x <font><?php echo empty($value->goods_number) ? : $value->goods_number ?></font>
+		   	  	 			   </div>
+		   	  	 			</li>
+		   	  	 		</ul>
+
+		   	  	 		<div class="jiage1" id="jiage">
+                             <?php if($value->is_hot == 1) { ?>
+                            <?php echo empty($value->order_amount) ? "0" : $value->order_amount?>(三界石)
+                                 <?php }else{ ?>
+                                 <?php echo empty($value->order_amount) ? "0" : $value->order_amount?>
+                                 <?php } ?>
+		   	  	 		</div>
+		   	  	 		<div class="loca1" id="loca">
+                            <?php foreach($value->order_code_list as $codes){ ?>
+                                <?php if($codes->state == 1){ ?>
+                                    <p><del > <?php echo empty($codes->check_code) ? "": $codes->check_code?></del></p>
+
+                                <?php }else{ ?>
+                                    <p><?php echo empty($codes->check_code) ? "": $codes->check_code?></p>
+                                <?php     }} ?>
+		   	  	 		</div>
+		   	  	 		<div class="logistics1" id="logistics">
+		   	  	 			  <p>
+                                  <?php
+                                      if ($value->order_status == 0){
+                                          echo "待付款";
+                                      }elseif($value->order_status == 1){
+                                          echo "待消费";
+                                      }elseif($value->order_status ==2){
+                                          echo "已消费";
+                                      }elseif($value->order_status ==3){
+                                          echo "无效";
+                                      }elseif($value->order_status ==4){
+                                          echo "退货";
+                                      }
+                                  ?>
+                              </p>
+<!--		   	  	 			  <a href="">确认消费</a>-->
+		   	  	 		</div>
+		   	  	 	</div>
+                     <?php }}?>
+		   	  	 </div> 
+
+
+		   	  	 
+		   	  	<!-- 店铺首页-我的收益-->
+		   	  	<div class="earnings">
+		   	  		<h3> 我的账房 </h3>
+<!--		   	  		<li class="Add_color"> 会员消费分红 </li> <span></span>-->
+<!--		   	  		<li> 会员升级奖励 </li>  <span></span>-->
+<!--		   	  		<li> 店铺充值奖励 </li>-->
+<!--		   	  		<li> 供应商业绩分红 </li>-->
+<!--		   	  		<li> 其他奖励 </li>-->
+<!--		   	  		<li> 充值 </li>-->
+<!--		   	  		<li> 转账 </li>-->
+<!--		   	  		<li> 兑换 </li>-->
+<!--		   	  		<li> 消费 </li>-->
+<!--		   	  		<a href="accountant.html">  更多 <img src="../../img/jiantou-icon.png"/> </a>-->
+		   	  	</div>
+		   	  	
+		   	  	<table class="tab">
+		   	  		<tr> <th style="width: 25%;"> 时间 </th> <th style="width: 25%;"> 受益内容 </th> <th style="width: 17%;"> 三界石 </th> <th style="width: 17%;"> 三界宝 </th> <th style="width: 16%;"> 人民币 </th> </tr>
+                    <?php if(!empty($accList)) {
+
+                    foreach($accList as $val){  //var_dump($accList);?>
+                        <tr> <td><?php echo empty($val->caldate)? '': $val->caldate;?></td><td><?php echo empty($val->acc_name)? '': $val->acc_name;?> </td>
+                                 <td><?php echo empty($val->wlbi_amnt)? '0' : $val->wlbi_amnt;?></td> <td><?php echo empty($val->wlbao_amt)? '0': $val->wlbao_amnt;?></td> <td><?php echo empty($val->rmb_amnt) ? '0' : $val->rmb_amnt;?></td> </tr>
+                    <?php }?>
+<!--                    <tr> <td colspan="2" style="text-align: center;">合计</td> <td>--><?php //echo empty($subTotal->wlbi_amnt_total) ? '0': $subTotal->wlbi_amnt_total?><!--</td> <td>--><?php //echo empty($subTotal->wlbao_amnt_total)? '0': $subTotal->wlbao_amnt_total;?><!--</td> <td>--><?php //echo empty($subTotal->rmb_amnt_total)? '0' : $subTotal->rmb_amnt_total?><!--</td> </tr>-->
+                    <?php } ?>
+                </table>
+		   	  	 	 
+		   	  </div>
+		   	  
+		   	  
+<!--		   	  <div class="the_order_rig"> -->
+<!--		   	  	<a href="" class="yitu"> <img src="../../img/83.png"/> </a>-->
+<!--		   	  	<a href="" class="yitu"> <img src="../../img/84.png"/> </a> -->
+<!--		   	  </div>-->
+		   </div>
+		   
+		   
+		
+		
+		
+			<!--底部-->
+            <?php echo \Yii::$app->view->renderFile('@app/views/layouts/bottom.php'); ?>
+		
+		<script src="<?php echo $pc_style; ?>js/lib/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="<?php echo $pc_style; ?>js/giveHigh.js" type="text/javascript" charset="utf-8"></script>
+		<script src="<?php echo $pc_style; ?>js/lib/common.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+			
+			  
+			  var dex ;
+			  $('#order_Type>li').on('click',function(){
+			  	  dex = $(this).index();
+			  	 
+			  	  if( dex == 0 ){
+			  	  	$('#store').show();
+			  	  	$('#bulk').hide();
+			  	  }else if( dex == 1 ){ 
+			  	  	$('#store').hide();
+			  	  	$('#bulk').show();
+			  	  };
+			  	  return false;
+			  });
+			  
+         
+			  
+			});
+		</script>
+		
+	</body>
+</html>

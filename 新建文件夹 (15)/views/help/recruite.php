@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> 帮助中心-物流查询 </title>
+		<link href="<?php echo $pc_style; ?>img/bitbug_favicon.ico" rel="shortcut icon" type="image/x-icon" /> 
+		<link rel="stylesheet" type="text/css" href="<?php echo $pc_style; ?>css/common/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="<?php echo $pc_style; ?>css/private/mix.css"/>
+		<link rel="stylesheet" type="text/css" href="<?php echo $pc_style; ?>css/common/common.css"/>
+	</head>
+	
+	
+	
+	<body>
+		
+		<!--头部用户导航-->
+		<?php echo \Yii::$app->view->renderFile('@app/views/layouts/header.php'); ?>
+		<!--搜索商品栏-->
+		<?php echo \Yii::$app->view->renderFile('@app/views/layouts/top.php'); ?>
+		
+		<div class="redXian"></div>
+		<!--帮助中心内容区-->
+		<div class="super_help_content">
+			<div class="help_content">
+
+				<?php echo \Yii::$app->view->renderFile('@app/views/layouts/helpcate.php'); ?>
+				<!--右边的内容区-->
+				<div class="help_content_rig">
+					<div class="help_path">
+						<span> 首页 </span>
+						<img src="<?php echo $pc_style; ?>img/jiantou-icon.png"/>
+
+						<span> 常见问题 </span>
+						<img src="<?php echo $pc_style; ?>img/jiantou-icon.png"/>
+						<span> 消费指南 </span>
+						<img src="<?php echo $pc_style; ?>img/jiantou-icon.png"/>
+						<span style="color: #282828;"> 物流查询 </span>
+					</div>
+					<h5> 物流查询 </h5>
+					 
+					<p class="help_content_p1"> 亲爱的朋友，首先，非常感谢您对我们的关注与支持！ </p>
+					<p> 很遗憾，由于当前我们的经费有限，暂时无法直接为您提供各家快递公司的订单信息状态，如您有需要，可以在“<span>三界中心</span>”-“<span>商城订单</span>”-“<span>待收货</span>”的订单中找到您的快递单号，然后点击“查看物流”按钮，在第三方物流网站查询包裹的状态。
+ </p>
+                    <p> 给您带来的不便，敬请谅解。 </p>
+					<div> <img src="<?php echo $pc_style; ?>img/wul_03.jpg"/> </div>
+					
+				 
+			 
+				</div>
+				
+			</div>
+		</div>
+		
+		
+		
+	    <!--底部-->
+		<?php echo \Yii::$app->view->renderFile('@app/views/layouts/bottom.php'); ?>
+		
+		
+		<script src="<?php echo $pc_style; ?>js/lib/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="<?php echo $pc_style; ?>js/lib/common.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){ 
+			var help_left = $('.help_content_left>li'); 
+		   for( var i = 0; i < help_left.length; i++  ){
+		   	  help_left[i].index = i;	
+		   	  help_left[i].onclick = function(){  
+		 
+      	   	  	$(this).find('ol').show();
+      	   	  	$(this).siblings().find('ol').hide();
+		   	  	
+		   	  };
+		   	  
+//		   	  help_left[i].onmouseleave = function(){  
+//		 
+//    	   	  	$(this).find('ol').hide();
+//		   	  	
+//		   	  };
+		   };
+		});	
+		</script>
+		
+	</body>
+</html>

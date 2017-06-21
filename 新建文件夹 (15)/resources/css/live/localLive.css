@@ -1,0 +1,398 @@
+@charset "utf-8";
+.data-width{
+	width:1180px;
+	margin:0 auto;	
+}
+h2{
+	font-size:20px;
+}
+h3{
+	font-size:16px;
+}
+h4{
+	font-size:14px;
+}
+p{
+	font-size:12px;
+}
+
+/*头部添加*/
+.channel-l{
+	height:42px;
+}
+
+.channel-nav-box{
+	display: block;
+}
+.channel-nav-box{
+	top:44px;
+}
+
+.channel-items .item h3,.channel-tabs .tabs h3{
+	font-weight: normal;
+}
+.channel-items .item-r span{
+	font-size:12px;
+}
+
+/*banner轮播部分*/
+
+/* main_image */
+.main_visual{
+	height:460px;
+	border-top:1px solid #d7d7d7;
+	overflow:hidden;
+	position:relative;
+	z-index: 1;
+}
+.main_image{
+	height:460px;
+	overflow:hidden;
+	position:relative;
+}
+.main_image ul{
+	width:9999px;
+	height:460px;
+	overflow:hidden;
+	position:absolute;
+	top:0;left:0;
+}
+.main_image li{
+	float:left;
+	width:100%;
+	height:460px;
+}
+.main_image li a{
+	display:block;
+	width:100%;
+	height:460px;
+}
+.main_image li a img{
+	width:100%;
+	height:460px;							
+}	
+/*.main_image li .img_1{*/
+	/*background:url('../../img/life_index/bendilb_01.jpg') center top no-repeat;*/
+/*}*/
+/*.main_image li .img_2{*/
+	/*background:url('../../img/life_index/bendilb_02.jpg') center top no-repeat;*/
+/*}*/
+
+div .flicking_con{
+	position:absolute;
+	top:420px;
+	left:0;
+	width:100%;
+	z-index:999;
+	height:21px;
+	text-align: center;
+}
+div.flicking_con a{
+	display: inline-block;
+	width:68px;
+	height:4px;
+	background: #fff;
+	margin:0 10px;
+}
+
+div.flicking_con a.on{
+	background-position:0 -21px;
+	background: #ffa;
+}
+#btn_prev,#btn_next{
+	z-index:11111;
+	position:absolute;
+	display:block;
+	width:73px!important;
+	height:74px!important;
+	top:50%;
+	margin-top:-37px;
+	display:none;
+}
+/*#btn_prev{background:url(../images/hover_left.png) no-repeat left top;left:100px;}
+#btn_next{background:url(../images/hover_right.png) no-repeat right top;right:100px;}*/
+
+.ddd{
+	position: absolute;
+	background: red;
+	left:0;
+	top:0;
+	z-index: 1;
+    width:100%;
+}
+
+	
+	.main_image{
+		z-index: 1
+	}
+	}
+	.main_image ul{
+		position: absolute;
+		z-index: 11
+	}
+	.sss{
+		position:relative;
+		width:1000px;
+		margin: 0 auto ;
+		background: red;
+		z-index: 22222
+	}
+	.ccc{
+		position: absolute;
+		width:100px;
+		height:100px;
+		background: red;
+		right:0;
+	}
+
+
+/*内容部分*/
+.locContent{
+	/*height:1900px;*/
+	width:100%;
+	background: #F6F6F6;
+}
+.hot-sale{
+	padding-top:40px;
+}
+.hot-title{
+	margin-bottom:20px;
+	height:30px;
+	width:100%;
+	background: url(../../img/biaotixian.png) no-repeat center;
+	text-align: center;
+}
+.hot-title h3{
+	font-size:20px;
+	display:inline-block;
+	text-align: center;
+}
+.hot-title .one{
+	color:#12AC9F;
+}
+.hot-title .two{
+	color:#575757;
+}
+.hot-main ul {
+	float:left;
+}
+.hot-main ul li{
+	box-sizing: border-box;
+	margin-left: 17px;
+	*margin-left: 15px;
+	float:left;
+	height:340px;
+	width:222px;
+	border:1px solid #F6F6F6;	
+	background: #fff;
+}
+.hot-main ul li:first-child{
+	margin-left:0;
+}
+
+.hot-list a{
+	height:220px;
+	height:220px;
+	display: block;
+	text-align: center;
+}
+.hot-list a img{
+	width:220px;
+	height:220px;
+}
+.hot-list:hover{
+	border:1px solid #12AC9F;
+}
+.hot-list-txt{
+	margin:18px 10px 0;
+	width:200px;
+
+}
+.hot-list-txt h4{
+	color:#282828;  
+	margin-bottom:2px; 	
+	font-weight:normal;
+}
+.hot-list-txt p{
+	color:#848484;
+	height:32px;
+	/*overflow: hidden;  
+    white-space: nowrap;     
+   -o-text-overflow: ellipsis;     
+   text-overflow: ellipsis;  */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    overflow: hidden;
+}
+.hot-list-m span{
+	font-size:14px;
+	color:#12AC9F;
+}
+.hot-title1 h3,.hot-title h3{
+	font-weight: normal;
+}
+
+.hot-list-m .hot-list-mon{
+	font-size:20px;
+}
+
+.hot-list-btm .item{
+	color:#999;
+}
+.hot-list-btm .iteml{
+	float:left;
+	display:none;
+}
+.hot-list-btm .itemr{
+	float:right;
+}
+.hot-list-btm .itemr span{
+	color:#282828;
+	margin-left:6px;;
+}
+.hot-log img{
+	margin-top:20px;
+	
+}
+
+/*1F美食*/
+.hot-title1 {
+	margin-bottom: 10px;
+    height: 28px;
+    line-height: 28px;
+	
+}
+.hot-sale .hot-title1 h3{
+	color:#282828;
+	font-size:20px;
+	float:left;
+}
+.hot-sale .hot-title1 .genduo{
+	float:right;
+}
+ .genduo a{
+ 	color:#999;
+ }
+ .genduo a:hover{
+ 	color:#12AC9F;
+ }
+
+
+/*后修改*/
+.channel-nav-box .item-r img{
+	float:right;
+}
+
+
+.channel-nav-box .item-r{
+	position: relative;
+}
+.channel-nav-box .item-r img{
+	position: absolute;
+	right:10px;
+	top:30px;
+}
+.channel-nav-box{
+	background: #15cab0;
+	height:auto;
+}
+
+.channel-nav-box .item-l a{
+	color:#fff;
+}
+.channel-nav-box .item-r span{
+	color:#fff;
+}
+.item-active{
+	background: #fff;
+}
+.channel-tabs .tabs{
+	background: #fff;
+}
+
+.channel-tabs .tabs h3{
+	color:#fff;
+}
+
+.channel-tabs .tablist a{
+	color:#fff;
+
+}
+.channel-tabs .tablist a:hover{
+	color:#76ffeb;
+	border-bottom: 1px solid #15cab0;
+}
+
+.channel-nav-box .item{
+	border-bottom:1px solid #12AC9F;
+}
+.channel-tabs .tabs{
+	border:2px solid #12AC9F;
+	border-left:0px;
+	border-top:0px;
+}
+
+/*修改影藏的店铺价格*/
+.hot-list-btm{
+	margin-top:12px;
+}
+.hot-list-m{
+	float:left;
+}
+.itemr{
+	margin-top:8px;
+}
+/*------end---------*/
+
+
+/*2016.12.14*/
+.channel-tabs .tabs{
+	height:461px;
+	width:318px;
+	padding: 16px 0;
+	padding:0 25px;
+	overflow-y: auto;
+}
+.tabs ul{
+	margin:16px 0;
+}
+.tabs ul li{
+	margin:0 25px;
+	float:left;
+	text-align: center;
+}
+.tabs ul li:first-child a{
+	color:#12AC9F;
+	text-decoration: underline;
+}
+.tabs ul li a{
+	display: block;
+	margin-top:14px;
+	margin-bottom: 18px;
+}
+.tabs ul li a:hover{
+	color:#12AC9F;
+	text-decoration: underline;
+}
+.hot-main ul .miaosha{
+	height:280px;
+}
+.hot-main ul .miaosha h3{
+	font-size:20px;
+	color:#282828;
+	text-align: center;
+	margin-top:10px;
+}
+.hot-main ul .miaosha h3 span{
+	vertical-align: super;
+}
+
+.channel-nav-box .item {
+	height:65px;
+}
+
+
+
+

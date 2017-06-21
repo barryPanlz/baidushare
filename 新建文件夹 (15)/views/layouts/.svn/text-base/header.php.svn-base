@@ -1,0 +1,73 @@
+<?php 
+use frontend\assets\LayoutsLib;
+$new = new LayoutsLib();
+$pc_style = $new->pc_style;
+?>
+<!--[if lte IE 7]><script>location.href='<?php echo \Yii::$app->urlManager->createUrl(['index/updatebrowser']);?>'</script><![endif]-->
+<div class="super_userNavi" id="super_userNavi">
+			<div class="userNavi">	
+				<div class="fun_location Location" style="position: relative;">
+					<p  class="fun_locationp Location">
+						<span>三界生活：</span><span class="cityname"> 邢台 </span> 
+						<img src="<?php echo $pc_style;?>img/jiant_x.png"/>
+					</p>&nbsp; 
+					<ul class="fun_over_china over_China ">
+						 <h2> 已开辟分站 </h2>
+							 <div id="">
+							 	<a class="updatecity" attr="130500"> 邢台 </a>
+								<a class="updatecity" attr="361000"> 抚州 </a>
+							 </div> <br />
+				        <!-- <h2> 即将开辟 </h2> 
+							<a href=""> 北京 </a>
+							<a href=""> 上海 </a>
+							<a href=""> 天津 </a>
+							<a href=""> 重庆 </a>
+							<a href=""> 河北 </a>
+							<a href=""> 北京 </a>
+							<a href=""> 上海 </a>
+							<a href=""> 天津 </a>
+							<a href=""> 黑龙江 </a>
+							<a href=""> 河北 </a>
+							<a href=""> 北京 </a>
+							<a href=""> 上海 </a>
+							<a href=""> 天津 </a>
+							<a href=""> 黑龙江 </a>
+							<a href=""> 河北 </a>-->
+					</ul>
+
+				</div>					
+				<div class="navigation" id="navigation" style="margin-right: 0;">
+                <?php  $session = Yii::$app->session; $phone = $session->get('mobile_phone');$username =$session->get('user_name'); if(!empty($phone)||!empty($username)){  ?>
+					<li class="My_Account">我的账户：<a href="<?php echo \Yii::$app->urlManager->createUrl(['user/diamond_index']);?>">  <?php echo empty($username)?$phone:$username; ?>  </a></li>
+					<li><a href="<?php echo \Yii::$app->urlManager->createUrl(['login/out'])?>"> 退出 </a></li>
+                    	<li><a href="<?php echo \Yii::$app->urlManager->createUrl(['user/order']);?>"> 我的订单 </a></li>
+                    <?php }else{?>
+                    <li><a href="<?php echo \Yii::$app->urlManager->createUrl(['login/login']);?>"> 登录 </a></li>
+                    <li><a href="<?php echo \Yii::$app->urlManager->createUrl(['login/register']);?>"> 注册 </a></li>
+                    <?php }?>
+				
+					<li><a href="<?php echo \Yii::$app->urlManager->createUrl(['help/helpcenter']);?>"> 帮助中心 </a></li>
+					<li><a href="<?php echo \Yii::$app->urlManager->createUrl(['help/getsyscode']);?>"> 新手上路 </a></li>
+					<li class="nav_li_wrap">
+						<a class="funLoca" id="funLoca" href="#">手机版</a>
+						<ul>
+							<div class="img_erweima">
+								<img src="<?php echo $pc_style; ?>img/erweimashouji.png"/>
+								<p class="erweima_p">三界生活手机商城</p>
+							</div>
+						</ul>
+					</li>
+					<li class="nav_li_wrap">
+						<a  class="funLoca" id="funLoca" href="#">微信服务号</a>
+						<ul class="weixin">
+							<div class="img_erweima">
+								<img src="<?php echo $pc_style; ?>img/weixinfuwuhao.png"/>
+								<p class="erweima_p">三界生活微信服务号</p>
+							</div>
+						</ul>
+					</li>
+				</div>
+			</div>
+		</div>
+
+ 			

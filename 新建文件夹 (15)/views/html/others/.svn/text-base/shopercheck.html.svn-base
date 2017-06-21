@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>商家入驻</title>
+		<link rel="stylesheet" type="text/css" href="../../css/common/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/common/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/private/shopercheck.css"/>
+	</head>
+	<body>
+		
+		<!--头部用户导航-->
+				<!--头部用户导航-->
+		<div class="super_userNavi" id="super_userNavi">
+			<div class="userNavi">
+				
+				<div class="fun_location Location" style="position: relative;">
+					<p  class="fun_locationp Location">
+						<span>三界商城：</span><span > 北京 </span>
+						<img src="../../img/jiant_x.png"/>
+					</p>&nbsp; 
+					<ul class="fun_over_china over_China ">
+						 <h2> 已开辟分站 </h2>
+							 <div id="">
+							 	<a href=""> 北京 </a>
+								<a href=""> 上海 </a>
+								<a href=""> 天津 </a>
+								<a href=""> 黑龙江 </a>
+								<a href=""> 河北 </a>
+								<a href=""> 北京 </a>
+								<a href=""> 上海 </a>
+								<a href=""> 天津 </a>
+								<a href=""> 重庆 </a>
+								<a href=""> 河北 </a>  
+							 </div> <br />
+				        <h2> 即将开辟 </h2> 
+							<a href=""> 北京 </a>
+							<a href=""> 上海 </a>
+							<a href=""> 天津 </a>
+							<a href=""> 重庆 </a>
+							<a href=""> 河北 </a>
+							<a href=""> 北京 </a>
+							<a href=""> 上海 </a>
+							<a href=""> 天津 </a>
+							<a href=""> 黑龙江 </a>
+							<a href=""> 河北 </a>
+							<a href=""> 北京 </a>
+							<a href=""> 上海 </a>
+							<a href=""> 天津 </a>
+							<a href=""> 黑龙江 </a>
+							<a href=""> 河北 </a>
+					</ul>
+
+				</div>
+									
+				<div class="navigation" style="margin-right: 0;">
+					<li><a href="">   1031237422  </a></li>
+					<li><a href=""> 退出 </a></li>
+					<li><a href=""> 我的订单 </a></li>
+					<li><a href="" style="cursor: help;"> 帮助中心 </a></li>
+					<li><a href=""> 新手上路 </a></li>
+					<li class="nav_li_wrap">
+						
+						<a class="" id="funLoca" href="">手机版</a>
+						<ul>
+							<li>
+								<p class="nav_li_pleft">
+									<span class="nav_li_pleft_top">三界商城手机APP</span>
+									<span class="nav_li_pleft_bottom">
+										<a href="">
+											<img src="../../img/iphoneshouji.png"/>
+											<span>iphone</span>
+										</a>
+										<a class="nav_li_pleft_bottom1" href="">
+											<img src="../../img/anzhuoshouji.png"/>
+											<span>Android</span>
+										</a>
+									</span>
+								</p>
+								<p class="nav_li_prigh">
+									<img src="../../img/shoujiduanerweima.png"/>
+								</p>
+							</li>
+							<li>
+								<p class="nav_li_pleft nav_li_pleft_word">
+									<span>三界商城微信公众号</span>
+								</p>
+								<p class="nav_li_prigh">
+									<img src="../../img/weiixngongzhonghaoerweima.png"/>
+								</p>
+							</li>
+						</ul>
+						
+						
+					</li>
+				</div>
+				
+			</div>
+		</div>	
+		<!--搜索商品栏-->
+		<div class="super_Search">
+			<div class="Search" href="">
+				
+			<img style="float: left;" src="../../img/logo.png"/>	
+			<input type="text" class="kuang" id="" placeholder="输入你想查找的商品名字" />
+			<input type="button" class="suoSou" id="" value="搜索" />
+			<a class="shopping_cart_icon">
+				 <img src="../../img/gouwuche.png"/> 我的购物车（ <sapn> 0 </sapn> ）
+			</a>
+			<div class="Text Text66">
+				<a href="">秋冬连衣裙</a>
+				<a href=""> 耐克跑步鞋</a>
+				<a href="">婴儿抱被 </a>
+				<a href="">会员特供 </a>
+				<a href="">买一送二</a>
+			</div>
+				
+			</div>
+			
+		</div>
+		
+		<!--频道跳转栏-->
+		<div class="super_general_navi ">
+			<!--一级菜单-->
+			<div class="general_navi">
+			
+			  <a href="" class="fun_huag_act" > <img src="../../img/hanbao.png"/> &nbsp; 全部商品分类 </a>
+			  <a href="../../index.html"> 首页 </a>
+			  <a href="../life/localLive.html"> 三界生活 </a>
+			  <a href="../center/Diamond_index.html"> 三界会员</a>
+			  <a href="../others/brand.html"> 品牌汇 </a>
+			  <a href="../others/Share.html" class="end_two" style="margin-right: 0;"> 分享邀请</a>
+			  <a href="../others/shopercheck.html" class="end_two color_title_fist" style="margin-right: 0;">商家入驻 </a>
+			<!--二级菜单-->
+			  <ul class="Secondary" id="Secondary">
+			  	<li> 
+			  		<a href="">大家电</a>/ 
+					<a href=""> 生活电器 </a> /
+					<a href=""> 厨房电器 </a>
+					<img src="../../img/youjiantou.png"/>
+					<!--三级菜单-->
+					<div class="wu" id="Level_3">
+						<dt style="padding-top: 30px;"> 
+							<span> 平板电视 <img src="../../img/jiantou-icon.png"/> </span>
+							<dl>
+								<a href=""> 4k超高清 </a>
+								<a href=""> 国产 </a>
+								<a href=""> 外资品牌 </a>
+								<a href=""> 曲面 </a>
+								<a style="color: #F2021C;" href=""> 智能电视 </a>
+								<a href=""> 超级大屏 </a>
+								<a href=""> 云电视 </a>
+								<a href=""> 客厅首选 </a>
+								<a href=""> 云电视 </a>
+							</dl>
+						</dt>
+						<dt> 
+							<span> 厨房大电 <img src="../../img/jiantou-icon.png"/> </span>
+							<dl>
+								<a href=""> 4k超高清 </a>
+								<a href=""> 国产 </a>
+								<a href=""> 外资品牌 </a>
+								<a href=""> 曲面 </a>
+								<a href=""> 智能电视 </a>
+								<a href=""> 超级大屏 </a>
+								<a href=""> 云电视 </a>
+								<a style="color: #F2021C;" href=""> 客厅首选 </a>
+								<a href=""> 云电视 </a>
+							</dl>
+						</dt>
+						<dt> 
+							<span> 平板电视 <img src="../../img/jiantou-icon.png"/> </span>
+							<dl>
+								<a style="color: #F2021C;" href=""> 4k超高清 </a>
+								<a href=""> 国产 </a>
+								<a href=""> 外资品牌 </a>
+								<a href=""> 曲面 </a>
+								<a href=""> 智能电视 </a>
+								<a href=""> 超级大屏 </a>
+								<a href=""> 云电视 </a>
+								<a href=""> 客厅首选 </a>
+								<a href=""> 云电视 </a>
+							</dl>
+						</dt>
+						<dt> 
+							<span> 厨房大电 <img src="../../img/jiantou-icon.png"/> </span>
+							<dl>
+								<a href=""> 4k超高清 </a>
+								<a href=""> 国产 </a>
+								<a href=""> 外资品牌 </a>
+								<a href=""> 曲面 </a>
+								<a style="color: #F2021C;" href=""> 智能电视 </a>
+								<a href=""> 超级大屏 </a>
+								<a style="color: #F2021C;" href=""> 云电视 </a>
+								<a href=""> 客厅首选 </a>
+								<a href=""> 云电视 </a>
+							</dl>
+						</dt>
+						<dt> 
+							<span> 平板电视 <img src="../../img/jiantou-icon.png"/></span>
+							<dl>
+								<a href=""> 4k超高清 </a>
+								<a href=""> 国产 </a>
+								<a href=""> 外资品牌 </a>
+								<a href=""> 曲面 </a>
+								<a style="color: #F2021C;" href=""> 智能电视 </a>
+								<a style="color: #F2021C;" href=""> 超级大屏 </a>
+								<a href=""> 云电视 </a>
+								<a href=""> 客厅首选 </a>
+								<a href=""> 云电视 </a>
+							</dl>
+						</dt>
+					</div>
+			  	</li>
+			  	<li> 
+			  		<a href="">数码</a>/ 
+					<a href=""> 手机 </a> /
+					<a href=""> 电脑办公 </a>
+					<img src="../../img/youjiantou.png"/>
+					<!--三级菜单-->
+					<div   class="wu" id="Level_3">
+						<dt style="padding-top: 30px;"> 
+							<span> 平板电视 <img src="../../img/jiantou-icon.png"/> </span>
+							<dl>
+								<a href=""> 4k超高清 </a>
+								<a href=""> 国产 </a>
+								<a href=""> 外资品牌 </a>
+								<a href=""> 曲面 </a>
+								<a style="color: #F2021C;" href=""> 智能电视 </a>
+								<a href=""> 超级大屏 </a>
+								<a href=""> 云电视 </a>
+								<a href=""> 客厅首选 </a>
+								<a href=""> 云电视 </a>
+							</dl>
+						</dt>
+						<dt> 
+							<span> 厨房大电 <img src="../../img/jiantou-icon.png"/> </span>
+							<dl>
+								<a href=""> 4k超高清 </a>
+								<a href=""> 国产 </a>
+								<a href=""> 外资品牌 </a>
+								<a href=""> 曲面 </a>
+								<a href=""> 智能电视 </a>
+								<a href=""> 超级大屏 </a>
+								<a href=""> 云电视 </a>
+								<a style="color: #F2021C;" href=""> 客厅首选 </a>
+								<a href=""> 云电视 </a>
+							</dl>
+						</dt>
+						 
+						<dt> 
+							<span> 厨房大电 <img src="../../img/jiantou-icon.png"/> </span>
+							<dl>
+								<a href=""> 4k超高清 </a>
+								<a href=""> 国产 </a>
+								<a href=""> 外资品牌 </a>
+								<a href=""> 曲面 </a>
+								<a style="color: #F2021C;" href=""> 智能电视 </a>
+								<a href=""> 超级大屏 </a>
+								<a style="color: #F2021C;" href=""> 云电视 </a>
+								<a href=""> 客厅首选 </a>
+								<a href=""> 云电视 </a>
+							</dl>
+						</dt>
+						<dt> 
+							<span> 平板电视 <img src="../../img/jiantou-icon.png"/> </span>
+							<dl>
+								<a href=""> 4k超高清 </a>
+								<a href=""> 国产 </a>
+								<a href=""> 外资品牌 </a>
+								<a href=""> 曲面 </a>
+								<a style="color: #F2021C;" href=""> 智能电视 </a>
+								<a style="color: #F2021C;" href=""> 超级大屏 </a>
+								<a href=""> 云电视 </a>
+								<a href=""> 客厅首选 </a>
+								<a href=""> 云电视 </a>
+							</dl>
+						</dt>
+					</div>
+			  	</li>
+			  	<li> 
+			  		<a href="">家居用品</a>/ 
+					<a href=""> 家具 </a> /
+					<a href=""> 厨具 </a> /
+					<a href=""> 宠物 </a>
+					<img src="../../img/youjiantou.png"/>
+					<!--三级菜单-->
+					<div   class="wu" id="Level_3">
+						<dt style="padding-top: 30px;"> 
+							<span> 平板电视 <img src="../../img/jiantou-icon.png"/> </span>
+							<dl>
+								<a href=""> 4k超高清 </a>
+								<a href=""> 国产 </a>
+								<a href=""> 外资品牌 </a>
+								<a href=""> 曲面 </a>
+								<a style="color: #F2021C;" href=""> 智能电视 </a>
+								<a href=""> 超级大屏 </a>
+								<a href=""> 云电视 </a>
+								<a href=""> 客厅首选 </a>
+								<a href=""> 云电视 </a>
+							</dl>
+						</dt>
+						<dt> 
+							<span> 厨房大电 <img src="../../img/jiantou-icon.png"/> </span>
+							<dl>
+								<a href=""> 4k超高清 </a>
+								<a href=""> 国产 </a>
+								<a href=""> 外资品牌 </a>
+								<a href=""> 曲面 </a>
+								<a href=""> 智能电视 </a>
+								<a href=""> 超级大屏 </a>
+								<a href=""> 云电视 </a>
+								<a style="color: #F2021C;" href=""> 客厅首选 </a>
+								<a href=""> 云电视 </a>
+							</dl>
+						</dt>
+						<dt> 
+							<span> 厨房大电 <img src="../../img/jiantou-icon.png"/> </span>
+							<dl>
+								<a href=""> 4k超高清 </a>
+								<a href=""> 国产 </a>
+								<a href=""> 外资品牌 </a>
+								<a href=""> 曲面 </a>
+								<a href=""> 智能电视 </a>
+								<a href=""> 超级大屏 </a>
+								<a href=""> 云电视 </a>
+								<a style="color: #F2021C;" href=""> 客厅首选 </a>
+								<a href=""> 云电视 </a>
+							</dl>
+						</dt>
+						<dt> 
+							<span> 平板电视 <img src="../../img/jiantou-icon.png"/> </span>
+							<dl>
+								<a style="color: #F2021C;" href=""> 4k超高清 </a>
+								<a href=""> 国产 </a>
+								<a href=""> 外资品牌 </a>
+								<a href=""> 曲面 </a>
+								<a href=""> 智能电视 </a>
+								<a href=""> 超级大屏 </a>
+								<a href=""> 云电视 </a>
+								<a href=""> 客厅首选 </a>
+								<a href=""> 云电视 </a>
+							</dl>
+						</dt>
+						<dt> 
+							<span> 厨房大电 <img src="../../img/jiantou-icon.png"/> </span>
+							<dl>
+								<a href=""> 4k超高清 </a>
+								<a href=""> 国产 </a>
+								<a href=""> 外资品牌 </a>
+								<a href=""> 曲面 </a>
+								<a style="color: #F2021C;" href=""> 智能电视 </a>
+								<a href=""> 超级大屏 </a>
+								<a style="color: #F2021C;" href=""> 云电视 </a>
+								<a href=""> 客厅首选 </a>
+								<a href=""> 云电视 </a>
+							</dl>
+						</dt>
+						<dt> 
+							<span> 平板电视 <img src="../../img/jiantou-icon.png"/> </span>
+							<dl>
+								<a href=""> 4k超高清 </a>
+								<a href=""> 国产 </a>
+								<a href=""> 外资品牌 </a>
+								<a href=""> 曲面 </a>
+								<a style="color: #F2021C;" href=""> 智能电视 </a>
+								<a style="color: #F2021C;" href=""> 超级大屏 </a>
+								<a href=""> 云电视 </a>
+								<a href=""> 客厅首选 </a>
+								<a href=""> 云电视 </a>
+							</dl>
+						</dt>
+					</div>
+			  	</li>
+			  	<li> 
+			  		<a href="">化妆品</a>/ 
+					<a href=""> 个人护理 </a> /
+					<a href=""> 珠宝 </a>
+					<img src="../../img/youjiantou.png"/>
+					<!--三级菜单-->
+					<div   class="wu" id="Level_3">
+						<dt style="padding-top: 30px;"> 
+							<span> 平板电视 <img src="../../img/jiantou-icon.png"/> </span>
+							<dl>
+								<a href=""> 4k超高清 </a>
+								<a href=""> 国产 </a>
+								<a href=""> 外资品牌 </a>
+								<a href=""> 曲面 </a>
+								<a style="color: #F2021C;" href=""> 智能电视 </a>
+								<a href=""> 超级大屏 </a>
+								<a href=""> 云电视 </a>
+								<a href=""> 客厅首选 </a>
+								<a href=""> 云电视 </a>
+							</dl>
+						</dt>
+						<dt> 
+							<span> 厨房大电 <img src="../../img/jiantou-icon.png"/> </span>
+							<dl>
+								<a href=""> 4k超高清 </a>
+								<a href=""> 国产 </a>
+								<a href=""> 外资品牌 </a>
+								<a href=""> 曲面 </a>
+								<a href=""> 智能电视 </a>
+								<a href=""> 超级大屏 </a>
+								<a href=""> 云电视 </a>
+								<a style="color: #F2021C;" href=""> 客厅首选 </a>
+								<a href=""> 云电视 </a>
+							</dl>
+						</dt>
+						<dt> 
+							<span> 平板电视 <img src="../../img/jiantou-icon.png"/> </span>
+							<dl>
+								<a style="color: #F2021C;" href=""> 4k超高清 </a>
+								<a href=""> 国产 </a>
+								<a href=""> 外资品牌 </a>
+								<a href=""> 曲面 </a>
+								<a href=""> 智能电视 </a>
+								<a href=""> 超级大屏 </a>
+								<a href=""> 云电视 </a>
+								<a href=""> 客厅首选 </a>
+								<a href=""> 云电视 </a>
+							</dl>
+						</dt>
+						<dt> 
+							<span> 厨房大电 <img src="../../img/jiantou-icon.png"/> </span>
+							<dl>
+								<a href=""> 4k超高清 </a>
+								<a href=""> 国产 </a>
+								<a href=""> 外资品牌 </a>
+								<a href=""> 曲面 </a>
+								<a style="color: #F2021C;" href=""> 智能电视 </a>
+								<a href=""> 超级大屏 </a>
+								<a style="color: #F2021C;" href=""> 云电视 </a>
+								<a href=""> 客厅首选 </a>
+								<a href=""> 云电视 </a>
+							</dl>
+						</dt>
+						<dt> 
+							<span> 平板电视 <img src="../../img/jiantou-icon.png"/> </span>
+							<dl>
+								<a href=""> 4k超高清 </a>
+								<a href=""> 国产 </a>
+								<a href=""> 外资品牌 </a>
+								<a href=""> 曲面 </a>
+								<a style="color: #F2021C;" href=""> 智能电视 </a>
+								<a style="color: #F2021C;" href=""> 超级大屏 </a>
+								<a href=""> 云电视 </a>
+								<a href=""> 客厅首选 </a>
+								<a href=""> 云电视 </a>
+							</dl>
+						</dt>
+					</div>
+			  	</li>
+			  	<li> 
+			  		<a href="">服装 </a>/ 
+					<a href=""> 鞋靴 </a> /
+					<a href=""> 箱包 </a>
+					<img src="../../img/youjiantou.png"/>
+					<!--三级菜单-->
+					<div  class="wu" id="Level_3">
+						<dt style="padding-top: 30px;"> 
+							<span> 平板电视 <img src="../../img/jiantou-icon.png"/> </span>
+							<dl>
+								<a href=""> 4k超高清 </a>
+								<a href=""> 国产 </a>
+								<a href=""> 外资品牌 </a>
+								<a href=""> 曲面 </a>
+								<a style="color: #F2021C;" href=""> 智能电视 </a>
+								<a href=""> 超级大屏 </a>
+								<a href=""> 云电视 </a>
+								<a href=""> 客厅首选 </a>
+								<a href=""> 云电视 </a>
+							</dl>
+						</dt>
+						<dt> 
+							<span> 厨房大电 <img src="../../img/jiantou-icon.png"/> </span>
+							<dl>
+								<a href=""> 4k超高清 </a>
+								<a href=""> 国产 </a>
+								<a href=""> 外资品牌 </a>
+								<a href=""> 曲面 </a>
+								<a href=""> 智能电视 </a>
+								<a href=""> 超级大屏 </a>
+								<a href=""> 云电视 </a>
+								<a style="color: #F2021C;" href=""> 客厅首选 </a>
+								<a href=""> 云电视 </a>
+							</dl>
+						</dt>
+						<dt> 
+							<span> 平板电视 <img src="../../img/jiantou-icon.png"/> </span>
+							<dl>
+								<a style="color: #F2021C;" href=""> 4k超高清 </a>
+								<a href=""> 国产 </a>
+								<a href=""> 外资品牌 </a>
+								<a href=""> 曲面 </a>
+								<a href=""> 智能电视 </a>
+								<a href=""> 超级大屏 </a>
+								<a href=""> 云电视 </a>
+								<a href=""> 客厅首选 </a>
+								<a href=""> 云电视 </a>
+							</dl>
+						</dt>
+						<dt> 
+							<span> 厨房大电 <img src="../../img/jiantou-icon.png"/> </span>
+							<dl>
+								<a href=""> 4k超高清 </a>
+								<a href=""> 国产 </a>
+								<a href=""> 外资品牌 </a>
+								<a href=""> 曲面 </a>
+								<a style="color: #F2021C;" href=""> 智能电视 </a>
+								<a href=""> 超级大屏 </a>
+								<a style="color: #F2021C;" href=""> 云电视 </a>
+								<a href=""> 客厅首选 </a>
+								<a href=""> 云电视 </a>
+							</dl>
+						</dt>
+						<dt> 
+							<span> 平板电视 <img src="../../img/jiantou-icon.png"/> </span>
+							<dl>
+								<a href=""> 4k超高清 </a>
+								<a href=""> 国产 </a>
+								<a href=""> 外资品牌 </a>
+								<a href=""> 曲面 </a>
+								<a style="color: #F2021C;" href=""> 智能电视 </a>
+								<a style="color: #F2021C;" href=""> 超级大屏 </a>
+								<a href=""> 云电视 </a>
+								<a href=""> 客厅首选 </a>
+								<a href=""> 云电视 </a>
+							</dl>
+						</dt>
+					</div>
+			  	</li>
+			  	<li> 
+			  		<a href="">医药保健</a>/ 
+					<a href=""> 户外装备 </a> 
+					<img src="../../img/youjiantou.png"/>
+					<!--三级菜单-->
+					<div  class="wu" id="Level_3">
+						<dt style="padding-top: 30px;"> 
+							<span> 平板电视 <img src="../../img/jiantou-icon.png"/> </span>
+							<dl>
+								<a href=""> 4k超高清 </a>
+								<a href=""> 国产 </a>
+								<a href=""> 外资品牌 </a>
+								<a href=""> 曲面 </a>
+								<a style="color: #F2021C;" href=""> 智能电视 </a>
+								<a href=""> 超级大屏 </a>
+								<a href=""> 云电视 </a>
+								<a href=""> 客厅首选 </a>
+								<a href=""> 云电视 </a>
+							</dl>
+						</dt>
+						<dt> 
+							<span> 厨房大电 <img src="../../img/jiantou-icon.png"/> </span>
+							<dl>
+								<a href=""> 4k超高清 </a>
+								<a href=""> 国产 </a>
+								<a href=""> 外资品牌 </a>
+								<a href=""> 曲面 </a>
+								<a href=""> 智能电视 </a>
+								<a href=""> 超级大屏 </a>
+								<a href=""> 云电视 </a>
+								<a style="color: #F2021C;" href=""> 客厅首选 </a>
+								<a href=""> 云电视 </a>
+							</dl>
+						</dt>
+						<dt> 
+							<span> 平板电视 <img src="../../img/jiantou-icon.png"/> </span>
+							<dl>
+								<a style="color: #F2021C;" href=""> 4k超高清 </a>
+								<a href=""> 国产 </a>
+								<a href=""> 外资品牌 </a>
+								<a href=""> 曲面 </a>
+								<a href=""> 智能电视 </a>
+								<a href=""> 超级大屏 </a>
+								<a href=""> 云电视 </a>
+								<a href=""> 客厅首选 </a>
+								<a href=""> 云电视 </a>
+							</dl>
+						</dt>
+						<dt> 
+							<span> 厨房大电 <img src="../../img/jiantou-icon.png"/> </span>
+							<dl>
+								<a href=""> 4k超高清 </a>
+								<a href=""> 国产 </a>
+								<a href=""> 外资品牌 </a>
+								<a href=""> 曲面 </a>
+								<a style="color: #F2021C;" href=""> 智能电视 </a>
+								<a href=""> 超级大屏 </a>
+								<a style="color: #F2021C;" href=""> 云电视 </a>
+								<a href=""> 客厅首选 </a>
+								<a href=""> 云电视 </a>
+							</dl>
+						</dt>
+						<dt> 
+							<span> 平板电视 <img src="../../img/jiantou-icon.png"/> </span>
+							<dl>
+								<a href=""> 4k超高清 </a>
+								<a href=""> 国产 </a>
+								<a href=""> 外资品牌 </a>
+								<a href=""> 曲面 </a>
+								<a style="color: #F2021C;" href=""> 智能电视 </a>
+								<a style="color: #F2021C;" href=""> 超级大屏 </a>
+								<a href=""> 云电视 </a>
+								<a href=""> 客厅首选 </a>
+								<a href=""> 云电视 </a>
+							</dl>
+						</dt>
+					</div>
+			  	</li>
+			  	<li> 
+			  		<a href="">汽车用品</a>/ 
+					<a href=""> 车载电器 </a>
+					<img src="../../img/youjiantou.png"/>
+					<!--三级菜单-->
+					<div  class="wu" id="Level_3">
+						<dt style="padding-top: 30px;"> 
+							<span> 平板电视 <img src="../../img/jiantou-icon.png"/> </span>
+							<dl>
+								<a href=""> 4k超高清 </a>
+								<a href=""> 国产 </a>
+								<a href=""> 外资品牌 </a>
+								<a href=""> 曲面 </a>
+								<a style="color: #F2021C;" href=""> 智能电视 </a>
+								<a href=""> 超级大屏 </a>
+								<a href=""> 云电视 </a>
+								<a href=""> 客厅首选 </a>
+								<a href=""> 云电视 </a>
+							</dl>
+						</dt>
+						<dt> 
+							<span> 厨房大电 <img src="../../img/jiantou-icon.png"/> </span>
+							<dl>
+								<a href=""> 4k超高清 </a>
+								<a href=""> 国产 </a>
+								<a href=""> 外资品牌 </a>
+								<a href=""> 曲面 </a>
+								<a href=""> 智能电视 </a>
+								<a href=""> 超级大屏 </a>
+								<a href=""> 云电视 </a>
+								<a style="color: #F2021C;" href=""> 客厅首选 </a>
+								<a href=""> 云电视 </a>
+							</dl>
+						</dt>
+						<dt> 
+							<span> 平板电视 <img src="../../img/jiantou-icon.png"/> </span>
+							<dl>
+								<a style="color: #F2021C;" href=""> 4k超高清 </a>
+								<a href=""> 国产 </a>
+								<a href=""> 外资品牌 </a>
+								<a href=""> 曲面 </a>
+								<a href=""> 智能电视 </a>
+								<a href=""> 超级大屏 </a>
+								<a href=""> 云电视 </a>
+								<a href=""> 客厅首选 </a>
+								<a href=""> 云电视 </a>
+							</dl>
+						</dt>
+						<dt> 
+							<span> 厨房大电 <img src="../../img/jiantou-icon.png"/> </span>
+							<dl>
+								<a href=""> 4k超高清 </a>
+								<a href=""> 国产 </a>
+								<a href=""> 外资品牌 </a>
+								<a href=""> 曲面 </a>
+								<a style="color: #F2021C;" href=""> 智能电视 </a>
+								<a href=""> 超级大屏 </a>
+								<a style="color: #F2021C;" href=""> 云电视 </a>
+								<a href=""> 客厅首选 </a>
+								<a href=""> 云电视 </a>
+							</dl>
+						</dt>
+						<dt> 
+							<span> 平板电视 <img src="../../img/jiantou-icon.png"/> </span>
+							<dl>
+								<a href=""> 4k超高清 </a>
+								<a href=""> 国产 </a>
+								<a href=""> 外资品牌 </a>
+								<a href=""> 曲面 </a>
+								<a style="color: #F2021C;" href=""> 智能电视 </a>
+								<a style="color: #F2021C;" href=""> 超级大屏 </a>
+								<a href=""> 云电视 </a>
+								<a href=""> 客厅首选 </a>
+								<a href=""> 云电视 </a>
+							</dl>
+						</dt>
+					</div>
+			  	</li>
+			  	<li> 
+			  		<a href="">食品饮料</a>/ 
+					<a href=""> 进口零售 </a> /
+					<a href=""> 酒茶 </a>
+					<img src="../../img/youjiantou.png"/>
+					<!--三级菜单-->
+					<div  class="wu" id="Level_3">
+						<dt style="padding-top: 30px;"> 
+							<span> 平板电视 <img src="../../img/jiantou-icon.png"/> </span>
+							<dl>
+								<a href=""> 4k超高清 </a>
+								<a href=""> 国产 </a>
+								<a href=""> 外资品牌 </a>
+								<a href=""> 曲面 </a>
+								<a style="color: #F2021C;" href=""> 智能电视 </a>
+								<a href=""> 超级大屏 </a>
+								<a href=""> 云电视 </a>
+								<a href=""> 客厅首选 </a>
+								<a href=""> 云电视 </a>
+							</dl>
+						</dt>
+						<dt> 
+							<span> 厨房大电 <img src="../../img/jiantou-icon.png"/> </span>
+							<dl>
+								<a href=""> 4k超高清 </a>
+								<a href=""> 国产 </a>
+								<a href=""> 外资品牌 </a>
+								<a href=""> 曲面 </a>
+								<a href=""> 智能电视 </a>
+								<a href=""> 超级大屏 </a>
+								<a href=""> 云电视 </a>
+								<a style="color: #F2021C;" href=""> 客厅首选 </a>
+								<a href=""> 云电视 </a>
+							</dl>
+						</dt>
+						<dt> 
+							<span> 平板电视 <img src="../../img/jiantou-icon.png"/> </span>
+							<dl>
+								<a style="color: #F2021C;" href=""> 4k超高清 </a>
+								<a href=""> 国产 </a>
+								<a href=""> 外资品牌 </a>
+								<a href=""> 曲面 </a>
+								<a href=""> 智能电视 </a>
+								<a href=""> 超级大屏 </a>
+								<a href=""> 云电视 </a>
+								<a href=""> 客厅首选 </a>
+								<a href=""> 云电视 </a>
+							</dl>
+						</dt>
+						<dt> 
+							<span> 厨房大电 <img src="../../img/jiantou-icon.png"/> </span>
+							<dl>
+								<a href=""> 4k超高清 </a>
+								<a href=""> 国产 </a>
+								<a href=""> 外资品牌 </a>
+								<a href=""> 曲面 </a>
+								<a style="color: #F2021C;" href=""> 智能电视 </a>
+								<a href=""> 超级大屏 </a>
+								<a style="color: #F2021C;" href=""> 云电视 </a>
+								<a href=""> 客厅首选 </a>
+								<a href=""> 云电视 </a>
+							</dl>
+						</dt>
+						<dt> 
+							<span> 平板电视 <img src="../../img/jiantou-icon.png"/> </span>
+							<dl>
+								<a href=""> 4k超高清 </a>
+								<a href=""> 国产 </a>
+								<a href=""> 外资品牌 </a>
+								<a href=""> 曲面 </a>
+								<a style="color: #F2021C;" href=""> 智能电视 </a>
+								<a style="color: #F2021C;" href=""> 超级大屏 </a>
+								<a href=""> 云电视 </a>
+								<a href=""> 客厅首选 </a>
+								<a href=""> 云电视 </a>
+							</dl>
+						</dt>
+					</div>
+			  	</li>
+			  	<li> 
+			  		<a href="">母婴服务器 </a>/ 
+					<a href=""> 婴儿食品 </a> /
+					<a href=""> 玩具 </a>
+					<img src="../../img/youjiantou.png"/>
+					<!--三级菜单-->
+					<div  class="wu" id="Level_3">
+						<dt style="padding-top: 30px;"> 
+							<span> 平板电视 <img src="../../img/jiantou-icon.png"/> </span>
+							<dl>
+								<a href=""> 4k超高清 </a>
+								<a href=""> 国产 </a>
+								<a href=""> 外资品牌 </a>
+								<a href=""> 曲面 </a>
+								<a style="color: #F2021C;" href=""> 智能电视 </a>
+								<a href=""> 超级大屏 </a>
+								<a href=""> 云电视 </a>
+								<a href=""> 客厅首选 </a>
+								<a href=""> 云电视 </a>
+							</dl>
+						</dt>
+						<dt> 
+							<span> 厨房大电 <img src="../../img/jiantou-icon.png"/> </span>
+							<dl>
+								<a href=""> 4k超高清 </a>
+								<a href=""> 国产 </a>
+								<a href=""> 外资品牌 </a>
+								<a href=""> 曲面 </a>
+								<a href=""> 智能电视 </a>
+								<a href=""> 超级大屏 </a>
+								<a href=""> 云电视 </a>
+								<a style="color: #F2021C;" href=""> 客厅首选 </a>
+								<a href=""> 云电视 </a>
+							</dl>
+						</dt>
+						<dt> 
+							<span> 平板电视 <img src="../../img/jiantou-icon.png"/> </span>
+							<dl>
+								<a style="color: #F2021C;" href=""> 4k超高清 </a>
+								<a href=""> 国产 </a>
+								<a href=""> 外资品牌 </a>
+								<a href=""> 曲面 </a>
+								<a href=""> 智能电视 </a>
+								<a href=""> 超级大屏 </a>
+								<a href=""> 云电视 </a>
+								<a href=""> 客厅首选 </a>
+								<a href=""> 云电视 </a>
+							</dl>
+						</dt>
+						<dt> 
+							<span> 厨房大电 <img src="../../img/jiantou-icon.png"/> </span>
+							<dl>
+								<a href=""> 4k超高清 </a>
+								<a href=""> 国产 </a>
+								<a href=""> 外资品牌 </a>
+								<a href=""> 曲面 </a>
+								<a style="color: #F2021C;" href=""> 智能电视 </a>
+								<a href=""> 超级大屏 </a>
+								<a style="color: #F2021C;" href=""> 云电视 </a>
+								<a href=""> 客厅首选 </a>
+								<a href=""> 云电视 </a>
+							</dl>
+						</dt>
+						<dt> 
+							<span> 平板电视 <img src="../../img/jiantou-icon.png"/> </span>
+							<dl>
+								<a href=""> 4k超高清 </a>
+								<a href=""> 国产 </a>
+								<a href=""> 外资品牌 </a>
+								<a href=""> 曲面 </a>
+								<a style="color: #F2021C;" href=""> 智能电视 </a>
+								<a style="color: #F2021C;" href=""> 超级大屏 </a>
+								<a href=""> 云电视 </a>
+								<a href=""> 客厅首选 </a>
+								<a href=""> 云电视 </a>
+							</dl>
+						</dt>
+					</div>
+			  	</li>
+			  	<li style="border-bottom: 0;"> 
+			  		<a href="">图书音像</a>/ 
+					<a href=""> 儿童教育 </a> /
+					<a href=""> 教材 </a>
+					<img src="../../img/youjiantou.png"/>
+					<!--三级菜单-->
+					<div  class="wu" id="Level_3">
+						<dt style="padding-top: 30px;"> 
+							<span> 平板电视 <img src="../../img/jiantou-icon.png"/> </span>
+							<dl>
+								<a href=""> 4k超高清 </a>
+								<a href=""> 国产 </a>
+								<a href=""> 外资品牌 </a>
+								<a href=""> 曲面 </a>
+								<a style="color: #F2021C;" href=""> 智能电视 </a>
+								<a href=""> 超级大屏 </a>
+								<a href=""> 云电视 </a>
+								<a href=""> 客厅首选 </a>
+								<a href=""> 云电视 </a>
+							</dl>
+						</dt>
+						<dt> 
+							<span> 厨房大电 <img src="../../img/jiantou-icon.png"/> </span>
+							<dl>
+								<a href=""> 4k超高清 </a>
+								<a href=""> 国产 </a>
+								<a href=""> 外资品牌 </a>
+								<a href=""> 曲面 </a>
+								<a href=""> 智能电视 </a>
+								<a href=""> 超级大屏 </a>
+								<a href=""> 云电视 </a>
+								<a style="color: #F2021C;" href=""> 客厅首选 </a>
+								<a href=""> 云电视 </a>
+							</dl>
+						</dt>
+						<dt> 
+							<span> 平板电视 <img src="../../img/jiantou-icon.png"/> </span>
+							<dl>
+								<a style="color: #F2021C;" href=""> 4k超高清 </a>
+								<a href=""> 国产 </a>
+								<a href=""> 外资品牌 </a>
+								<a href=""> 曲面 </a>
+								<a href=""> 智能电视 </a>
+								<a href=""> 超级大屏 </a>
+								<a href=""> 云电视 </a>
+								<a href=""> 客厅首选 </a>
+								<a href=""> 云电视 </a>
+							</dl>
+						</dt>
+						<dt> 
+							<span> 厨房大电 <img src="../../img/jiantou-icon.png"/> </span>
+							<dl>
+								<a href=""> 4k超高清 </a>
+								<a href=""> 国产 </a>
+								<a href=""> 外资品牌 </a>
+								<a href=""> 曲面 </a>
+								<a style="color: #F2021C;" href=""> 智能电视 </a>
+								<a href=""> 超级大屏 </a>
+								<a style="color: #F2021C;" href=""> 云电视 </a>
+								<a href=""> 客厅首选 </a>
+								<a href=""> 云电视 </a>
+							</dl>
+						</dt>
+						<dt> 
+							<span> 平板电视 <img src="../../img/jiantou-icon.png"/> </span>
+							<dl>
+								<a href=""> 4k超高清 </a>
+								<a href=""> 国产 </a>
+								<a href=""> 外资品牌 </a>
+								<a href=""> 曲面 </a>
+								<a style="color: #F2021C;" href=""> 智能电视 </a>
+								<a style="color: #F2021C;" href=""> 超级大屏 </a>
+								<a href=""> 云电视 </a>
+								<a href=""> 客厅首选 </a>
+								<a href=""> 云电视 </a>
+							</dl>
+						</dt>
+					</div>
+			  	</li>
+			  </ul>
+			</div>
+		</div>
+		
+	
+		<div class="w_wrap" style="background: #FFFFFF;">
+			<div class="w">
+				<!--面包屑-->
+				<p class="crumbs-bar">
+					<a href="###">首页</a>
+					<i>></i>
+					<a class="bar_act_clor" href="###">商家入驻</a>
+				</p> 
+				<div class="che_center">
+					<div class="che_center_top">
+						请您填写以下简单资料，我们的客服会尽快联系您完成商家注册：
+					</div>
+					<ul>
+						<li>
+							<p class="che_ul_li_pleft">
+								
+							</p>
+							<p class="che_ul_li_pright">
+								<span><input class="zhifu" type="radio" name="zhang" id="" value="" /><em>我是产品供应商</em></span>
+								<span><input class="zhifu" type="radio" name="zhang" id="" value="" /><em>我是实体店铺商家</em></span>
+								<span><input class="zhifu" type="radio" name="zhang" id="" value="" /><em>我是代理商</em></span>
+							</p>
+							
+						</li>
+						<li>
+							<p class="che_ul_li_pleft">
+								商家名称
+							</p>
+							<p class="che_ul_li_pright">
+								<input class="shoper_name" type="text" name="" id="" value="" placeholder="输入您的公司营业执照名称或店铺名称" />
+							</p>
+						</li>
+						<li>
+							<p class="che_ul_li_pleft">
+								申请代理城市
+							</p>
+							<p class="che_ul_li_pright">
+								<select name="" class="shoper_name shoper_city shoper_city1">
+									<option value="">选择省份</option>
+									<option value=""></option>
+									<option value=""></option>
+								</select>
+								<select name="" class="shoper_name shoper_city">
+									<option value="">选择城市</option>
+									<option value=""></option>
+									<option value=""></option>
+								</select>
+								<select name="" class="shoper_name shoper_city">
+									<option value="">选择县城</option>
+									<option value=""></option>
+									<option value=""></option>
+								</select>
+							</p>
+						</li>
+						<li>
+							<p class="che_ul_li_pleft">
+								联系人
+							</p>
+							<p class="che_ul_li_pright">
+								<input class="shoper_name shoper_name1" type="text" name="" id="" value="" placeholder="请输入您的姓名，以方便客服联系您" />
+							</p>
+						</li>
+						<li>
+							<p class="che_ul_li_pleft">
+								电话
+							</p>
+							<p class="che_ul_li_pright">
+								<input class="shoper_name shoper_name1" type="text" name="" id="" value="" placeholder="输入您的手机号" />
+								<b>或</b>
+								<input class="shoper_name shoper_quhao" type="text" name="" id="" value="" placeholder="区号" />
+								<i>——</i>
+								<input class="shoper_name shoper_zuoji" type="text" name="" id="" value="" placeholder="座机号码" />
+							</p>
+						</li>
+						<li>
+							<p class="che_ul_li_pleft">
+								邀请码
+							</p>
+							<p class="che_ul_li_pright">
+								<input class="shoper_name shoper_name1" type="text" name="" id="" value="" placeholder="输入邀请码" />
+								<a href="###">没有验证码？<span>点击获得系统默认码</span></a>
+							</p>
+						</li>
+						<li>
+							<p class="che_ul_li_pleft">
+							</p>
+							<p class="che_ul_li_pright">
+								<button>提交资料</button><br />
+								<span class="kefudianhua">客服电话：010-88888888</span>
+							</p>
+						</li>
+					</ul>
+					
+					
+					
+					
+					
+				</div>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			</div>
+			
+		</div>
+		<!--尾部部分-->
+					<div class="footer">
+				<div class="data-width">
+					<div class="foot-mid">
+						<ul>
+							<li>
+								<h3>注册登录</h3>
+								<a href="">消费注册</a>
+								<a href="">正品保障</a>
+								<a href="">用户登录</a>
+								<a href="">忘记密码</a>
+								<a href="">商家入驻</a>
+							</li>
+							<li>
+								<h3>消费指南</h3>
+								<a href="">兑换流程</a>
+								<a href="">消费流程</a>
+								<a href="">货币与支付</a>
+								<a href="">配送方式</a>
+								<a href="">配送方式</a>
+								<a href="">物流查询</a>
+							</li>
+							<li>
+								<h3>购物指南</h3>
+								<a href="">7天退换货</a>
+								<a href="">退货流程</a>
+							</li>
+							<li>
+								<h3>订单问题</h3>
+								<a href="">订单查询</a>
+								<a href="">订单取消</a>
+								<a href=""></a>
+							</li>
+							<li class="kefuqu">
+								<h3>联系我们</h3>
+								<a href="">电话客服：9999999</a>
+								<a href="">QQ客服：999999999</a>
+								<a href="">邮箱：888888888</a>
+								<a href="">公众号：0000000000</a>
+							</li>
+						</ul>
+					</div>
+					<div class="foot-top">
+						<ul>
+							<li class="first"><img src="../../img/foot-icon1.png" alt="">
+								<p>闪电发货</p>
+							</li>
+							<li><img src="../../img/foot-icon1.png" alt=""><p>七天退换</p></li>
+							<li><img src="../../img/foot-icon1.png" alt=""><p>正品保证</p></li>
+							<li><img src="../../img/foot-icon1.png" alt=""><p>提供发票</p></li>
+							<li class="end"><img src="../../img/foot-icon1.png" alt=""><p>三界战略合作</p></li>
+						</ul>
+					</div>
+					<div class="foot-btm">
+						<div class="foot-btm-nav">					
+							<a href="">关于我们</a>
+							<a href="">品牌招商</a>
+							<a href="">集团采购</a>
+							<a href="">招贤纳士</a>
+							<a href="">联系我们</a>
+							<a href="">网站地图</a>
+							<a href="">网站资讯</a>
+							<a href="">商家联盟</a>
+							<a href="">友情链接</a>
+						</div>
+						<p>Copyright © 2011-2015 HaiHeShiDai Technology Co., Ltd. 京ICP备09070608号-4 增值电信业务经营许可证：京 B2-20090203 京公网安备：4403101910665</p>
+						<div class="foot-btm-btm"><img src="../../img/foot-icon7.jpg" alt="" /></div>
+					</div>
+				</div>
+			</div>
+
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+			<script src="../../js/lib/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
+			<script src="../../js/lib/inputs.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			 $(document).ready(function(){
+			 	
+   
+			 $('.fun_location').on('mousemove',function(){ 
+				$(".fun_locationp").removeClass('Location').addClass('Location1');
+				$('.fun_over_china').css('display','block');
+				$('.fun_location img').attr("src","../../img/jiant_s.png");
+			  });
+			  
+   			  $('.fun_location').on('mouseleave',function(){ 
+   			  	
+   				$(".fun_locationp").removeClass('Location1').addClass('Location');
+   				$('.fun_over_china').css('display','none');
+   				$('.fun_location img').attr("src","../../img/jiant_x.png");
+   			  });
+   			  	 		 	
+			 $('.fun_over_china').on('mousemove',function(){ 
+				$('.fun_locationp').removeClass('Location').addClass('Location1');
+				$('.fun_over_china').css('display','block');
+			  });
+			  
+			  $('.fun_over_china').on('mouseleave',function(){ 
+   				$('.fun_locationp').removeClass('Location1').addClass('Location');
+   				$('.fun_over_china').css('display','none');
+   				$('.fun_location img').attr("src","../../img/jiant_x.png");
+   			  });
+			   
+			})   ;
+			
+			$("#funLoca").mousemove(function(){
+				$(".nav_li_wrap ul").css("display","block");
+				$("#funLoca").addClass("loca_a");
+			})
+			$("#funLoca").mouseleave(function(){
+				$(".nav_li_wrap ul").css("display","none");
+				$("#funLoca").removeClass("loca_a");
+			})
+			$(".nav_li_wrap ul").mousemove(function(){
+				$(".nav_li_wrap ul").css("display","block");
+				$("#funLoca").addClass("loca_a");
+			})
+			$(".nav_li_wrap ul").mouseleave(function(){
+				$(".nav_li_wrap ul").css("display","none");
+				$("#funLoca").removeClass("loca_a");
+			})
+			
+			
+			$(".fun_huag_act").mouseover(function(){
+				$("#Secondary").css("display","block");
+			});
+			$(".fun_huag_act").mouseleave(function(){
+				$("#Secondary").css("display","none");
+			})
+				var Secondary_Li = $("#Secondary li");
+				var Secondary = $("#Secondary");
+				var level_3 = $("#Secondary div");
+				var iNum = 0;
+				for( var i = 0; i < Secondary_Li.length; i++ ){
+					Secondary_Li[i].index = i;
+					Secondary_Li[i].onmousemove = function(){
+						$("#Secondary").css("display","block");
+						iNum = $(this).index();
+						$(this).addClass('backFff').siblings().removeClass('backFff');
+						for( var k = 0; k < level_3.length; k++ ){
+							level_3[k].className = 'wu';
+						};
+						level_3[iNum].className = 'you';
+					    level_3[iNum].onmouseleave = function(){
+					    	$("#Secondary").css("display","none");
+					    	level_3[iNum].className = 'wu';
+					    	Secondary_Li[iNum].className = '';
+					    };
+					    Secondary_Li[iNum].onmouseleave = function(){
+					    	$("#Secondary").css("display","none");
+					    	level_3[iNum].className = 'wu';
+					    	Secondary_Li[iNum].className = '';
+					    };
+					};
+				};
+
+		</script>
+
+	</body>
+</html>

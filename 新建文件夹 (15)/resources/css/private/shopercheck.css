@@ -1,0 +1,305 @@
+.crumbs-bar {
+	width: 99%;
+	height: 55px;
+	line-height: 55px;
+	float: left;
+	border-bottom: 1px solid #dddddd;
+}
+.crumbs-bar a{
+	font-size: 12px;
+	color: #848484;
+}
+.bar_act_clor{
+	color: #282828;
+}
+
+.che_center{
+	width: 99%;
+	min-height: 500px;
+	float: left;
+	border-bottom:1px solid #CCCCCC ;
+	border-right:1px solid #CCCCCC ;
+	border-left:1px solid #CCCCCC ;
+}
+.che_center_top{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	float: left;
+	color: #575757;
+	font-size: 16px;
+	text-indent: 30px;
+	border-bottom: 1px solid #dedede;
+}
+.che_center ul{
+	width: 100%;
+	min-height: 450px;
+	float: left;
+	margin-bottom:60px ;
+}
+.che_center li{
+	width: 100%;
+	height: 60px;
+	float: left;
+	position: relative;
+}
+.che_center li .u_posi_p{
+	width: 500px;
+	height: 16px;
+	font-size: 12px;
+	color: #F2011D;
+	text-align: left;
+	position: absolute;
+	bottom:-12px ;
+	left: 130px;
+}
+.che_ul_li_pleft{
+	width: 100px;
+	height: 60px;
+	float: left;
+	line-height: 60px;
+	text-align: right;
+	color: #282828;
+	font-size: 14px;
+	
+}
+.che_ul_li_pright{
+	width: 500px;
+	height: 60px;
+	float: left;
+	margin-left:18px ;
+}
+.che_ul_li_pright input[type="radio"]::after{
+	border:1px solid #FFFFFF;
+	background: #ffffff;
+	width: 18px;
+    height: 18px;
+    display:inline-block ;
+    -webkit-box-shadow: inset 0 2px 2px rgba(0,0,0,0.1);
+    -moz-box-shadow: inset 0 2px 2px rgba(0,0,0,0.1);
+    box-shadow: inset 0 2px 2px rgba(0,0,0,0);
+	content:url(../../img/kongxindedianji.png);
+	cursor: pointer;
+}
+.all-sel label,.mid-all label{
+	vertical-align: middle;
+}
+.che_ul_li_pright input[type="radio"]:checked::after{
+	content:url(../../img/shixindedianji.png);
+}
+.che_ul_li_pright span input{
+	float: left;
+	margin-top:8px ;
+}
+.che_ul_li_pright span{
+	display: inline-block;
+	width: 160px;
+	height: 36px;
+	line-height: 36px;
+	
+}
+.che_ul_li_pright span em{
+	display: inline-block;
+	margin-left:10px ;
+	font-size:16px;
+	color: #F3001D;
+	line-height:36px ;
+	float: left;
+	
+}
+.shoper_name{
+	width: 420px;
+	/*height: 37px;*/
+	/*line-height: 37px;*/
+	padding: 11px 0;
+	border: 1px solid #cccccc;
+	background: #ffffff;
+	margin-top:12px ;
+	text-indent: 10px;
+	
+}
+.shoper_name1{
+	width: 235px;
+}
+.shoper_quhao{
+	width: 70px;
+}
+.shoper_zuoji{
+	width: 106px;
+}
+.shoper_city{
+	width: 110px;
+	margin-left: 15px;
+	padding: 8px 0;
+}
+.shoper_city1{
+	margin-left:0 ;
+}
+.che_ul_li_pright b{
+	font-weight: 100;
+	padding: 0 12px;
+}
+.che_ul_li_pright a{
+	color: #282828;
+	font-size: 14px;
+	
+}
+.che_ul_li_pright a span{
+	color: #F3001D;
+}
+.che_ul_li_pright button{
+	width: 235px;
+	height: 38px;
+	text-align: center;
+	line-height: 38px;
+	background: #f3001d;
+	color: #FFFFFF;
+	border: 0;
+	margin-top:20px ;
+	font-size: 18px;
+}
+.che_ul_li_pright button:hover{
+	background: #ff4e4e;
+}
+li .kefudianhua{
+	display: block;
+	width: 235px;
+	text-align: center;
+}
+.che_ul_li_pright span{
+	margin-top:18px ;
+	color: #848484;
+}
+.che_ul_li_pright i{
+	color: #cccccc;
+	padding: 3px;
+}
+
+
+
+
+/*首页总的导航*/
+.super_general_navi{
+	width: 100%;
+	min-width: 1180px;
+	height: 45px; 
+	line-height: 45px;
+	background: #FFFFFF;
+	border-bottom: 2px solid #C10F10;
+}
+.general_navi{
+	width: 1180px; 
+	height: 45px; 
+	margin: 0 auto; 
+	position: relative;
+}
+.general_navi a{
+	margin: 0 21px;
+	display: inline-block;
+	font-size: 16px;
+	color: #282828;
+}
+.general_navi .end_two{
+	float: right;
+}
+.general_navi a:hover{
+	color: #F2021C;
+}
+/*二级菜单*/
+.Secondary{
+	position: absolute;
+	z-index: 3;
+	top: 45px;
+	width: 210px;
+	height: 460px;
+	background-color: #000000;
+	filter:alpha(opacity=100);   
+    opacity: 1;    
+}
+.Secondary li a{
+	margin: 0;
+	font-size: 14px;
+	color: #fff;
+}
+.Secondary li{
+	width: 190px;
+	padding: 0 10px;
+	height: 45px;
+	line-height: 45px;
+	color: #fff;
+	border-bottom: 1px solid rgba(255,255,255,1);
+}
+.Secondary li>img{
+	float: right;
+	padding-top: 20px;
+}
+.Secondary .backFff{
+	background: #FFFFFF; 
+	color: #F2021C;
+}
+.Secondary .backFff a{ 
+	color: #F2021C;
+	font-size: 14px;
+}
+/*三级菜单*/
+#Level_3{
+	position: absolute;
+	z-index: 100;
+	top: 0;
+	left: 210px;
+	width: 970px;
+	height: 458px;
+	border-bottom: 1px solid #000000;
+	border-top: 1px solid #000000;
+	background: #FFFFFF;
+	font-size: 14px;
+}
+#Level_3 dt{
+	height: 46px;
+	line-height: 46px;
+}
+#Level_3 a{
+	color: #848484;
+}
+#Level_3 span{
+	float: left;
+	color: #575757;
+	margin-left: 36px;
+}
+#Level_3 span>img{
+	margin-left: 10px;
+}
+#Level_3 dl{
+	float: left;
+	margin-left: 20px;
+	width: 820px;
+	border-bottom: 1px dashed #848484;
+}
+#Level_3 dl a{
+	margin: 0 10px;
+}
+#Level_3 dl a:hover{
+	color: #F2021C;
+	text-decoration: underline;
+}
+.you{
+	display: block;
+}
+.wu{
+	display: none;
+}
+
+/*----*/
+.Secondary{
+	display: none;
+}
+.general_navi  .fun_huag_act{
+	width: 210px;
+	text-indent: 20px;
+	background: #c10f10;
+	color: #FFFFFF;
+	margin-left: 0;
+}
+.general_navi  .fun_huag_act:hover{
+	color: #FFFFFF;
+}

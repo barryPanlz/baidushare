@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>转账</title>
+		  <link href="<?php echo $pc_style; ?>img/bitbug_favicon.ico" rel="shortcut icon" type="image/x-icon" /> 
+		<link rel="stylesheet" type="text/css" href="<?php echo $pc_style; ?>css/common/reset.css" />
+		<link rel="stylesheet" type="text/css" href="<?php echo $pc_style; ?>css/common/common.css" />
+		<link rel="stylesheet" type="text/css" href="<?php echo $pc_style; ?>css/private/centerPay.css" />
+	</head>
+	<body>
+		<!--遮罩充值的的-->
+<!--		<div class="pay-mark">-->
+<!--			<div class="pay-mbox">-->
+<!--				<h3 class="tit">-->
+<!--					提示-->
+<!--				</h3>-->
+<!--				<p>请在第三方支付页面完成操作...</p>-->
+<!--				<div class="pay-btn-box">-->
+<!--					   <a class="yes">我已完成支付</a>-->
+<!--				       <a class="no">取消</a>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--		</div>-->
+<!--		-->
+		
+		<!--头部用户导航-->
+	<?php echo \Yii::$app->view->renderFile('@app/views/layouts/header.php'); ?>
+		<!--搜索商品栏-->
+		<?php echo \Yii::$app->view->renderFile('@app/views/layouts/top.php'); ?>
+		
+		<!--频道跳转栏-->
+        <!--频道跳转栏-->
+        <div class="local-channel fix">
+            <div class="data-width">
+                <div class="channel-box .fix">
+                    <a class="channel-l ta_center" href="<?php echo \Yii::$app->urlManager->createUrl(['index/index']);?>">
+                        <span>返回商城首页</span>
+                    </a>
+                    <div class="channel-c channel-d">
+                        <a href="<?php echo \Yii::$app->urlManager->createUrl(['agent/index']);?>"> 三界会员 </a>
+                        <a  class="now_tab_red" href="<?php echo \Yii::$app->urlManager->createUrl(['agent/accountant']);?>"> 我的账房 </a>
+                        <a href="<?php echo \Yii::$app->urlManager->createUrl(['agent/accountsettings']);?>"> 账户设置 </a>
+                    </div>
+                    <div class="channel-r">
+                        <a href="<?php echo \Yii::$app->urlManager->createUrl(['help/san_jie_tong']);?>"> 三界石 </a>
+                        <a href="<?php echo \Yii::$app->urlManager->createUrl(['help/san_jie_bao']);?>"> 三界宝 </a>
+                        <a href="<?php echo \Yii::$app->urlManager->createUrl(['help/share']);?>">分享邀请</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<div class="pay-cont">
+			<div class="data-width">
+				<div class="pay-box">
+					<h3 class="tit">转账三界石</h3>
+					<div class="pay-txt-info">
+						<ul>
+
+							<li>账户余额：<span class="num"><?php echo empty($details1->data->future_currency) ? "0" : $details1->data->future_currency?></span><span class="b">三界石</span></li>
+							<li>我的身份：<span class="jewel"><?if(!empty($details1->data->user_type)){
+                                        if($details1->data->user_type ==1){
+                                            echo "普通会员";
+                                        }elseif($details1->data->user_type ==2){
+                                            echo "创业会员";
+                                        }elseif($details1->data->user_type ==3){
+                                            echo "店铺";
+                                        }elseif($details1->data->user_type ==4){
+                                            echo "供应商";
+                                        }elseif($details1->data->user_type ==5){
+                                            echo "代理商";
+                                        }
+                                    }?></span></li>
+
+							<li>转账金额：<span class="ratio">10000</span><span class="suffix">三界石/次</span></li>
+						</ul>
+					</div>
+					
+					<div class="pay-topUp">
+						<label for="" class="r-text">转账金额</label>
+						<input type="text" id="money" placeholder="请输入数字" />
+						<span>三界石</span>
+					</div>
+					<div class="pay-topUp">
+						<label for="" class="r-text">对方账号</label>
+						<input type="text" id="revbankaccno" placeholder="请输入账号" />
+					</div>
+
+					  
+					<div class="pay-btn">
+						<button id="acOrder">确认转账</button>
+					</div>
+				</div>				
+			</div>
+		</div>	
+<?php echo \Yii::$app->view->renderFile('@app/views/layouts/bottom.php'); ?>
+		<div class="modal_order">
+			转账成功
+		</div>
+		<div class="modal_order1">
+			转账失败
+		</div>
+		
+		<script src="<?php echo $pc_style; ?>js/lib/jquery-1.7.1.min.js"></script>
+			<script src="<?php echo $pc_style; ?>js/lib/common.js"></script>
+		<script src="<?php echo $pc_style; ?>js/lib/inputs.js"></script>
+	
+		<script>
+			$(function(){
+				$('.pay-select li input').click(function(){														
+				    $('.pay-select li').children("div").removeClass('abcdf');
+					$(this).next("div").addClass('abcdf');
+				})
+//				$('.pay-btn-box').click(function(){
+//					$('.pay-mark').hide();
+//				})
+			})	
+			
+			
+		    $("#acOrder").click(function(){
+//		    	$(".modal_order").css("display","block");
+   				 $("#acOrder").attr("disabled","disabled");
+                var money = $("#money").val();
+                var revbankaccno = $("#revbankaccno").val();
+                $.ajax({
+                    url:"<?php echo \Yii::$app->urlManager->createUrl(['agent/transfer']);?>",
+                    data:{"money":money,"revbankaccno":revbankaccno},
+                    type:"post",
+                    dataType:"json",
+                    success:function(data){
+                    $("#acOrder").removeAttr("disabled");
+                   if(data.errorCode == 0){
+                       modal("modal_order"); 
+                       setTimeout(" location.href='<?php echo \Yii::$app->urlManager->createUrl(['/agent/transfer'])?>'",2000);
+                   }else if(data.errorCode == -2){
+                       alert("登录超时，请重新登录");;
+                        setTimeout("location.href='<?php echo \Yii::$app->urlManager->createUrl(['login/login'])?>'",2000);
+                   }else if(data.errorCode ==-34){
+                       alert("网络繁忙，请稍后重试");modal("modal_order1");
+                   }else if(data.errorCode ==-40){
+                       alert("您没有转账权限");modal("modal_order1");
+                        $("#acOrder").removeAttr("disabled");
+                   }else if(data.errorCode ==-42){
+                       alert("对方账户不存在");modal("modal_order1");
+                   }else if(data.errorCode ==-43){
+                       alert("超出转账上限");modal("modal_order1");
+                   }else if(data.errorCode ==-44){
+                       alert("低于转账最小额");modal("modal_order1");
+                   }else if(data.errorCode ==-15){
+                       alert("请输入正确的金额和账号");modal("modal_order1");
+                   }else if(data.errorCode == -50){
+                       alert(data.message);
+                   }else if(data.errorCode == -81){
+                       alert(data.message);
+                   }
+                },
+                error:function(){
+                    alert("转账失败，请稍后重试");
+                    $("#acOrder").removeAttr("disabled");
+                }
+                });
+				//modal("modal_order1");
+				//return false;
+		    })
+		     
+		     
+//		     模态框显示,需完成时调用
+			    var time;
+				function modal(mod){
+					$("."+mod).show();
+					var timer = 3;
+					clearInterval(time);
+					var time=setInterval(function(){
+						timer--
+						if(timer==0){
+							$('.'+mod).hide();
+							clearInterval(time);
+						}
+					},1000);
+				}
+				
+				
+		</script>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

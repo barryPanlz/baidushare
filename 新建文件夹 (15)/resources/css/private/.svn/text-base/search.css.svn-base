@@ -1,0 +1,297 @@
+.w_wrap{
+	width: 100%;
+	min-width: 1180px;
+	float: left;
+	height: auto;
+}
+.w{
+	width: 1180px;
+	min-height: 100px;
+	margin: 0 auto;
+}
+.crumbs-bar {
+	width: 100%;
+	height: 55px;
+	line-height: 55px;
+	float: left;
+	
+}
+.crumbs-bar a{
+	font-size: 12px;
+	color: #848484;
+}
+.bar_act_clor{
+	color: #282828;
+}
+
+/*搜索*/
+.selector{
+	width: 1180px;
+	height: auto;
+    border: 1px solid #dedede;
+    background: #FFF;
+    margin-bottom: 10px;
+    float: left;
+}
+.selectorLine{
+	width: 100%;
+	height: auto;
+	float: left;
+	border-bottom: 1px dashed #dedede;
+}
+.sl-key{
+	width: 90px;
+	height: 54px;
+	float: left;
+	font-size:14px;
+	color: #575757;
+}
+.sl-key b{
+	padding: 16px 0 0 16px;
+	float: left;
+}
+.sl-value{
+	width: 1000px;
+	min-height:40px;
+	max-height: 80px;
+	float: left;
+	overflow: hidden;
+	padding:6px 0 10px 0;
+}
+.sl-value1{
+	width: 1000px;
+	height:160px;
+	float: left;
+	overflow: auto;
+	padding:6px 0 10px 0;
+}
+.sl-value a,.sl-value1 a{
+	padding: 7px 12px;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 14px;
+    color: #282828;
+    line-height: 26px;
+    float: left;
+}
+.sl-value a:hover{
+	color: #c10f10;;
+}
+
+.sl-ext{
+	width: 55px;
+	height: 54px;
+	float: left;
+	padding: 16px 0 0 15px ;
+}
+.sl-ext a{
+	font-size: 12px;
+	
+}
+.sl-ext1{
+	display: block;
+	
+}
+.sl-ext2{
+	display: none;
+}
+
+/*content===============*/
+.content{
+	width: 100%;
+	min-height:100px;
+	height: auto;
+	float: left;
+	
+}
+.con_sousuo{
+	width: 1180px;
+	height: 40px;
+	float: left;
+	border-top:1px solid #dedede;
+	border-bottom:1px solid #dedede;
+	overflow: hidden;
+	position: relative;
+	background: #FFFFFF;
+	margin: 10px 0;
+}
+.con_sousuo>a{
+	font-size: 12px;
+	color: #565656;
+	display: inline-block;
+	padding:12px 24px ;
+	border-left: 1px solid #dedede;;
+	
+}
+.con_sousuo>a:hover{
+	color: #f3001d;
+}
+.con_page{
+	width: 258px;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	font-size: 12px;
+	line-height: 40px;
+	color: #575757;
+}
+.con_page a{
+	color: #848484;
+}
+.con_page i{
+	font-style: normal;
+	color: red;
+	float: left;
+}
+.con_page span{
+	float: left;
+}
+.con_page_nub{
+	float: left;
+	margin-left:30px ;
+}
+.con_page_ji{
+	float: left;
+	margin-left:10px ;
+	font-size: 20px;
+}
+.con_page_page1{
+	color: #f3001d;
+}
+.con_page .page_color1{
+	color: #272727;
+}
+/*商品*/
+.sp_warp{
+	width: 100%;
+	min-height: 100px;
+	height: auto;
+	float: left;
+}
+.sp-item{
+	width: 220px;
+	height: 362px;
+	float: left;
+	border: 1px solid #FFFFFF;
+	background: #FFFFFF;
+	margin-right:17px ;
+	margin-bottom:20px ;
+}
+.sp-item:hover{
+	border: 1px solid #dddddd;
+}
+.sp-item>img{
+	width: 220px;
+	height: 220px;
+	float: left;
+	cursor: pointer;
+	
+}
+.sp-item-content{
+	width: 200px;
+	height:120px;
+	float: left;
+	margin-left:10px ;
+}
+.sp-money{
+	width: 100%;
+	padding: 20px 0 10px 0;
+	float: left;
+	color: #F3001D;
+}
+.sp-money b{
+	font-size: 14px;
+	float: left;
+	padding-top:6px ;
+	padding-left:6px ;
+}
+.sp-money span{
+	font-size: 20px;
+	float: left;
+}
+.sp-name{
+	width: 100%;
+	min-height: 20px;
+	line-height: 22px;
+	font-size: 12px;
+	color: #575757;
+	float: left;
+	overflow:hidden; 
+	text-overflow:ellipsis;
+	display:-webkit-box; 
+	-webkit-box-orient:vertical;
+	-webkit-line-clamp:2; 
+	cursor: pointer;
+}
+.sp-name:hover{
+	color:  #F3001D;
+}
+.sp-bottom{
+	width: 100%;
+	min-height:30px;
+	float: left;
+	
+}
+.sp-bottom em{
+	font-size: 12px;
+	float: left;
+	padding-top:8px ;
+	color: #999999;
+}
+.sp-bottom b{
+	font-weight: 100;
+	color: #282828;
+}
+.sp-bottom img{
+	width: 24px;
+	float: right;
+	margin-top:6px ;
+	cursor: pointer;
+}
+/*页码*/
+.page_warp{
+	width: 100%;
+	height: 30px;
+	float: left;
+	padding: 30px 0 60px 0;
+}
+
+.page_warp p{
+	width: 600px;
+	height: 30px;
+	margin: 0 auto;
+}
+.page_warp a{
+	font-size: 12px;
+	padding:  8px 12px;
+	border: 1px solid #dddddd;
+}
+.page_warp i{
+	font-style: normal;
+}
+.page_warp a:hover{
+	color: #f2021c;
+}
+.page_input{
+	display: inline-block;
+	width: 30px;
+	height: 26px;
+	border: 1px solid #dddddd;
+	font-size: 12px;
+}
+.page_warp button{
+	display: inline-block;
+	width: 60px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	background: #f2021c;
+	color: #FFFFFF;
+	border: 0;
+	cursor: pointer;
+}
+
+

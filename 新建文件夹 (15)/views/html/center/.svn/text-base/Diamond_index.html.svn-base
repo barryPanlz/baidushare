@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> 创业会员商城首页 </title>
+		<link rel="stylesheet" type="text/css" href="../../css/common/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/private/mix.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/common/common.css">
+	</head>
+	
+	
+	
+	<body>
+		
+		
+		<!--头部用户导航-->
+		<div class="super_userNavi" id="super_userNavi">
+			<div class="userNavi">
+				
+				<div class="fun_location Location">
+					<p  class="fun_locationp Location">
+						<span>三界商城：</span><span > 北京 </span>
+						<img src="../../img/jiant_x.png"/>
+					</p>&nbsp; 
+					<ul class="fun_over_china over_China ">
+						 <h2> 已开辟分站 </h2>
+							 <div id="">
+							 	<a href=""> 北京 </a>
+								<a href=""> 上海 </a> 
+								<a href=""> 天津 </a>
+								<a href=""> 黑龙江 </a>
+								<a href=""> 河北 </a>
+								<a href=""> 北京 </a>
+								<a href=""> 上海 </a>
+								<a href=""> 天津 </a>
+								<a href=""> 重庆 </a>
+								<a href=""> 河北 </a>  
+							 </div> <br />
+				        <h2> 即将开辟 </h2> 
+							<a href=""> 北京 </a>
+							<a href=""> 上海 </a>
+							<a href=""> 天津 </a>
+							<a href=""> 重庆 </a>
+							<a href=""> 河北 </a>
+							<a href=""> 北京 </a>
+							<a href=""> 上海 </a>
+							<a href=""> 天津 </a>
+							<a href=""> 黑龙江 </a>
+							<a href=""> 河北 </a>
+							<a href=""> 北京 </a>
+							<a href=""> 上海 </a>
+							<a href=""> 天津 </a>
+							<a href=""> 黑龙江 </a>
+							<a href=""> 河北 </a>
+					</ul>
+
+				</div>
+									
+				<div class="navigation">
+					<li><a href="">   1031237422  </a></li>
+					<li><a href="login.html"> 退出 </a></li>
+					<li><a href="Diamond_order.html"> 我的订单 </a></li>
+					<li><a href="../others/Helpcenter.html"> 帮助中心 </a></li>
+					<li><a href="Newbie.html"> 新手上路 </a></li>
+					<li class="nav_li_wrap">
+						
+						<a class="" id="funLoca" href="../others/phone.html">手机版</a>
+						<ul>
+							<li>
+								<p class="nav_li_pleft">
+									<span class="nav_li_pleft_top">三界商城手机APP</span>
+									<span class="nav_li_pleft_bottom">
+										<a href="">
+											<img src="../../img/iphoneshouji.png"/>
+											<span>iphone</span>
+										</a>
+										<a class="nav_li_pleft_bottom1" href="">
+											<img src="../../img/anzhuoshouji.png"/>
+											<span>Android</span>
+										</a>
+									</span>
+								</p>
+								<p class="nav_li_prigh">
+									<img src="../../img/shoujiduanerweima.png"/>
+								</p>
+							</li>
+							<li>
+								<p class="nav_li_pleft nav_li_pleft_word">
+									<span>三界商城微信公众号</span>
+								</p>
+								<p class="nav_li_prigh">
+									<img src="../../img/weiixngongzhonghaoerweima.png"/>
+								</p>
+							</li>
+						</ul>
+						
+						
+					</li>
+				</div>
+				
+			</div>
+		</div>		
+		<!--搜索商品栏-->
+		<div class="super_Search">
+			<div class="Search" href="">
+				
+			<img style="float: left;" src="../../img/logo.png"/>	
+			<input type="text" class="kuang" id="" placeholder="输入你想查找的商品名字" />
+			<input type="button" class="suoSou" id="" value="搜索" />
+			<a class="shopping_cart_icon">
+				 <img src="../../img/gouwuche.png"/> 我的购物车（ <sapn> 0 </sapn> ）
+			</a>
+			<div class="Text">
+				<a href="">秋冬连衣裙</a>
+				<a href=""> 耐克跑步鞋</a>
+				<a href="">婴儿抱被 </a>
+				<a href="">会员特供 </a>
+				<a href="">买一送二</a>
+			</div>
+				
+			</div>
+			
+		</div>
+		
+		
+		
+		<!--创业会员—商城订单的导航-->
+		<div class="super_general_navi ">
+			<div class="general_navi">
+			  <a href="../../index.html" class="general_navi_a1"> 返回商城首页 </a>
+			  <a href="" class="color_title_fist"> 三界会员 </a>
+			  <a href="order1.html"> 我的订单 </a>
+			  <a href="accountant.html"> 我的账房 </a>
+			  <a href="myrecommend.html"> 我的推荐 </a>
+			  <a href="accountsettings.html"> 账户设置 </a>
+			  <a href="../others/Share.html" class="end_two end_two_mar" > 分享邀请 </a>
+			  <a href="../others/sanjiebao.html" class="end_two"> 三界宝 </a>
+			  <a href="../others/sanjietong.html" class="end_two"> 三界石 </a>
+			</div>
+		</div>
+		
+		<!--创业会员—个人中心-->
+	   		<div class="super_Personal_center ">
+				   <div class="Personal_center">
+				   	<div class="Personal_title">
+				   		<div class="photo1">
+							<img src="../../img/lvyou5.png" alt="" />
+							<img class="circle_shadow1" src="../../img/circle_shadow.png" />
+						</div>
+					   	<div class="the_name">
+					   		<dt> 张三 </dt>   
+				   	  	    <dd> 创业会员 </dd>
+					   	</div>	
+					</div>
+			   		
+			        <div class="list_of ">
+			           <ul> 
+			           	 <li> <img src="../../img/daifukuan.png"/> <span class="span_1">待付款</span>     <span> 211 </span> </li>
+			           	 <li> <img src="../../img/fahuo.png"/>  <span class="span_1">待发货</span>    <span> 58 </span> </li>
+			           </ul>
+			           
+			           <ul> 
+			           	 <li> <img src="../../img/shouhuo.png"/> <span class="span_1"> 待收货</span>  <span> 41 </span> </li>
+			           	 <li> <img src="../../img/xiaofei.png"/><span class="span_1"> 待消费  </span><span> 5243 </span> </li>
+			           </ul>
+			           
+			           <ul> 
+			           	 <li> <img src="../../img/yijieshu.png"/><span class="span_1"> 已结束  </span><span> 23 </span> </li> 
+			           </ul>
+			        </div>
+			        <div class="per_money">
+			        	<ul>
+			        		<li>三界石</li>
+			        		<li class="colorF7">100</li>
+			        	</ul>
+			        	<ul>
+			        		<li>三界宝</li>
+			        		<li class="colorF7">100</li>
+			        	</ul>
+			        	<ul>
+			        		<li>人民币</li>
+			        		<li class="colorF7">1000</li>
+			        	</ul>
+			        	<a href=" ">马上充值</a>
+			        </div>
+			        <div class="per_erwima">
+			        	<img src="../../img/erweima.png"/>
+			        	<ul>
+			        		<li>我的二维码</li>	
+			        		<li><span>我的推荐邀请码:</span><span>123456</span></li>	
+			        	</ul>
+			        </div>
+				   	  
+				   </div>
+				</div>
+		
+		<!--订单内容区-->
+		<div class="super_the_order">
+			
+		<!--商城订单-->
+		   <div class="the_order the_order_mall" id="store">
+		   	  <div class="the_order_left">
+		   	  	
+		   	  	 <ul class="order_Type" id="order_Type">
+		   	  	 	<li class="order_back">  商城订单  ( <span> 4 </span> )  </li>
+		   	  	 	<li>  团购订单( <span> 13 </span> ) </li>
+		   	        <a class="last1" href="order.html"> 更多 <img src="../../img/jiantou-icon.png"/> </a>  
+		   	  	 </ul>
+		   	  	 
+		   	  	 <ol class="order_title">
+		   	  	    <li class="inquire1">  
+		   	  	 	   &nbsp;<font class="changeContent"> 近三个月订单  </font> <span class="triangle_down"></span> 
+		   	  	 	   <dt class="liuYue">近六个月订单 </dt>
+		   	  	 	   <dt class="yinian"> 近一年订单 </dt>
+		   	  	 	</li> 
+		   	  	 	<li class="order_title_li2"> 订单内容 </li>
+		   	  	 	<li class="order_title_li3"> 数量 </li>
+		   	  	 	<li class="order_title_li4"> 金额(人民币) </li>
+		   	  	 	<li class="order_title_li5"> 收货人  </li>
+		   	  	 	<li class="order_title_li6"> 订单状态 </li>
+		   	  	 </ol>
+		   	  	 
+		   	  	 
+		   	  	 <div class="order_details1 ">
+		   	  	 	<div class="number_time">
+		   	  	 		 <strong> 2016-10-14 14:56:42 </strong>    订单号：<font class="number_time_font1">39388732822</font>        快递单号：<font>39388732822</font>
+		   	  	 	</div>
+		   	  	 	<div class="box_list">
+		   	  	 		
+		   	  	 		<ul class="specific specific2" id="specific">
+		   	  	 			<li>
+		   	  	 			   <a href=""><img src="../../img/meinv.png"/></a>
+		   	  	 			   <div class="instru">
+		   	  	 			   	   <a> 丹顿公子【都市系列】男士西裤 英伦修身休闲西装裤夏 </a>
+		   	  	 			   	   <p>  &nbsp;颜色：<span>白色</span>&nbsp; &nbsp; &nbsp;   尺码：<span>38</span> </p>
+		   	  	 			   </div>
+		   	  	 			   <div class="shuliang">
+		   	  	 			   	   x <font>1</font>
+		   	  	 			   </div>
+		   	  	 			</li>
+		   	  	 			<li>
+		   	  	 			   <a href=""><img src="../../img/meinv.png"/></a>
+		   	  	 			   <div class="instru">
+		   	  	 			   	   <a> 丹顿公子【都市系列】男士西裤 英伦修身休闲西装裤夏 </a>
+		   	  	 			   	   <p>  &nbsp;颜色：<span>白色</span>&nbsp; &nbsp; &nbsp;   尺码：<span>38</span> </p>
+		   	  	 			   </div>
+		   	  	 			   <div class="shuliang">
+		   	  	 			   	   x <font>1</font>
+		   	  	 			   </div>
+		   	  	 			</li>
+		   	  	 		</ul>
+		   	  	 		
+		   	  	 		<div class="jiage1" id="jiage">
+		   	  	 			4320.00
+		   	  	 		</div>
+		   	  	 		<div class="loca1" id="loca">
+		   	  	 			<p> 杨树林 </p>
+							<p> 18325631452 </p>
+							<p> 北京市海淀区中关村大街111号海龙大厦11-11 </p>
+		   	  	 		</div>
+		   	  	 		<div class="logistics1" id="logistics">
+		   	  	 			  <p>待收货</p>
+		   	  	 			  <a href="">查看物流</a>
+		   	  	 		</div>
+		   	  	 	</div>
+		   	  	 </div>
+		   	  	 
+		   	  	<div class="order_details1 ">
+		   	  	 	<div class="number_time">
+		   	  	 		  <strong> 2016-10-14 14:56:42 </strong>   订单号：<font class="number_time_font1">39388732822</font>   快递单号：<font>39388732822</font>
+		   	  	 	</div>
+		   	  	 	<div class="box_list">
+		   	  	 		
+		   	  	 		<ul class="specific specific1">
+		   	  	 			<li>
+		   	  	 			   <a href=""><img src="../../img/meinv.png"/></a>
+		   	  	 			   <div class="instru">
+		   	  	 			   	   <a> 丹顿公子【都市系列】男士西裤 英伦修身休闲西装裤夏 </a>
+		   	  	 			   	   <p>  &nbsp;颜色：<span>白色</span>&nbsp; &nbsp; &nbsp;   尺码：<span>38</span> </p>
+		   	  	 			   </div>
+		   	  	 			   <div class="shuliang">
+		   	  	 			   	   x <font>1</font>
+		   	  	 			   </div>
+		   	  	 			</li>
+		   	  	 		</ul>
+		   	  	 		
+		   	  	 		<div style="height: 108px;" class="jiage">
+		   	  	 			4320.00
+		   	  	 		</div>
+		   	  	 		<div class="loca">
+		   	  	 			<p> 杨树林 </p>
+							<p> 18325631452 </p>
+							<p> 北京市海淀区中关村大街111号  </p>
+		   	  	 		</div>
+		   	  	 		<div class="logistics">
+		   	  	 			  <p>待收货</p>
+		   	  	 			  <a href="">查看物流</a>
+		   	  	 		</div>
+		   	  	 	</div>
+		   	  	 </div>
+		   	  	 
+		   	  	<!-- 创业会员-我的收益-->
+		   	  	<div class="earnings">
+		   	  		<h3> 我的收益 </h3>
+		   	  		<li class="Add_color"> 会员消费分红 </li> <span></span>
+		   	  		<li> 会员升级奖励 </li>  <span></span>
+		   	  		<li> 店铺充值奖励 </li>
+		   	  		<li> 供应商业绩分红 </li>
+		   	  		<li> 其他奖励 </li>
+		   	  		<li> 充值 </li>
+		   	  		<li> 转账 </li>
+		   	  		<li> 兑换 </li>
+		   	  		<li> 消费 </li>
+		   	  		<a href="accountant.html">  更多 <img src="../../img/jiantou-icon.png"/> </a>
+		   	  	</div>
+		   	  	
+		   	  	<table class="tab">
+		   	  		<tr> <th style="width: 25%;"> 时间 </th> <th style="width: 25%;"> 受益内容 </th> <th style="width: 17%;"> 三界石 </th> <th style="width: 17%;"> 三界宝 </th> <th style="width: 16%;"> 人民币 </th> </tr>
+		   	  		<tr> <td>2016-10-23 10：10</td> <td>会员消费分红</td> <td>+2000</td> <td>+2000</td> <td>+2000</td> </tr>
+		   	  		<tr> <td>2016-10-23 10：10</td> <td>会员消费分红</td> <td>+2000</td> <td>+2000</td> <td>+2000</td> </tr>
+		   	  		<tr> <td>2016-10-23 10：10</td> <td>会员消费分红</td> <td>+2000</td> <td>+2000</td> <td>+2000</td> </tr>
+		   	  		<tr> <td>2016-10-23 10：10</td> <td>会员消费分红</td> <td>+2000</td> <td>+2000</td> <td>+2000</td> </tr>
+		   	  		<tr> <td>2016-10-23 10：10</td> <td>会员消费分红</td> <td>+2000</td> <td>+2000</td> <td>+2000</td> </tr>
+		   	  		<tr> <td colspan="2" style="text-align: center;">合计</td> <td>+2000</td> <td>+2000</td> <td>+2000</td> </tr>
+		   	  	</table>
+		   	  	 	 
+		   	  </div>
+		   	  
+		   	  
+		   	  <div class="the_order_rig">
+		   	  	 <div class="my_recommend">
+		   	  	 	我的推荐  <a href="myrecommend.html">  更多 <img src="../../img/jiantou-icon.png"/> </a>
+		   	  	 </div>
+		   	  	 
+		   	  	 <table class="tab once">
+		   	  		<tr> <th> 推荐对象 </th> <th> 身份识别  </th> <th> 注册时间 </th>   </tr>
+		   	  		<tr> <td>
+			   	  			<div class="photo2">
+								<img src="../../img/nansheng.png" alt="">
+								<img class="circle_shadow2" src="../../img/circle_shadow.png">
+							</div> 
+		   	  		     </td> 
+		   	  		     <td>会员消费 </td> <td>2016-12-21</td> 
+		   	  		</tr>
+		   	  		<tr> <td>
+			   	  			<div class="photo2">
+								<img src="../../img/nansheng.png" alt="">
+								<img class="circle_shadow2" src="../../img/circle_shadow.png">
+							</div> 
+		   	  		     </td> 
+		   	  		     <td>会员消费 </td> <td>2016-12-21</td> 
+		   	  		</tr>
+		   	  		<tr> <td>
+			   	  			<div class="photo2">
+								<img src="../../img/nansheng.png" alt="">
+								<img class="circle_shadow2" src="../../img/circle_shadow.png">
+							</div> 
+		   	  		     </td> 
+		   	  		     <td>会员消费 </td> <td>2016-12-21</td>  
+		   	  		</tr>
+		   	  		<tr> <td>
+			   	  			<div class="photo2">
+								<img src="../../img/nansheng.png" alt="">
+								<img class="circle_shadow2" src="../../img/circle_shadow.png">
+							</div> 
+		   	  		     </td> 
+		   	  		     <td>会员消费 </td> <td>2016-12-21</td>  
+		   	  		</tr>
+		   	  		<tr> <td>
+			   	  			<div class="photo2">
+								<img src="../../img/nansheng.png" alt="">
+								<img class="circle_shadow2" src="../../img/circle_shadow.png">
+							</div> 
+		   	  		     </td> 
+		   	  		     <td>会员消费 </td> <td>2016-12-21</td>  
+		   	  		</tr>
+		   	  	</table>
+		   	  	
+		   	  	<a href="" class="yitu"> <img src="../../img/83.png"/> </a>
+		   	  	<a href="" class="yitu"> <img src="../../img/84.png"/> </a>
+		   	  	
+		   	  </div>
+		   </div>
+		   
+		    <!-- 团购订单-->
+		   <div class="the_order the_order_yi the_order_mall" id="bulk">
+		   	  <div class="the_order_left">
+		   	  	
+		   	  	 <ul class="order_Type" id="order_Type">
+		   	  	 	<li> 商城订单( <span> 15 </span> ) </li>
+		   	  	 	<li class="order_back"> 团购订单( <span> 8 </span> ) </li>
+		   	        <a class="last1" href="order1.html"> 更多 <img src="../../img/jiantou-icon.png"/> </a>  
+		   	  	 </ul>
+		   	  	 
+		   	  	 <ol class="order_title">
+		   	  	    <li class="inquire1">  
+		   	  	 	 &nbsp;<font class="changeContent"> 近三个月订单  </font> <span class="triangle_down"></span> 
+		   	  	 	   <dt class="liuYue">近六个月订单 </dt>
+		   	  	 	   <dt class="yinian"> 近一年订单 </dt>
+		   	  	 	</li> 
+		   	  	 	<li class="order_title_li2"> 订单内容 </li>
+		   	  	 	<li class="order_title_li3"> 数量 </li>
+		   	  	 	<li class="order_title_li4"> 金额(人民币) </li>
+		   	  	 	<li class="order_title_li5"> 收货人  </li>
+		   	  	 	<li class="order_title_li6"> 订单状态 </li>
+		   	  	 </ol>
+		   	  	 
+		   	  	 
+		   	  	 <div class="order_details1 ">
+		   	  	 	<div class="number_time">
+		   	  	 		 <strong> 2016-10-14 14:56:42 </strong> 订单号：<font class="number_time_font1">39388732822</font> 快递单号：<font>39388732822</font>
+		   	  	 	</div>
+		   	  	 	<div class="box_list">
+		   	  	 		
+		   	  	 		<ul class="specific" id="specific">
+		   	  	 			<li>
+		   	  	 			   <a href=""><img src="../../img/meinv.png"/></a>
+		   	  	 			   <div class="instru">
+		   	  	 			   	   <a> 丹顿公子【都市系列】男士西裤 英伦修身休闲西装裤夏 </a>
+		   	  	 			   	   <p>  &nbsp;颜色：<span>白色</span>&nbsp; &nbsp; &nbsp;   尺码：<span>38</span> </p>
+		   	  	 			   </div>
+		   	  	 			   <div class="shuliang">
+		   	  	 			   	   x <font>1</font>
+		   	  	 			   </div>
+		   	  	 			</li>
+		   	  	 		</ul>
+		   	  	 		
+		   	  	 		<div class="jiage" id="jiage">
+		   	  	 			4320.00
+		   	  	 		</div>
+		   	  	 		<div class="loca" id="loca">
+		   	  	 			<p> 杨树林 </p>
+							<p> 18325631452 </p>
+							<p> 北京市海淀区中关村大街111号海龙大厦11-11 </p>
+		   	  	 		</div>
+		   	  	 		<div class="logistics" id="logistics">
+		   	  	 			  <p>待收货</p>
+		   	  	 			  <a href="">查看物流</a>
+		   	  	 		</div>
+		   	  	 	</div>
+		   	  	 </div>
+		   	  	 
+		   	  	<div class="order_details1 ">
+		   	  	 	<div class="number_time">
+		   	  	 		  <strong> 2016-10-14 14:56:42 </strong>   订单号：<font class="number_time_font1">39388732822</font>  快递单号：<font>39388732822</font>
+		   	  	 	</div>
+		   	  	 	<div class="box_list">
+		   	  	 		
+		   	  	 		<ul class="specific" id="specific1">
+		   	  	 			<li>
+		   	  	 			   <a href=""><img src="../../img/meinv.png"/></a>
+		   	  	 			   <div class="instru">
+		   	  	 			   	   <a> 丹顿公子【都市系列】男士西裤 英伦修身休闲西装裤夏 </a>
+		   	  	 			   	   <p>  &nbsp;颜色：<span>白色</span>&nbsp; &nbsp; &nbsp;   尺码：<span>38</span> </p>
+		   	  	 			   </div>
+		   	  	 			   <div class="shuliang">
+		   	  	 			   	   x <font>1</font>
+		   	  	 			   </div>
+		   	  	 			</li>
+		   	  	 			<!--<li>
+		   	  	 			   <a href=""><img src="../../img/meinv.png"/></a>
+		   	  	 			   <div class="instru">
+		   	  	 			   	   <a> 丹顿公子【都市系列】男士西裤 英伦修身休闲西装裤夏 </a>
+		   	  	 			   	   <p>  &nbsp;颜色：<span>白色</span>&nbsp; &nbsp; &nbsp;   尺码：<span>38</span> </p>
+		   	  	 			   </div>
+		   	  	 			   <div class="shuliang">
+		   	  	 			   	   x <font>1</font>
+		   	  	 			   </div>
+		   	  	 			</li>-->
+		   	  	 		</ul>
+		   	  	 		
+		   	  	 		<div class="jiage" id="jiage1">
+		   	  	 			4320.00
+		   	  	 		</div>
+		   	  	 		<div class="loca" id="loca1">
+		   	  	 			<p> 杨树林 </p>
+							<p> 18325631452 </p>
+							<p> 北京市海淀区中关村大街111号  </p>
+		   	  	 		</div>
+		   	  	 		<div class="logistics" id="logistics1">
+		   	  	 			  <p>待收货</p>
+		   	  	 			  <a href="">查看物流</a>
+		   	  	 		</div>
+		   	  	 	</div>
+		   	  	 </div>
+		   	  	 
+		   	  	<!-- 创业会员-我的收益-->
+		   	  	<div class="earnings">
+		   	  		<h3> 我的收益 </h3>
+		   	  		<li class="Add_color"> 会员消费分红 </li> <span></span>
+		   	  		<li> 会员升级奖励 </li>  <span></span>
+		   	  		<li> 店铺充值奖励 </li>
+		   	  		<li> 供应商业绩分红 </li>
+		   	  		<li> 其他奖励 </li>
+		   	  		<li> 充值 </li>
+		   	  		<li> 转账 </li>
+		   	  		<li> 兑换 </li>
+		   	  		<li> 消费 </li>
+		   	  		<a href="accountant.html">  更多 <img src="../../img/jiantou-icon.png"/> </a>
+		   	  	</div>
+		   	  	
+		   	  	<table class="tab">
+		   	  		<tr> <th style="width: 25%;"> 时间 </th> <th style="width: 25%;"> 受益内容 </th> <th style="width: 17%;"> 三界石 </th> <th style="width: 17%;"> 三界宝 </th> <th style="width: 16%;"> 人民币 </th> </tr>
+		   	  		<tr> <td>2016-10-23 10：10</td> <td>会员消费分红</td> <td>+2000</td> <td>+2000</td> <td>+2000</td> </tr>
+		   	  		<tr> <td>2016-10-23 10：10</td> <td>会员消费分红</td> <td>+2000</td> <td>+2000</td> <td>+2000</td> </tr>
+		   	  		<tr> <td>2016-10-23 10：10</td> <td>会员消费分红</td> <td>+2000</td> <td>+2000</td> <td>+2000</td> </tr>
+		   	  		<tr> <td>2016-10-23 10：10</td> <td>会员消费分红</td> <td>+2000</td> <td>+2000</td> <td>+2000</td> </tr>
+		   	  		<tr> <td>2016-10-23 10：10</td> <td>会员消费分红</td> <td>+2000</td> <td>+2000</td> <td>+2000</td> </tr>
+		   	  		<tr> <td colspan="2" style="text-align: center;">合计</td> <td>+2000</td> <td>+2000</td> <td>+2000</td> </tr>
+		   	  	</table>
+		   	  	 	 
+		   	  </div>
+		   	  
+		   	  
+		   	  <div class="the_order_rig">
+		   	  	 <div class="my_recommend">
+		   	  	 	我的推荐  <a href="myrecommend.html">  更多 <img src="../../img/jiantou-icon.png"/> </a>
+		   	  	 </div>
+		   	  	 
+		   	  	 <table class="tab once">
+		   	  		<tr> <th> 推荐对象 </th> <th> 身份识别  </th> <th> 注册时间 </th>   </tr>
+		   	  		<tr> <td>
+			   	  			<div class="photo2">
+								<img src="../../img/nansheng.png" alt="">
+								<img class="circle_shadow2" src="../../img/circle_shadow.png">
+							</div> 
+		   	  		     </td>  <td>会员消费 </td> <td>2016-12-21</td>   </tr>
+		   	  		<tr> <td>
+			   	  			<div class="photo2">
+								<img src="../../img/nansheng.png" alt="">
+								<img class="circle_shadow2" src="../../img/circle_shadow.png">
+							</div> 
+		   	  		     </td>  <td>会员消费 </td> <td>2016-12-21</td>   </tr>
+		   	  		<tr> <td>
+			   	  			<div class="photo2">
+								<img src="../../img/nansheng.png" alt="">
+								<img class="circle_shadow2" src="../../img/circle_shadow.png">
+							</div> 
+		   	  		     </td>  <td>会员消费 </td> <td>2016-12-21</td>   </tr>
+		   	  		<tr> <td>
+			   	  			<div class="photo2">
+								<img src="../../img/nansheng.png" alt="">
+								<img class="circle_shadow2" src="../../img/circle_shadow.png">
+							</div> 
+		   	  		     </td>  <td>会员消费 </td> <td>2016-12-21</td>   </tr>
+		   	  		<tr> <td>
+			   	  			<div class="photo2">
+								<img src="../../img/nansheng.png" alt="">
+								<img class="circle_shadow2" src="../../img/circle_shadow.png">
+							</div> 
+		   	  		     </td>  <td>会员消费 </td> <td>2016-12-21</td>  </tr>
+		   	  		<tr> <td>
+			   	  			<div class="photo2">
+								<img src="../../img/nansheng.png" alt="">
+								<img class="circle_shadow2" src="../../img/circle_shadow.png">
+							</div> 
+		   	  		     </td>  <td>会员消费 </td> <td>2016-12-21</td>  </tr>
+		   	  		<tr> <td>
+			   	  			<div class="photo2">
+								<img src="../../img/nansheng.png" alt="">
+								<img class="circle_shadow2" src="../../img/circle_shadow.png">
+							</div> 
+		   	  		     </td>  <td>会员消费 </td> <td>2016-12-21</td>  </tr>
+		   	  		<tr> <td>
+			   	  			<div class="photo2">
+								<img src="../../img/nansheng.png" alt="">
+								<img class="circle_shadow2" src="../../img/circle_shadow.png">
+							</div> 
+		   	  		     </td>  <td>会员消费 </td> <td>2016-12-21</td>  </tr>
+		   	  	</table>
+		   	  	
+		   	  	<a href="" class="yitu"> <img src="../../img/83.png"/> </a>
+		   	  	<a href="" class="yitu"> <img src="../../img/84.png"/> </a>
+		   	  	
+		   	  </div>
+		   </div>
+		   
+		</div>
+		
+		<!--尾部部分-->
+		<div class="footer">
+				<div class="data-width">
+					<div class="foot-mid">
+						<ul>
+							<li>
+								<h3>注册登录</h3>
+								<a href="">消费注册</a>
+								<a href="">正品保障</a>
+								<a href="">用户登录</a>
+								<a href="">忘记密码</a>
+								<a href="">商家入驻</a>
+							</li>
+							<li>
+								<h3>消费指南</h3>
+								<a href="">兑换流程</a>
+								<a href="">消费流程</a>
+								<a href="">货币与支付</a>
+								<a href="">配送方式</a>
+								<a href="">配送方式</a>
+								<a href="">物流查询</a>
+							</li>
+							<li>
+								<h3>购物指南</h3>
+								<a href="">7天退换货</a>
+								<a href="">退货流程</a>
+							</li>
+							<li>
+								<h3>订单问题</h3>
+								<a href="">订单查询</a>
+								<a href="">订单取消</a>
+								<a href=""></a>
+							</li>
+							<li class="kefuqu">
+								<h3>联系我们</h3>
+								<a href="">电话客服：9999999</a>
+								<a href="">QQ客服：999999999</a>
+								<a href="">邮箱：888888888</a>
+								<a href="">公众号：0000000000</a>
+							</li>
+						</ul>
+					</div>
+					<div class="foot-top">
+						<ul>
+							<li class="first"><img src="../../img/foot-icon1.png" alt="">
+								<p>闪电发货</p>
+							</li>
+							<li><img src="../../img/foot-icon2.png" alt=""><p>七天退换</p></li>
+							<li><img src="../../img/foot-icon3.png" alt=""><p>正品保证</p></li>
+							<li><img src="../../img/foot-icon4.png" alt=""><p>提供发票</p></li>
+							<li class="end"><img src="../../img/foot-icon5.png" alt=""><p>三界战略合作</p></li>
+						</ul>
+					</div>
+					<div class="foot-btm">
+						<div class="foot-btm-nav">					
+							<a href="">关于我们</a>
+							<a href="">品牌招商</a>
+							<a href="">集团采购</a>
+							<a href="">招贤纳士</a>
+							<a href="">联系我们</a>
+							<a href="">网站地图</a>
+							<a href="">网站资讯</a>
+							<a href="">商家联盟</a>
+							<a href="">友情链接</a>
+						</div>
+						<p>Copyright © 2011-2015 HaiHeShiDai Technology Co., Ltd. 京ICP备09070608号-4 增值电信业务经营许可证：京 B2-20090203 京公网安备：4403101910665</p>
+						<div class="foot-btm-btm"><img src="../../img/foot-icon7.jpg" alt="" /></div>
+					</div>
+				</div>
+			</div>
+		
+		<script src="../../js/lib/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/giveHigh.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/lib/common.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+			
+			  
+			  var dex ;
+			  $('#order_Type>li').on('click',function(){
+			  	  dex = $(this).index();
+			  	 
+			  	  if( dex == 0 ){
+			  	  	$('#store').show();
+			  	  	$('#bulk').hide();
+			  	  }else if( dex == 1 ){ 
+			  	  	$('#store').hide();
+			  	  	$('#bulk').show();
+			  	  };
+			  	  return false;
+			  });
+			  
+         
+			  
+			});
+		</script>
+		
+	</body>
+</html>

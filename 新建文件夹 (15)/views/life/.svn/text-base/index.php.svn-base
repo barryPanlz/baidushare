@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="三界生活平台集购物积分商城、本地生活消费与数字资产为一体的积分商城消费平台，是在运用互联网+技术+创新金融（数字金融）的同时运用了被麦肯锡誉为第五次产业革命的区块链技术的积分消费商城平台。三界生活商城平台总部位于北京二环，由区块国际集团投资打造，并提供区块链技术支持。三界生活商城平台的所有交易信息数据全部放在区块链上，加密、不可篡改与分布式账本等这些强大属性，有效地保障消费者、创业会员、供应商、店家、服务商和代理商的巨大权益。">
+		<title>本地生活</title>
+		<link href="<?php echo $pc_style; ?>img/bitbug_favicon.ico" rel="shortcut icon" type="image/x-icon" /> 
+		<link rel="stylesheet" type="text/css" href="<?php echo $pc_style;?>css/common/reset.css" />
+		<link rel="stylesheet" type="text/css" href="<?php echo $pc_style;?>css/common/common.css" />
+		<link rel="stylesheet" type="text/css" href="<?php echo $pc_style;?>css/common/liveheader.css" />
+		<link rel="stylesheet" type="text/css" href="<?php echo $pc_style;?>css/live/localLive.css" />
+	</head>
+	<body>	
+		<!--头部用户导航-->
+		<?php echo \Yii::$app->view->renderFile('@app/views/layouts/header.php'); ?>
+		<!--搜索商品栏-->
+        <?php echo \Yii::$app->view->renderFile('@app/views/layouts/life_top.php'); ?>
+
+
+		<!--轮播图位置-->
+		<div class="main_visual ">   
+			<div class="flicking_con">
+				<a href="#"></a>
+				<a href="#"></a>
+			</div>
+			<div class="main_image">
+				<ul>
+					<li>
+						<a class="img_1" href="<?php echo \Yii::$app->urlManager->createUrl('navipic/online')?>"></a>
+					</li>
+					<li>
+						<a class="img_2" href="<?php echo \Yii::$app->urlManager->createUrl(['life/merchantinde','merchant_id' =>'7'])?>"></a>
+					</li>
+				</ul>
+				<a href="javascript:;" id="btn_prev"></a>
+				<a href="javascript:;" id="btn_next"></a>
+			</div>
+		</div>
+		<!--main_visual end--> 
+
+		<!--内容部分-->
+		<div class="locContent">
+			<div class="data-width">
+				<!--热销-->
+				<div class="hot-sale">
+					<div class="hot-title">
+						<h3 class="one">热销团购</h3>
+					</div>
+					<div class="hot-main fix">
+						<ul>
+                        <?php foreach($newgoods as $v){ ?>
+							<li class="hot-list">
+							
+								<a href="<?php echo \Yii::$app->urlManager->createUrl(['life/goodsdetails','goodsId' =>$v['store_goods_id']])?>">
+									<img src="<?php echo $pic_host.$v['goods_img']; ?>" alt="" />
+								</a>
+								<div class="hot-list-txt">
+									<h4><?php echo  mb_substr($v['goods_name'],0,14,'utf-8'); ?>... </h4>
+									<p><?php //echo  mb_substr($v['goods_desc'],0,20,'utf-8'); ?>...</p>
+									<div class="hot-list-btm fix">
+										<div class="hot-list-m">
+											<span>￥</span><span class="hot-list-mon"><?php echo $v['promote_price']; ?></span>
+										</div>
+										<div class="item">
+											<div class="iteml">
+												门店价<del>￥<?php echo $v['shop_price']; ?></del>
+											</div>
+											<div class="itemr">
+												已售<span class=""><?php echo $v['goods_sales']; ?></span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+                            <?php } ?>
+							<!-- 
+                            <li class="hot-list">
+							
+								<a href="<?php echo \Yii::$app->urlManager->createUrl(['life/goodsdetails','goodsId' =>'42'])?>">
+									<img src="<?php echo $pc_style;?>img/life_index/zhe.jpg" alt="" />
+								</a>
+								<div class="hot-list-txt">
+									<h4>追风鸟折叠车 20寸 </h4>
+									<p> 20寸追风鸟折叠自行车单车减震自行车男女款学生车。</p>
+									<div class="hot-list-btm fix">
+										<div class="hot-list-m">
+											<span>￥</span><span class="hot-list-mon">400</span>
+										</div>
+										<div class="item">
+											<div class="iteml">
+												门店价<del>￥460</del>
+											</div>
+											<div class="itemr">
+												已售<span class="">30</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+                            <li class="hot-list">
+								<a href="<?php echo \Yii::$app->urlManager->createUrl(['life/goodsdetails','goodsId' =>'39'])?>">
+									<img src="<?php echo $pc_style;?>img/life_index/list2.png" alt="" /></a>
+								<div class="hot-list-txt">
+									<h4>儿童小摩托车</h4>
+									<p>适合3-7岁宝宝，邢台市区免费送货上门。</p>
+									<div class="hot-list-btm fix">
+										<div class="hot-list-m">
+											<span>￥</span><span class="hot-list-mon">380</span>
+										</div>
+										<div class="item">
+											<div class="iteml">
+												门店价<del>￥400</del>
+											</div>
+											<div class="itemr">
+												已售<span class="">3015</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="hot-list">
+								<a href="<?php echo \Yii::$app->urlManager->createUrl(['life/goodsdetails','goodsId' =>'56'])?>">
+									<img src="<?php echo $pc_style;?>img/life_index/list3.jpg" alt="" /></a>
+								<div class="hot-list-txt">
+									<h4>比德文电动车</h4>
+									<p>配备比德文原装超威电池48V12AH</p>
+									<div class="hot-list-btm fix">
+										<div class="hot-list-m">
+											<span>￥</span><span class="hot-list-mon">2180</span>
+										</div>
+										<div class="item">
+											<div class="iteml">
+												门店价<del>￥2180</del>
+											</div>
+											<div class="itemr">
+												已售<span class="">468</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="hot-list">
+								<a href="<?php echo \Yii::$app->urlManager->createUrl(['life/goodsdetails','goodsId' =>'40'])?>">
+									<img src="<?php echo $pc_style;?>img/life_index/list4.png" alt="" /></a>
+								<div class="hot-list-txt">
+									<h4>追风鸟折叠自行车</h4>
+									<p>16寸，适合全家人骑的车。</p>
+									<div class="hot-list-btm fix">
+										<div class="hot-list-m">
+											<span>￥</span><span class="hot-list-mon">460</span>
+										</div>
+										<div class="item">
+											<div class="iteml">
+												门店价<del>￥480</del>
+											</div>
+											<div class="itemr">
+												已售<span class="">80</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="hot-list">
+								<a href="<?php echo \Yii::$app->urlManager->createUrl(['life/goodsdetails','goodsId' =>'43'])?>">
+									<img src="<?php echo $pc_style;?>img/life_index/shunv.jpg" alt="" /></a>
+								<div class="hot-list-txt">
+									<h4>追风鸟淑女车</h4>
+									<p>追风鸟淑女车，前轮24寸，后轮16寸，可变速。</p>
+									<div class="hot-list-btm fix">
+										<div class="hot-list-m">
+											<span>￥</span><span class="hot-list-mon">880</span>
+										</div>
+										<div class="item">
+											<div class="iteml">
+												门店价<del>900</del>
+											</div>
+											<div class="itemr">
+												已售<span class="">15</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>-->
+						</ul>
+					</div>
+				</div>
+
+				<!--抢购频道-->
+				<div class="hot-sale" style="display: none;">
+					<div class="hot-title">
+						<h3 class="one">店铺精选</h3>				
+					</div>
+					<div class="hot-main fix">
+						<ul>
+							<li class="hot-list bast-list">
+								<a href="<?php echo \Yii::$app->urlManager->createUrl(['life/goodsdetails','goodsId' =>'45'])?>">
+									<img src="<?php echo $pc_style;?>img/life_index/list6.png" alt="" /></a>
+								<div class="hot-list-txt">
+									<h4>河北省邢台市新骑点车业</h4>
+									<p>UCC罗林斯迪山地车</p>
+									<div class="hot-list-btm fix">
+										<div class="hot-list-m">
+											<span>￥</span><span class="hot-list-mon">328</span>
+										</div>
+										<div class="item">
+											<div class="iteml">
+												门店价<del>￥348</del>
+											</div>
+											<div class="itemr">
+												已售<span class="">0</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="hot-list bast-list">
+								<a href="<?php echo \Yii::$app->urlManager->createUrl(['life/goodsdetails','goodsId' =>'46'])?>">
+									<img src="<?php echo $pc_style;?>img/life_index/list7.png" alt="" /></a>
+								<div class="hot-list-txt">
+									<h4>金帝豪健身俱乐部</h4>
+									<p>健身卡 三店通用</p>
+									<div class="hot-list-btm fix">
+										<div class="hot-list-m">
+											<span>￥</span><span class="hot-list-mon">3080</span>
+										</div>
+										<div class="item">
+											<div class="iteml">
+												门店价<del>￥3100</del>
+											</div>
+											<div class="itemr">
+												已售<span class="">2</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="hot-list bast-list">
+								<a href="<?php echo \Yii::$app->urlManager->createUrl(['life/goodsdetails','goodsId' =>'51'])?>">
+									<img src="<?php echo $pc_style;?>img/life_index/list8.png" alt="" /></a>
+								<div class="hot-list-txt">
+									<h4>谷养道上品涮锅</h4>
+									<p>壹帮人52度纯酿造白酒</p>
+									<div class="hot-list-btm fix">
+										<div class="hot-list-m">
+											<span>￥</span><span class="hot-list-mon">5180</span>
+										</div>
+										<div class="item">
+											<div class="iteml">
+												门店价<del>￥5200</del>
+											</div>
+											<div class="itemr">
+												已售<span class="">21998</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="hot-list bast-list">
+								<a href="<?php echo \Yii::$app->urlManager->createUrl(['life/goodsdetails','goodsId' =>'57'])?>">
+								<img src="<?php echo $pc_style;?>img/life_index/list9.png" alt="" /></a>
+								<div class="hot-list-txt">
+									<h4>娟子生活馆</h4>
+									<p>加绒塑身保暖背心</p>
+									<div class="hot-list-btm fix">
+										<div class="hot-list-m">
+											<span>￥</span><span class="hot-list-mon">2450</span>
+										</div>
+										<div class="item">
+											<div class="iteml">
+												门店价<del>￥2550</del>
+											</div>
+											<div class="itemr">
+												已售<span class="">0</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="hot-list bast-list">
+								<a href="<?php echo \Yii::$app->urlManager->createUrl(['life/goodsdetails','goodsId' =>'71'])?>">
+									<img src="<?php echo $pc_style;?>img/life_index/list10.png" alt="" /></a>
+								<div class="hot-list-txt">
+									<h4>邢台市紫红蓝美容美发用品店</h4>
+									<p>玉荣方面膜</p>
+									<div class="hot-list-btm fix">
+										<div class="hot-list-m">
+											<span>￥</span><span class="hot-list-mon">16000</span>
+										</div>
+										<div class="item">
+											<div class="iteml">
+												门店价<del>￥16020</del>
+											</div>
+											<div class="itemr">
+												已售<span class="">2179</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<!--log展示-->
+				<div class="hot-log">
+					<a href="<?php echo Yii::$app->urlManager->createUrl('feature/index2')?>">
+						<img src="<?php echo $pc_style;?>img/life_index/small-banner.jpg" alt="" />
+					</a>
+					
+				</div>
+
+				<!--1F 美食餐饮-->
+				<div class="hot-sale" onclick="return false;">
+					<div class="hot-title1">
+						<h3 class="one">1F 美食餐饮</h3>
+						<!--<div class="genduo"><a href="javascript:void(0)">更多商品 ></a></div>-->
+					</div>
+					<div class="hot-main fix">
+						<ul>
+							<li class="hot-list bast-list">
+								<a href=""><img src="<?php echo $pc_style;?>img/life_index/aila.png" alt="" /></a>
+								<div class="hot-list-txt">
+									<h4>爱辣啵啵鱼 </h4>
+									<p>啵啵鱼双人餐，提供免费WiFi</p>
+									<div class="hot-list-btm fix">
+										<div class="hot-list-m">
+											<span>￥</span><span class="hot-list-mon">43.5</span>
+										</div>
+										<div class="item">
+											<div class="iteml">
+												门店价<del>￥49</del>
+											</div>
+											<div class="itemr">
+												已售<span class="">0</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="hot-list bast-list">
+								<a href=""><img src="<?php echo $pc_style;?>img/life_index/dianfengmixian.png" alt="" /></a>
+								<div class="hot-list-txt">
+									<h4>滇峰米线</h4>
+									<p>原味米线，建议单人使用，提供免费WiFi</p>
+									<div class="hot-list-btm fix">
+										<div class="hot-list-m">
+											<span>￥</span><span class="hot-list-mon">9.9</span>
+										</div>
+										<div class="item">
+											<div class="iteml">
+												门店价<del>￥16</del>
+											</div>
+											<div class="itemr">
+												已售<span class="">0</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="hot-list bast-list">
+								<a href=""><img src="<?php echo $pc_style;?>img/life_index/huichangbai.png" alt="" /></a>
+								<div class="hot-list-txt">
+									<h4>烩昌佰味黄焖鸡米饭</h4>
+									<p>套餐A，建议单人使用，提供免费WiFi</p>
+									<div class="hot-list-btm fix">
+										<div class="hot-list-m">
+											<span>￥</span><span class="hot-list-mon">14.8</span>
+										</div>
+										<div class="item">
+											<div class="iteml">
+												门店价<del>￥17</del>
+											</div>
+											<div class="itemr">
+												已售<span class="">0</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="hot-list bast-list">
+								<a href=""><img src="<?php echo $pc_style;?>img/life_index/lashangfang.png" alt="" /></a>
+								<div class="hot-list-txt">
+									<h4>辣尚坊麻辣香锅</h4>
+									<p>50元代金券1张，除酒水、饮料外全场通用</p>
+									<div class="hot-list-btm fix">
+										<div class="hot-list-m">
+											<span>￥</span><span class="hot-list-mon">39.9</span>
+										</div>
+										<div class="item">
+											<div class="iteml">
+												门店价<del>￥50</del>
+											</div>
+											<div class="itemr">
+												已售<span class="">0</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="hot-list bast-list">
+								<a href=""><img src="<?php echo $pc_style;?>img/life_index/pangziyuan.png" alt="" /></a>
+								<div class="hot-list-txt">
+									<h4>胖子缘肉蟹煲</h4>
+									<p>鸡爪煲/猪蹄煲/鸡翅煲/排骨煲，建议2-3人</p>
+									<div class="hot-list-btm fix">
+										<div class="hot-list-m">
+											<span>￥</span><span class="hot-list-mon">78</span>
+										</div>
+										<div class="item">
+											<div class="iteml">
+												门店价<del>￥108</del>
+											</div>
+											<div class="itemr">
+												已售<span class="">0</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<!--2F 休闲娱乐-->
+				<div class="hot-sale"  onclick="return false;">
+					<div class="hot-title1">
+						<h3 class="one">2F 休闲娱乐</h3>
+						<!--<div class="genduo"><a href="javascript:void(0)">更多商品 ></a></div>-->
+					</div>
+					<div class="hot-main fix">
+						<ul>
+							<li class="hot-list bast-list">
+								<a href=""><img src="<?php echo $pc_style;?>img/life_index/changbamaisong.png" alt="" /></a>
+								<div class="hot-list-txt">
+									<h4>唱吧麦颂量贩式KTV</h4>
+									<p>下午场欢唱1小时</p>
+									<div class="hot-list-btm fix">
+										<div class="hot-list-m">
+											<span>￥</span><span class="hot-list-mon">20</span>
+										</div>
+										<div class="item">
+											<div class="iteml">
+												门店价<del>￥90</del>
+											</div>
+											<div class="itemr">
+												已售<span class="">0</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="hot-list bast-list">
+								<a href=""><img src="<?php echo $pc_style;?>img/life_index/hanzhengchuanqi.png" alt="" /></a>
+								<div class="hot-list-txt">
+									<h4>汗蒸传奇</h4>
+									<p>单人成人汗蒸一次</p>
+									<div class="hot-list-btm fix">
+										<div class="hot-list-m">
+											<span>￥</span><span class="hot-list-mon">48</span>
+										</div>
+										<div class="item">
+											<div class="iteml">
+												门店价<del>￥80</del>
+											</div>
+											<div class="itemr">
+												已售<span class="">0</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="hot-list bast-list">
+								<a href=""><img src="<?php echo $pc_style;?>img/life_index/tianjiaotai.png" alt="" /></a>
+								<div class="hot-list-txt">
+									<h4>天娇泰spa养生会所</h4>
+									<p>单人天娇泰式保健A套餐</p>
+									<div class="hot-list-btm fix">
+										<div class="hot-list-m">
+											<span>￥</span><span class="hot-list-mon">78</span>
+										</div>
+										<div class="item">
+											<div class="iteml">
+												门店价<del>￥158</del>
+											</div>
+											<div class="itemr">
+												已售<span class="">0</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="hot-list bast-list">
+								<a href=""><img src="<?php echo $pc_style;?>img/life_index/shenkang.png" alt="" /></a>
+								<div class="hot-list-txt">
+									<h4>神康足疗</h4>
+									<p>足疗套餐A</p>
+									<div class="hot-list-btm fix">
+										<div class="hot-list-m">
+											<span>￥</span><span class="hot-list-mon">49.9</span>
+										</div>
+										<div class="item">
+											<div class="iteml">
+												门店价<del>￥120</del>
+											</div>
+											<div class="itemr">
+												已售<span class="">0</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="hot-list bast-list">
+								<a href=""><img src="<?php echo $pc_style;?>img/life_index/jindingguoji.png" alt="" /></a>
+								<div class="hot-list-txt">
+									<h4>金鼎国际音乐会所</h4>
+									<p>小包欢唱1小时，包间免费，提供免费WiFi</p>
+									<div class="hot-list-btm fix">
+										<div class="hot-list-m">
+											<span>￥</span><span class="hot-list-mon">31.8</span>
+										</div>
+										<div class="item">
+											<div class="iteml">
+												门店价<del>￥48</del>
+											</div>
+											<div class="itemr">
+												已售<span class="">0</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<!--3F 旅游-->
+				<div class="hot-sale"  onclick="return false;">
+					<div class="hot-title1">
+						<h3 class="one">3F 旅游</h3>
+						<!--<div class="genduo"><a href="javascript:void(0)">更多商品 ></a></div>-->
+					</div>
+					<div class="hot-main fix">
+						<ul>
+							<li class="hot-list bast-list">
+								<a href=""><img src="<?php echo $pc_style;?>img/life_index/senlingongyuan.png" alt="" /></a>
+								<div class="hot-list-txt">
+									<h4>森林公园龙鑫游乐场</h4>
+									<p>恐龙园门票1次</p>
+									<div class="hot-list-btm fix">
+										<div class="hot-list-m">
+											<span>￥</span><span class="hot-list-mon">10</span>
+										</div>
+										<div class="item">
+											<div class="iteml">
+												门店价<del>￥20</del>
+											</div>
+											<div class="itemr">
+												已售<span class="">0</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="hot-list bast-list">
+								<a href=""><img src="<?php echo $pc_style;?>img/life_index/qishanhu.png" alt="" /></a>
+								<div class="hot-list-txt">
+									<h4>岐山湖景区</h4>
+									<p>仅售18.0元！最高价值20.0元的岐山湖景</p>
+									<div class="hot-list-btm fix">
+										<div class="hot-list-m">
+											<span>￥</span><span class="hot-list-mon">18</span>
+										</div>
+										<div class="item">
+											<div class="iteml">
+												门店价<del>￥20</del>
+											</div>
+											<div class="itemr">
+												已售<span class="">0</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="hot-list bast-list">
+								<a href=""><img src="<?php echo $pc_style;?>img/life_index/xingtaizijinshan.png" alt="" /></a>
+								<div class="hot-list-txt">
+									<h4>邢台紫金山—中华五杰山</h4>
+									<p>仅售50.0元！最高价值60.0元的邢台紫金</p>
+									<div class="hot-list-btm fix">
+										<div class="hot-list-m">
+											<span>￥</span><span class="hot-list-mon">50</span>
+										</div>
+										<div class="item">
+											<div class="iteml">
+												门店价<del>￥60</del>
+											</div>
+											<div class="itemr">
+												已售<span class="">0</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="hot-list bast-list">
+								<a href=""><img src="<?php echo $pc_style;?>img/life_index/xianjieshan.png" alt="" /></a>
+								<div class="hot-list-txt">
+									<h4>仙界山景区</h4>
+									<p>仅售45.0元！最高价值60.0元的仙界山景</p>
+									<div class="hot-list-btm fix">
+										<div class="hot-list-m">
+											<span>￥</span><span class="hot-list-mon">45</span>
+										</div>
+										<div class="item">
+											<div class="iteml">
+												门店价<del>￥60</del>
+											</div>
+											<div class="itemr">
+												已售<span class="">0</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="hot-list bast-list">
+								<a href=""><img src="<?php echo $pc_style;?>img/life_index/yunmengshan.png" alt="" /></a>
+								<div class="hot-list-txt">
+									<h4>云梦山</h4>
+									<p>仅售20.0元！最高价值25.0元的云梦山滑</p>
+									<div class="hot-list-btm fix">
+										<div class="hot-list-m">
+											<span>￥</span><span class="hot-list-mon">20</span>
+										</div>
+										<div class="item">
+											<div class="iteml">
+												门店价<del>￥25</del>
+											</div>
+											<div class="itemr">
+												已售<span class="">0</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<!--4F 酒店服务-->
+				<div class="hot-sale"  onclick="return false;">
+					<div class="hot-title1">
+						<h3 class="one">4F 酒店服务</h3>
+						<!--<div class="genduo"><a href="javascript:void(0)">更多商品 ></a></div>-->
+					</div>
+					<div class="hot-main fix">
+						<ul>
+							<li class="hot-list bast-list">
+								<a href=""><img src="<?php echo $pc_style;?>img/life_index/aifengwan.png" alt="" /></a>
+								<div class="hot-list-txt">
+									<h4>爱枫晚主题酒店</h4>
+									<p>豪华大床房钟点房3小时，免费WiFi</p>
+									<div class="hot-list-btm fix">
+										<div class="hot-list-m">
+											<span>￥</span><span class="hot-list-mon">61</span>
+										</div>
+										<div class="item">
+											<div class="iteml">
+												门店价<del>￥78</del>
+											</div>
+											<div class="itemr">
+												已售<span class="">0</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="hot-list bast-list">
+								<a href=""><img src="<?php echo $pc_style;?>img/life_index/rujiakuaijiejiudian.png" alt="" /></a>
+								<div class="hot-list-txt">
+									<h4>如家快捷酒店</h4>
+									<p>钟点房4小时，特惠大床房/特惠双床房2选1</p>
+									<div class="hot-list-btm fix">
+										<div class="hot-list-m">
+											<span>￥</span><span class="hot-list-mon">109</span>
+										</div>
+										<div class="item">
+											<div class="iteml">
+												门店价<del>￥159</del>
+											</div>
+											<div class="itemr">
+												已售<span class="">0</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="hot-list bast-list">
+								<a href=""><img src="<?php echo $pc_style;?>img/life_index/mayirizu.png" alt="" /></a>
+								<div class="hot-list-txt">
+									<h4>蚂蚁日租公寓</h4>
+									<p>仅售48元！价值65元的蚂蚁日租公寓大床房钟点房4小时，免费WiFi。</p>
+									<div class="hot-list-btm fix">
+										<div class="hot-list-m">
+											<span>￥</span><span class="hot-list-mon">48</span>
+										</div>
+										<div class="item">
+											<div class="iteml">
+												门店价<del>￥65</del>
+											</div>
+											<div class="itemr">
+												已售<span class="">0</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="hot-list bast-list">
+								<a href=""><img src="<?php echo $pc_style;?>img/life_index/xingtaiyuquanshankangnian.png" alt="" /></a>
+								<div class="hot-list-txt">
+									<h4>邢台玉泉山康年酒店</h4>
+									<p>仅售318元！价值638元的邢台玉泉山康年酒店高级客房入住1晚，温馨舒适</p>
+									<div class="hot-list-btm fix">
+										<div class="hot-list-m">
+											<span>￥</span><span class="hot-list-mon">318</span>
+										</div>
+										<div class="item">
+											<div class="iteml">
+												门店价<del>￥638</del>
+											</div>
+											<div class="itemr">
+												已售<span class="">0</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="hot-list bast-list">
+								<a href=""><img src="<?php echo $pc_style;?>img/life_index/yijia365.png" alt="" /></a>
+								<div class="hot-list-txt">
+									<h4>驿家365连锁酒店</h4>
+									<p>仅售79元！价值108元的驿家365连锁酒店浪漫主题房钟点房5小时。</p>
+									<div class="hot-list-btm fix">
+										<div class="hot-list-m">
+											<span>￥</span><span class="hot-list-mon">79</span>
+										</div>
+										<div class="item">
+											<div class="iteml">
+												门店价<del>￥108</del>
+											</div>
+											<div class="itemr">
+												已售<span class="">0</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<!--5F 生活服务-->
+				<div class="hot-sale"  onclick="return false;">
+					<div class="hot-title1">
+						<h3 class="one">5F 生活服务</h3>
+						<!--<div class="genduo"><a href="javascript:void(0)">更多商品 ></a></div>-->
+					</div>
+					<div class="hot-main fix">
+						<ul>
+							<li class="hot-list bast-list">
+								<a href=""><img src="<?php echo $pc_style;?>img/life_index/quandeligouwuzhongxin.png" alt="" /></a>
+								<div class="hot-list-txt">
+									<h4>全得利购物中心</h4>
+									<p>100元购物卡1张，全场通用，可叠加使用</p>
+									<div class="hot-list-btm fix">
+										<div class="hot-list-m">
+											<span>￥</span><span class="hot-list-mon">95</span>
+										</div>
+										<div class="item">
+											<div class="iteml">
+												门店价<del>￥100</del>
+											</div>
+											<div class="itemr">
+												已售<span class="">0</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="hot-list bast-list">
+								<a href=""><img src="<?php echo $pc_style;?>img/life_index/73haoxiaozhan.png" alt="" /></a>
+								<div class="hot-list-txt">
+									<h4>73号小站</h4>
+									<p>河北移动用户专享 省内流量充值加油包</p>
+									<div class="hot-list-btm fix">
+										<div class="hot-list-m">
+											<span>￥</span><span class="hot-list-mon">3.9</span>
+										</div>
+										<div class="item">
+											<div class="iteml">
+												门店价<del>￥10</del>
+											</div>
+											<div class="itemr">
+												已售<span class="">0</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="hot-list bast-list">
+								<a href=""><img src="<?php echo $pc_style;?>img/life_index/wemhuayanjing.png" alt="" /></a>
+								<div class="hot-list-txt">
+									<h4>文华眼镜</h4>
+									<p>配镜套餐</p>
+									<div class="hot-list-btm fix">
+										<div class="hot-list-m">
+											<span>￥</span><span class="hot-list-mon">138</span>
+										</div>
+										<div class="item">
+											<div class="iteml">
+												门店价<del>￥379</del>
+											</div>
+											<div class="itemr">
+												已售<span class="">0</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="hot-list bast-list">
+								<a href=""><img src="<?php echo $pc_style;?>img/life_index/aixinguo.png" alt="" /></a>
+								<div class="hot-list-txt">
+									<h4>爱心果孕婴童购物广场</h4>
+									<p>游乐场门票</p>
+									<div class="hot-list-btm fix">
+										<div class="hot-list-m">
+											<span>￥</span><span class="hot-list-mon">78</span>
+										</div>
+										<div class="item">
+											<div class="iteml">
+												门店价<del>￥10</del>
+											</div>
+											<div class="itemr">
+												已售<span class="">0</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="hot-list bast-list">
+								<a href=""><img src="<?php echo $pc_style;?>img/life_index/tangrenjie.png" alt="" /></a>
+								<div class="hot-list-txt">
+									<h4>唐人街儿童乐园</h4>
+									<p>儿童单次门票一张</p>
+									<div class="hot-list-btm fix">
+										<div class="hot-list-m">
+											<span>￥</span><span class="hot-list-mon">12.8</span>
+										</div>
+										<div class="item">
+											<div class="iteml">
+												门店价<del>￥20</del>
+											</div>
+											<div class="itemr">
+												已售<span class="">0</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<!--6F 婚庆服务-->
+				<div class="hot-sale"  onclick="return false;">
+					<div class="hot-title1">
+						<h3 class="one">6F 婚庆服务</h3>
+						<!--<div class="genduo"><a href="javascript:void(0)">更多商品 ></a></div>-->
+					</div>
+					<div class="hot-main fix">
+						<ul>
+							<li class="hot-list bast-list">
+								<a href=""><img src="<?php echo $pc_style;?>img/life_index/huatianxishi.png" alt="" /></a>
+								<div class="hot-list-txt">
+									<h4>花田喜事花坊·婚庆会所</h4>
+									<p>仅售139元！价值238元的19只香槟玫瑰+两只小熊+礼盒1次。</p>
+									<div class="hot-list-btm fix">
+										<div class="hot-list-m">
+											<span>￥</span><span class="hot-list-mon">139</span>
+										</div>
+										<div class="item">
+											<div class="iteml">
+												门店价<del>￥238</del>
+											</div>
+											<div class="itemr">
+												已售<span class="">0</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="hot-list bast-list">
+								<a href=""><img src="<?php echo $pc_style;?>img/life_index/aiduhunli.png" alt="" /></a>
+								<div class="hot-list-txt">
+									<h4>爱都婚礼</h4>
+									<p>仅售499.9元！价值1058元的99枝精品红玫瑰，提供免费WiFi</p>
+									<div class="hot-list-btm fix">
+										<div class="hot-list-m">
+											<span>￥</span><span class="hot-list-mon">499.9</span>
+										</div>
+										<div class="item">
+											<div class="iteml">
+												门店价<del>￥1058</del>
+											</div>
+											<div class="itemr">
+												已售<span class="">0</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="hot-list bast-list">
+								<a href=""><img src="<?php echo $pc_style;?>img/life_index/meiguichuanqing.png" alt="" /></a>
+								<div class="hot-list-txt">
+									<h4>玫瑰传情鲜花速递</h4>
+									<p>仅售680元，价值980元喜庆浪漫婚礼多色可选，节假日通用！</p>
+									<div class="hot-list-btm fix">
+										<div class="hot-list-m">
+											<span>￥</span><span class="hot-list-mon">680</span>
+										</div>
+										<div class="item">
+											<div class="iteml">
+												门店价<del>￥980</del>
+											</div>
+											<div class="itemr">
+												已售<span class="">0</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="hot-list bast-list">
+								<a href=""><img src="<?php echo $pc_style;?>img/life_index/jinbaihe.png" alt="" /></a>
+								<div class="hot-list-txt">
+									<h4>金百合婚礼庆典公司</h4>
+									<p>仅售129元，价值229元19支玫瑰礼盒 </p>
+									<div class="hot-list-btm fix">
+										<div class="hot-list-m">
+											<span>￥</span><span class="hot-list-mon">129</span>
+										</div>
+										<div class="item">
+											<div class="iteml">
+												门店价<del>￥229</del>
+											</div>
+											<div class="itemr">
+												已售<span class="">0</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="hot-list bast-list">
+								<a href=""><img src="<?php echo $pc_style;?>img/life_index/duoduoxianhua.png" alt="" /></a>
+								<div class="hot-list-txt">
+									<h4>朵朵鲜花婚庆</h4>
+									<p>仅售220元，价值320元朵朵鲜花婚庆婚车彩扎4选1，节假日通用！</p>
+									<div class="hot-list-btm fix">
+										<div class="hot-list-m">
+											<span>￥</span><span class="hot-list-mon">220</span>
+										</div>
+										<div class="item">
+											<div class="iteml">
+												门店价<del>￥320</del>
+											</div>
+											<div class="itemr">
+												已售<span class="">0</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div style="height:20px;"></div>
+			</div>
+		</div>
+		<!--page bottom-->
+		<!--尾部部分-->
+		<?php echo \Yii::$app->view->renderFile('@app/views/layouts/bottom.php'); ?>
+
+
+		<!--js部分-->
+		<script type="text/javascript" src="<?php echo $pc_style; ?>js/lib/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="<?php echo $pc_style; ?>js/lib/common.js"></script>
+		<script type="text/javascript" src="<?php echo $pc_style; ?>js/lib/inputs.js"></script>
+		<script type="text/javascript" src="<?php echo $pc_style; ?>js/lib/jquery.event.drag-1.5.min.js"></script>
+		<script type="text/javascript" src="<?php echo $pc_style; ?>js/lib/jquery.touchSlider.js"></script>
+		<script type="text/javascript">
+		//三级菜单的选项卡
+			$(function(){	
+//					$(".channel-l").mousemove(function(){
+//					$(".channel-nav-box").css("display","block");
+//					});
+//					$(".channel-l").mouseleave(function(){
+//						$(".channel-nav-box").css("display","none");
+//					})
+//				阻止a链接跳转，下个版本请放开
+//				$(".hot-sale").click(function(){
+//					return false;
+//				})
+				$('.channel-items').find(".item").mouseover(function(){
+					$(".channel-nav-box").css("display","block");
+					$(this).addClass('item-active');
+				    var index = $(this).index();
+					$('.channel-tabs .tabs').eq(index).css('display','block');	
+					$('.channel-tabs .tabs').eq(index).css('top',index*54+"px");
+					if(index==6){
+						$('.channel-tabs').find(".tabs").eq(6).css(index*54+"px");
+					}
+					$('.channel-items .item img').eq(index).css('display','none')
+				})	
+				$('.channel-items').find(".item").mouseout(function(){
+//					$(".channel-nav-box").css("display","none");
+					$(this).removeClass('item-active');
+				    var index = $(this).index();
+					$('.channel-tabs .tabs').eq(index).css('display','none');	
+				    $('.channel-items .item img').eq(index).css('display','inline-block')
+				})
+				$('.channel-tabs .tabs').mouseover(function(){
+					$(".channel-nav-box").css("display","block");
+				   var index = $(this).index();
+					$('.channel-items .item').eq(index).addClass('item-active');				
+					$('.channel-tabs .tabs').eq(index).css('display','block');	
+					$('.channel-items .item img').eq(index).css('display','none')
+				})				
+				$('.channel-tabs .tabs').mouseout(function(){	
+//					$(".channel-nav-box").css("display","none");
+				    var index = $(this).index();
+				    $('.channel-items .item').eq(index).removeClass('item-active');				
+					$('.channel-tabs .tabs').eq(index).css('display','none');	
+					$('.channel-items .item img').eq(index).css('display','inline-block')
+				});		
+			})		
+         //切换商家和团购	
+		$(function(){
+			$('.search-sel-tab .tri').mouseover(function(){
+				$('.search-sel-tab li:eq(0)').css({background:"#f6f6f6"})
+			})
+			$('.search-sel-tab .tri').mouseout(function(){
+				$('.search-sel-tab li:eq(0)').css({background:""})
+			})
+			
+			$('.search-sel-tab').mouseover(function(){
+				$('.search-sel-tab li').show();				
+				$('.search-sel-tab li:eq(1)').css({borderBottom:"1px solid #ddd"})
+//				$('.search-sel-tab li:eq(1)').css({height:"41px"})
+			})
+			$('.search-sel-tab').mouseout(function(){
+				$('.search-sel-tab li:eq(1)').hide();
+				$('.search-sel-tab li:eq(0)').css({borderBottom:"none"})
+			})
+			$('.search-sel-tab li').click(function(){					
+				$(this).addClass('search-sel-hid').siblings().removeClass('search-sel-hid');
+				if($(this)){
+					$(this).after($(this).siblings());
+				}
+			})
+		})
+		//轮播banner
+           $(document).ready(function(){
+				$(".main_visual").hover(function(){
+					$("#btn_prev,#btn_next").fadeIn()
+				},function(){
+					$("#btn_prev,#btn_next").fadeOut()
+				});
+				$dragBln = false;
+				
+				$(".main_image").touchSlider({
+					flexible : true,
+					speed : 200,
+					btn_prev : $("#btn_prev"),
+					btn_next : $("#btn_next"),
+					paging : $(".flicking_con a"),
+					counter : function (e){
+						$(".flicking_con a").removeClass("on").eq(e.current-1).addClass("on");
+					}
+				});
+				
+				$(".main_image").bind("mousedown", function() {
+					$dragBln = false;
+				});
+				
+				$(".main_image").bind("dragstart", function() {
+					$dragBln = true;
+				});
+				
+				$(".main_image a").click(function(){
+					if($dragBln) {
+						return false;
+					}
+				});
+				
+				timer = setInterval(function(){
+					$("#btn_next").click();
+				}, 3000);
+				
+				$(".main_visual").hover(function(){
+					clearInterval(timer);
+				},function(){
+					timer = setInterval(function(){
+						$("#btn_next").click();
+					},3000);
+				});
+				
+				$(".main_image").bind("touchstart",function(){
+					clearInterval(timer);
+				}).bind("touchend", function(){
+					timer = setInterval(function(){
+						$("#btn_next").click();
+					}, 3000);
+				});
+				
+			});
+		
+	</script>
+	</body>
+
+</html>

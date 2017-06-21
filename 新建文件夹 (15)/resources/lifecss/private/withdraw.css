@@ -1,0 +1,262 @@
+.w_wrap{
+	width: 100%;
+	min-width: 1180px;
+	float: left;
+	height: auto;
+	background: #F6F6F6;
+}
+.w{
+	width: 1180px;
+	min-height: 100px;
+	margin: 0 auto;
+	overflow: hidden;
+	font-size: 14px;
+}
+
+
+.wi_chongzhi{
+	width: 1120px;
+	min-height:100px;
+	background: #FFFFFF;
+	margin: 20px 0;
+	padding: 0 30px;
+	overflow: hidden;
+}
+
+.per_mingxi_top{
+	width: 1120px;
+	height: 50px;
+	line-height: 50px;
+	float: left;
+	border-bottom:1px solid #e5e5e5 ;
+	font-size: 18px;
+}
+.per_mingxi_top_title{
+	width: 150px;
+	float: left;
+}
+.per_mingxi_top_right{
+	width: 40px;
+	height: 56px;
+	line-height: 56px;
+	float: right;
+	font-size: 14px;
+	margin-right:5px;
+}
+.per_mingxi_top_right a{
+	color: #848484;
+}
+.per_mingxi_top_right img{
+	width: 5px;
+	height: 9px;
+}
+
+.per_mingxi_content{
+	width: 1100px;
+	min-height: 100px;
+	float: left;
+	background: #F6F6F6;
+	padding-left:20px ;
+}
+.per_mingxi_content ul{
+	width: 100%;
+	min-height: 40px;
+	float: left;
+	
+}
+.per_mingxi_content .wi_li_left{
+	width: 100px;
+	height: 40px;
+	line-height: 40px;
+	float: left;
+}
+.per_mingxi_content .wi_li_right{
+	width: 500px;
+	height: 40px;
+	line-height: 40px;
+	float: left;
+}
+/*提现金额*/
+.wi_tixian{
+	width: 100%;
+	min-height:100px ;
+	float: left;
+	background: #FFFFFF;
+	margin-top:20px ;
+	padding-left:0 ;
+}
+.wi_tixian .wi_li_left_big{
+	width: 100px;
+	min-height: 40px;
+	line-height: 40px;
+	float: left;
+}
+.wi_tixian .wi_li_right_big{
+	width: 800px;
+	min-height: 40px;
+	float: left;
+}
+.wi_li_right_big input[type="radio"]::after,#all-sel input[type="radio"]::after,.mid-all input[type="radio"]::after{
+	border:1px solid #FFFFFF;
+	background: #ffffff;
+	width: 18px;
+    height: 18px;
+    display:inline-block ;
+    -webkit-box-shadow: inset 0 2px 2px rgba(0,0,0,0.1);
+    -moz-box-shadow: inset 0 2px 2px rgba(0,0,0,0.1);
+    box-shadow: inset 0 2px 2px rgba(0,0,0,0);
+	content:url(../../img/tuoyuan.png);
+	cursor: pointer;
+}
+.all-sel label,.mid-all label{
+	vertical-align: middle;
+}
+.wi_li_right_big input[type="radio"]:checked::after{
+	content:url(../../img/xuanzhong.png);
+}
+ input[type="text"]{
+ 	text-indent: 10px;
+ }
+.wi_li_right_big p{
+	width: 100%;
+	height:40px;
+	line-height: 40px;
+	float: left;
+}
+.wi_li_right_big p span{
+	margin-right:40px ;
+	font-size: 14px;
+}
+.wi_input_left{
+	width: 140px;
+	height: 40px;
+	float: left;
+}
+.wi_input_right{
+	width: 280px;
+	height: 40px;
+	float: left;
+	margin-left:30px ;
+}
+.wi_tijiao{
+	width: 100%;
+	min-height: 68px;
+	float: left;
+}
+.wi_tijiao button{
+	width: 180px;
+	height: 50px;
+	float: left;
+	line-height: 50px;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 18px;
+	background: #f3001d;
+	border: 0;
+	border-radius:2px ;
+	margin-top:30px ;
+	margin-left:100px ;
+}
+.wi_liucheng{
+	width: 100%;
+	min-height: 80px;
+	float: left;
+	margin:20px 0;
+}
+.wi_liucheng p{
+	width: 100%;
+	height: 20px;
+	line-height: 20px;
+	float: left;
+	margin-left:100px ;
+	color: #848484;
+}
+/*==============================提现已申请====================*/
+.wi_shenqing_wrap{
+	width: 100%;
+	min-height: 151px;
+	float: left;
+	
+}
+.wi_shenqing{
+	width: 450px;
+	height: 70px;
+	float: left;
+	margin:50px 0 0 370px ;
+}
+.wi_shenqing img{
+	width: 50px;
+	height: 50px;
+	float: left;
+	margin-top:10px ;
+}
+.wi_shenqing ul{
+	width: 300px;
+	height:70px ;
+	float: left;
+	margin-left:30px ;
+}
+.wi_shenqing_li_top{
+	font-size: 18px;
+	color: #282828;
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+}
+.wi_shenqing_li_bottom{
+	font-size: 12px;
+	color: #848484;
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+}
+.wi_yinhangka{
+	width: 100%;
+	height: 70px;
+	background: #e4e4e4;
+	float: left;
+	padding:30px ;
+	margin-bottom:50px ;
+}
+.wi_chongzhi1{
+	margin-bottom:0 ;
+}
+.wi_yinhangka ul{
+	width: 100%;
+	height: 28px;
+	line-height: 28px;
+	float: left;
+	color: #575757;
+	
+}
+.wi_yinhangka .wi_yinhangka_li_left{
+	width: 100px;
+	height: 26px;
+	float: left;
+	line-height: 26px;
+}
+.wi_yinhangka_li_right{
+	width:300px ;
+	height: 26px;
+	float: left;
+	line-height: 26px;
+	color: #848484;
+}
+.wi_left_wrap{
+	width: 50%;
+	height: auto;
+	float: left;
+}
+.wi_left_wrap button{
+	width: 126px;
+	height: 36px;
+	text-align: center;
+	line-height: 36px;
+	font-size: 18px;
+	background: #f3001d;
+	color: #FFFFFF;
+	border: 0;
+	border-radius:2px ;
+	float: right;
+	margin:30px 100px 0 0;
+}

@@ -1,0 +1,105 @@
+.w_wrap {
+    width: 100%;
+    min-width: 1180px;
+    float: left;
+    height: auto;
+    background: #dfdfdf;
+}
+.w {
+    width: 1000px;
+    min-height: 100px;
+    margin: 20px auto;
+    overflow: hidden;
+    background: #FFFFFF;
+    
+}
+.crumbs-bar {
+    width: 100%;
+    height: 55px;
+    line-height: 55px;
+    border-bottom: 1PX solid #dddddd;
+}
+.crumbs-bar a {
+    font-size: 12px;
+    color: #848484;
+}
+.bar_act_clor {
+    color: #282828;
+}
+/*center*/
+.sf{
+	margin-top: 20px 0;
+	width: 950px;
+	height: auto;
+	overflow: hidden;
+}
+.sf_left{
+	width: 850px;
+	height: 500px;
+	float: left;
+	padding: 0 50px;
+	overflow-x:hidden ;
+	overflow-y:scroll ;
+}
+.sf_left h4{
+	width: 100%;
+	min-height: 60px;
+	font-size: 22px;
+	font-weight: 400;
+	color: #282828;
+	line-height: 60px;
+}
+.p_13{
+	width: 100%;
+	min-height:32px ;
+	line-height: 32px;
+	font-size: 16px;
+	color: #282828;
+	font-weight: 900;
+	color: #282828;
+}
+.p_14{
+	width: 100%;
+	min-height:24px ;
+	line-height: 24px;
+	font-size: 14px;
+	margin-top:10px ;
+	color: #848484;
+}
+.sf_left>img{
+	width: 100%;
+	margin: 20px 0 50px 0;
+}
+.p_mar1{
+	margin: 10px 0;
+}
+.p_mar2{
+	margin-top: 30px;
+}
+
+.s_bottom{
+	width: 100%;
+	height: 85px;
+	overflow: hidden;
+	text-align: center;
+	line-height: 85px;
+	
+}
+.s_bottom a{
+	display: inline-block;
+	width: 280px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #FFFFFF;
+	background: #f3001d;
+	border-radius:5px;
+}
+
+
+
+
+
+
+
+

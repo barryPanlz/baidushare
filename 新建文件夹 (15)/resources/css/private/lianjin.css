@@ -1,0 +1,84 @@
+.lianjin_wrap{
+	width: 100%;
+	overflow: hidden;
+	font-size: 0;
+}
+.lianjin_wrap>div{
+	width: 100%;
+    min-width: 1200px;
+    overflow: hidden;
+}
+.lianjin_wrap>div>img{
+	width: 100%;
+}
+ .lianjin_wrap .lj4{
+ 	height: 655px;
+	background: #000000;
+}
+.shipin_title{
+	height: 139px;
+	line-height: 139px;
+	text-align: center;
+	color: #ffe29a;
+	font-size: 40px;
+}
+.shipin{
+	width: 747px;
+	height: 480px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.lianjin_wrap .lj32{
+	position: relative;
+}
+
+.lianjin_wrap .lj32 .click_buy{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	float: initial;
+}
+.click_buy a{
+	position: absolute;
+	top: 0;
+	right: 27%;
+	display: inline-block;
+	width: 17.2%;
+	height: 101px;
+	line-height: 101px;
+	margin-top:10px ;
+	float: right;
+	color: #FFFFFF;
+	font-size: 38px;
+	background:red;
+	font-weight: 900;
+	text-align: center;
+	
+	border-radius:10px ;
+	border:3px solid #ffffff ;
+}
+@media (max-width: 1840px){
+	.click_buy a{
+		width: 300px;
+		height: 80px;
+		line-height: 80px;
+	    font-size: 34px;
+	}
+}
+@media (max-width: 1550px){ 
+	.click_buy a{
+	    width: 260px;
+		height: 60px;
+		line-height: 60px;
+	    font-size: 28px;
+	}
+}
+@media (max-width: 1334px){ 
+	.click_buy a{
+	    width: 220px;
+		height: 40px;
+		line-height: 40px;
+	    font-size: 22px;
+	}
+}

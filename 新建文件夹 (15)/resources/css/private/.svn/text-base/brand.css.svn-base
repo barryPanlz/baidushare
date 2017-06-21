@@ -1,0 +1,296 @@
+.fun_huag_act{
+	border-bottom:2px solid #c10f10;
+}
+
+/*修改版*/
+
+/*头部结束*/
+.brand-top .tit{
+	margin-top:40px;
+	width:100%;
+	height:30px;
+	line-height: 0px;
+	text-align: center;
+	background: url(../../img/biaotixian.png) no-repeat;
+}
+.brand-top .tit h2{
+	font-size:20px;
+	color:#c10f10;
+	vertical-align: middle;
+	font-weight: 100;
+}
+.top-box{
+	position: relative;
+}
+.top-box li{
+	border: 1px solid #fff
+}
+.top-box-up{
+	height:100px;
+}
+.top-box-up li,.top-box-below li{
+	float:left;
+	width: 292px;
+	position: relative;
+}
+.top-box:before{
+	content: '';
+	width: 1180px;
+	height: 1px;
+	background: url(../../img/branch_bgline1.jpg) repeat-x left bottom;
+	z-index: 1;
+	position: absolute;
+	top: 100px;
+}
+.top-box-up li:before,.top-box-below li:before{
+	content: '';
+	width: 1px;
+	height: 100px;
+	background: url(../../img/branch_bgline.jpg) repeat-y right top;
+	z-index: 33;
+	position: absolute;
+	right: -1px;
+}
+.top-box-up li.four:before,.top-box-below li.four:before{
+	content: '';
+	width: 0px;
+	height: 100px;
+	background: url(../../img/branch_bgline.jpg) repeat-y right top;
+	z-index: 33;
+	position: absolute;
+	right: -1px;
+}
+.top-box li:hover{
+	border:1px solid #ccc;
+}
+.top-box li:hover:before{
+	content: '';
+	width: 0px;
+	height: 100px;
+	background: url(../../img/branch_bgline.jpg) repeat-y right top;
+	z-index: 99;
+	position: absolute;
+	right: 0px;
+}
+.top-box li a{
+	display: block;
+	width:100%;
+}
+.top-box li a img{
+	width:100%;
+}
+
+
+
+
+
+/*<!-- 左侧竖排的导航栏 -->*/
+
+
+.nav-box{
+	width:1180px;
+	position: relative;
+}
+.nav-box ul{
+	height:auto;
+	border:1px solid #ccc;
+	position: absolute;
+	left:-120px;
+	top:46px;
+}
+.nav-lista a{
+	display: block;
+	height:40px;
+	width:80px;
+	line-height: 40px;
+	text-align: center;
+	border-top:1px solid #ddd;
+}
+.nav-lista a:hover{
+	color:#282828;
+}
+.nav-box ul h3{
+	width:80px;
+	height:40px;
+	background:#F3001C; 
+	text-align: center;
+	line-height: 40px;
+	color:#fff;
+}
+.nav-box ul li{
+	height:40px;
+	width:80px;
+	line-height: 40px;
+	border-top:1px solid #ccc;
+	font-size:12px;
+	text-align: center;
+	cursor: pointer;
+}
+.nav-box ul li:hover{
+	background:#ddd;
+}
+.nav-box .acitve{
+	background:#ddd;
+}
+.nav-box ul li:first-child{
+	border-top:0px;
+}
+
+.brand-cont{
+	position: relative;
+	z-index: 1;
+}
+
+
+
+.brand-mid-box .tit{
+	margin-top:40px;
+}
+.tit h2{
+	font-weight: normal;
+}
+.brand-mid-box .tit h2{
+	font-size:20px;
+	color:#282828;
+	margin-top:40px;
+	margin-bottom: 20px;
+}
+.list-box{
+	width:100%;
+}
+.list-box .list1,.list-box .list4,.list-box .list7,.list-box .list9,.list-box .list10{
+	height:58px;
+}.list-box .list1 a{
+	margin-bottom: none;
+}
+.list-box .list2,.list-box .list3,.list-box .list5,.list-box .list6,.list-box .list8{
+	height:140px;
+}
+.list-box  .active{
+	color:#ea0405;
+}
+.list-fl{
+	width:380px;
+	height:280px;
+	border:1px solid #ddd;
+	color:#8d8d8d;
+	line-height: 30px;
+}
+.list-fl li{
+	float:left;
+}
+.list-fl a{
+	display: block;
+	margin:12px  16px 0px;
+	color:#8d8d8d;
+	font-size:12px;
+}
+.list-fr{
+	float:right;
+	width:796px;
+}
+.list-fr img:hover{
+	border:1px solid #F3001D
+}
+.list-fr a{
+	float:left;
+	width:180px;
+	height:58px;
+	margin-left:17px;
+	margin-bottom:24px;
+}
+.list-fr a img{
+	width:100%;
+	border:1px solid #fff;
+}
+
+
+/*二级菜单*/
+.Secondary{
+	position: absolute;
+	z-index:33;
+	top: 43px;
+	width: 210px;
+	height: 460px;
+    display: none;
+}
+#Level_3{
+	background: #fff;
+	border-bottom:none;
+}
+.Secondary li a{
+	margin: 0;
+	font-size: 14px;
+	color: #fff;
+}
+.Secondary li{
+	width: 190px;
+	padding: 0 10px;
+	height: 45px;
+	line-height: 45px;
+	color: #fff;
+	border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+
+.Secondary li>img{
+	float: right;
+	padding-top: 20px;
+}
+.Secondary .backFff{
+	background: #FFFFFF; 
+	color: #F2021C;
+}
+.Secondary .backFff a{ 
+	color: #F2021C;
+	font-size: 14px;
+}
+/*三级菜单*/
+#Level_3{
+	position: absolute;
+	z-index: 100;
+	top: 0;
+	left: 210px;
+	width: 970px;
+	height: 458px;
+	background: #FFFFFF;
+	font-size: 14px;
+	border-top:1px solid #c10f10;
+	border-bottom:1px solid #000;
+}
+#Level_3 dt{
+	height: 46px;
+	line-height: 46px;
+}
+#Level_3 a{
+	color: #848484;
+}
+#Level_3 span{
+	float: left;
+	color: #575757;
+	margin-left: 36px;
+}
+#Level_3 span>img{
+	margin-left: 10px;
+}
+#Level_3 dl{
+	float: left;
+	margin-left: 20px;
+	width: 820px;
+	border-bottom: 1px dashed #848484;
+}
+#Level_3 dl a{
+	margin: 0 10px;
+}
+#Level_3 dl a:hover{
+	color: #F2021C;
+	text-decoration: underline;
+}
+.you{
+	display: block;
+}
+.wu{
+	display: none;
+}
+.footer{
+	border-top:1px solid #ccc;
+}

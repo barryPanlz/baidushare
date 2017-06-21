@@ -1,0 +1,144 @@
+.w_wrap{
+	width: 100%;
+	min-width: 1180px;
+	float: left;
+	height: auto;
+}
+.w{
+	width: 1180px;
+	min-height: 100px;
+	margin: 0 auto;
+	overflow: auto;
+}
+.cl_banner{
+	width: 100%;
+	height: auto;
+	padding: 20px 0;
+	overflow: hidden;
+	float: left;
+	
+}
+.lt_banner{
+	width: 100%;
+	float: left;
+}
+.cl_center{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+.cl_center_list{
+	width: 580px;
+	height: auto;
+	float: left;
+}
+/*IE8有兼容*/
+.cl_center_list:nth-of-type(2n){
+	margin-left:20px ;
+}
+
+.cl_center_title{
+	width:100%;
+	height: 60px;
+	float: left;
+	
+}
+.cl_center_title_left{
+	width: 90px;
+	height: 100%;
+	float: left;
+	line-height: 60px;
+	font-size: 20px;
+}
+.cl_center_title_right{
+	width: 1080px;
+	height: 100%;
+	float: left;
+}
+.cl_center_title_right_line{
+	width: 490px;
+	float: left;
+	height: 60px;
+	line-height: 60px;
+}
+.line2{
+	width: 390px;
+}
+.cl_center_title_right_line img{
+	width: 100%;
+}
+.cl_center_title_title{
+	width: 200px;
+	height:60px;
+	float: left;
+	text-align: center;
+	line-height: 60px;
+	font-size: 20px;
+}
+/*图片区*/
+.cl_allimg_wrap{
+	width: 100%;
+	height: 180px;
+	float: left;
+	overflow: hidden;
+}
+
+.cl_allimg_wrap img{
+	width: 180px;
+	float: left;
+	margin-left:20px ;
+}
+.cl_allimg_wrap .im_active{
+	margin-left: 0px;
+}
+/*内容区*/
+.cl_content_wrap{
+	width: 100%;
+	min-height:auto ;
+	float: left;
+	margin-top:21px ;
+	
+}
+.cl_content{
+	width: 100%;
+	height: auto;
+	float: left;
+	background: #FFFFFF;
+	
+}
+.cl_content li{
+	padding: 10px 0;
+	width: 580px;
+	min-height:32px;
+	float: left;
+	font-size: 12px;
+	overflow: auto;
+	margin: 0 5px;
+}
+.cl_content_left{
+	width: 90px;
+	height: 100%;
+	height: auto;
+	float: left;
+	color: #575757;
+	line-height: 32px;
+	text-align: center;
+	font-size: 14px;
+	font-weight: 900;
+}
+.cl_content_right{
+	width: 490px;
+	height: auto;
+	float: left;
+	line-height: 22px;
+	
+}
+.cl_content_right a{
+	display: inline-block;
+	padding: 4px 6px;
+	color: #848484;
+}
+.cl_content_right a:hover{
+	color: #C10F10;
+}
+

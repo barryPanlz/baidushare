@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>三界石</title>
+		<link rel="stylesheet" type="text/css" href="<?php echo $pc_style; ?>css/announce/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="<?php echo $pc_style; ?>css/announce/shouaffiche.css"/>
+	</head>
+	<body>
+		<div class="w_wrap">
+			<div class="w">
+				<!--面包屑-->
+				<p class="crumbs-bar">
+					<a href="<?php echo Yii::$app->urlManager->createUrl('index/index')?>">首页</a><em>></em>
+					<a class="bar_act_clor" href="###">知识堂</a>
+				</p> 
+				<div class="sf">
+					<div class="sf_left">
+						<h4>三界石</h4>
+						<p class="p_14 p_mar1">
+							三界石，是由三界生活推出的一种积分类型，可在三界商城兑换商品
+						</p>
+						<p class="p_13 p_mar1">
+							一、怎么获取三界石？
+						</p>
+						<p class="p_14 ">
+							1、	在三界本地或与我们有合作的实体店铺消费时获得；
+						</p>
+						<p class="p_14 ">
+							2、	其他会员转账给你；
+						</p>
+						<p class="p_14 ">
+							3、	使用人民币购买（充值）。
+						</p>
+						<p class="p_13 p_mar1">
+							二、三界石的价值？
+						</p>
+						<p class="p_14 ">
+							1、在“三界商城”兑换任意商品。
+						</p>
+						<p class="p_14 ">
+							2、	统一了不同地区、不同店铺的积分奖励体系，让积分的发放更加方便、积分消费更加灵活多样，为实体店铺提高工作效率的同时还能带来更多的客户引流 。
+						</p>
+						 
+					</div>
+					<div class="sf_right">
+						<ul>
+							<li>
+								<h3>知识堂</h3>
+							</li>
+							<li>
+								<a href="<?php echo Yii::$app->urlManager->createUrl('announce/qukuailian')?>">什么是区块链</a>
+								<span>2016-11-23  10:17:56</span>
+							</li>
+							<li>
+								<a href="<?php echo Yii::$app->urlManager->createUrl('announce/exchange')?>">兑换流程</a>
+								<span>2016-11-23  10:17:56</span>
+							</li>
+							<li>
+								<a href="<?php echo Yii::$app->urlManager->createUrl('announce/consume')?>">消费流程</a>
+								<span>2016-11-23  10:17:56</span>
+							</li>
+							<li>
+								<a href="<?php echo Yii::$app->urlManager->createUrl('announce/sanjiebao')?>">三界宝</a>
+								<span>2016-11-23  10:17:56</span>
+							</li>
+							<li>
+								<a href="<?php echo Yii::$app->urlManager->createUrl('announce/sanjieshi')?>">三界石</a>
+								<span>2016-11-23  10:17:56</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

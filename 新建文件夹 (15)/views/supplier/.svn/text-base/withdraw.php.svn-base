@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>提现</title>
+		  <link href="<?php echo $pc_style; ?>img/bitbug_favicon.ico" rel="shortcut icon" type="image/x-icon" /> 
+		<link rel="stylesheet" type="text/css" href="<?php echo $pc_style; ?>css/common/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="<?php echo $pc_style; ?>css/private/withdraw.css"/>
+		<link rel="stylesheet" type="text/css" href="<?php echo $pc_style; ?>css/common/common.css"/>
+	</head>
+	<body>
+						<!--头部用户导航-->
+		<?php echo \Yii::$app->view->renderFile('@app/views/layouts/header.php'); ?>
+		<!--搜索商品栏-->
+		
+		<?php echo \Yii::$app->view->renderFile('@app/views/layouts/top.php'); ?>
+		<!--频道跳转栏-->
+
+
+                        <div class="local-channel fix">
+                            <div class="data-width">
+                                <div class="channel-box .fix">
+                                    <a class="channel-l ta_center" href="<?php echo \Yii::$app->urlManager->createUrl(['index/index']);?>">
+                                        <span>返回商城首页</span>
+                                    </a>
+                                    <div class="channel-c channel-d">
+                                        <a class="now_tab_red" href="<?php echo \Yii::$app->urlManager->createUrl(['supplier/supplier_index']);?>"> 三界会员 </a>
+                                        <a href="<?php echo \Yii::$app->urlManager->createUrl(['supplier/order']);?>"> 我的订单 </a>
+                                        <a href="<?php echo \Yii::$app->urlManager->createUrl(['supplier/accountant']);?>"> 我的账房 </a>
+                                        <a href="<?php echo \Yii::$app->urlManager->createUrl(['supplier/accountsettings']);?>"> 账户设置 </a>
+                                    </div>
+                                    <div class="channel-r">
+                                        <a href="<?php echo \Yii::$app->urlManager->createUrl(['help/san_jie_tong']);?>"> 三界石 </a>
+                                        <a href="<?php echo \Yii::$app->urlManager->createUrl(['help/san_jie_bao']);?>"> 三界宝 </a>
+                                        <a href="<?php echo \Yii::$app->urlManager->createUrl(['help/share']);?>">分享邀请</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+		
+		<div class="w_wrap">
+			<div class="w" style="background:#f6f6f6">
+				<div class="wi_chongzhi">
+					<div class="per_mingxi_top">
+						<div class="per_mingxi_top_title">
+							<span>提现</span>
+						</div>
+						<!--<div class="per_mingxi_top_right">
+							<a href="">更多</a>
+							<img src="<?php echo $pc_style; ?>img/xiaoyoujiantong.png"/>
+						</div>-->
+					</div>
+					<div class="per_mingxi_content">
+						<ul>
+							<li class="wi_li_left">账户余额：</li>
+							<li class="wi_li_right"><span><?php echo empty($details1->data->money) ? "0" : $details1->data->money ;?></span></li>
+						</ul>
+						<ul>
+							<li class="wi_li_left">我的身份：</li>
+							<li class="wi_li_right">
+                                <?if(!empty($details1->data->user_type)){
+                                    if($details1->data->user_type ==1){
+                                        echo "普通会员";
+                                    }elseif($details1->data->user_type ==2){
+                                        echo "创业会员";
+                                    }elseif($details1->data->user_type ==3){
+                                        echo "店铺";
+                                    }elseif($details1->data->user_type ==4){
+                                        echo "供应商";
+                                    }elseif($details1->data->user_type ==5){
+                                        echo "代理商";
+                                    }
+                                }?>
+                            </li>
+						</ul>
+						<ul>
+							<li class="wi_li_left">提现额度：</li>
+							<li class="wi_li_right"><span>10000.00</span></li>
+						</ul>
+					</div>
+					<div class="wi_tixian per_mingxi_content">
+						<ul>
+							<li class="wi_li_left">提现金额</li>
+							<li class="wi_li_right"><input type="text" name="numbers" class="wi_input_left" placeholder="请输入数字"  id="numbers" value="" /></li>
+						</ul>
+						<ul style="margin-top:20px ;">
+							<li class="wi_li_left_big">提现到账号</li>
+							<li class="wi_li_right_big">
+								<div class="">
+									<p>
+										<span><input class="zhifu" type="radio" name="paytype" id="zhifubao" value="1" /></span><span>支付宝</span>
+									</p>
+									<p>
+										<input type="text" name="name" id="name1" value="" class="wi_input_left" placeholder="请输入支付宝名称" />
+										<input type="text" name="revbankaccno" id="revbankaccno1" value="" class="wi_input_right" placeholder="请输入支付宝账号"/>
+									</p>
+								</div>
+								<div class="">
+									<p>
+										<span><input class="zhifu" type="radio" name="paytype" id="banckcard" value="3" /></span><span>银行卡</span>
+									</p>
+									<p>
+										<select name="revorgname" class="wi_input_left">
+                                            <?php if(!empty($bancklist->data->bankList)){
+                                                foreach($bancklist->data->bankList as $re){ ?>
+											<option value="<?php echo $re?>"><?php echo $re?></option>
+                                            <?php } } ?>
+										</select>
+										<input type="text" name="revbankaccno" id="revbankaccno2" value="" class="wi_input_right" placeholder="银行卡号"/>
+										<input type="text" name="name" style="margin-left: 20px;" id="name2" value="" class="wi_input_left" placeholder="请输入持卡人姓名"/>
+									</p>
+								</div>
+								
+							</li>
+						</ul>
+					</div>
+                   <!-- <div class="modal_order">
+                        恭喜，转账成功
+                    </div>
+                    <div class="modal_order1">
+                        抱歉，转账失败
+                    </div>-->
+					
+					<div class="wi_tijiao">
+						<button id="submit">确认提交</button>
+					</div>
+					<div class="wi_liucheng">
+						<p>提现流程：用户发起——>填写提现账号信息——>平台审核——>平台打款——>资金到账。</p>
+						<p>到账时间：1-2个工作日，遇周末、节假日则自动顺延。</p>
+						<p>客服咨询：010-8888888</p>
+					</div>
+				</div>
+                <script src="<?php echo $pc_style; ?>js/lib/jquery-1.7.1.min.js"></script>
+                <script src="<?php echo $pc_style; ?>js/lib/common.js"></script>
+                <script src="<?php echo $pc_style; ?>js/lib/inputs.js"></script>
+				<script>
+
+                    $("#submit").click(function(){
+                        var numbers = $("#numbers").val();
+                        var paytype = $('input:radio:checked').val();
+                        if(paytype == 1){
+                            var revbankaccno = $("#revbankaccno1").val();
+                            var revorgname = $("#name1").val();
+                        }else if(paytype == 3){
+                            var revbankaccno = $("#revbankaccno2").val();
+                            var revorgname = $(".wi_input_left option:selected").val();
+                            var name = $("#name2").val();
+                        }
+                        $.ajax({
+                            url:"<?php echo \Yii::$app->urlManager->createUrl(['supplier/withdrawal']);?>",
+                            type:"post",
+                            dataType:"json",
+                            data:{"numbers":numbers,"revbankaccno":revbankaccno,"paytype":paytype,"name":name,"revorgname":revorgname},
+                            success:function(data){
+                                if(data.errorCode == 0){
+                                    alert(data.message);
+                                    setTimeout(" location.href='<?php echo \Yii::$app->urlManager->createUrl(['supplier/withdrawal'])?>'",2000);
+                                }else if(data.errorCode == -2){
+                                    alert("登录超时，请重新登录");
+                                    setTimeout("location.href='<?php echo \Yii::$app->urlManager->createUrl(['login/login'])?>'",2000);
+                                }else if(data.errorCode == -34){
+                                    alert(data.message);
+                                }else if(data.errorCode == -41){
+                                    alert(data.message);
+                                }else if(data.errorCode == -43){
+                                    alert(data.message);
+                                }else if(data.errorCode == -44){
+                                    alert(data.message);
+                                }else if(data.errorCode == -15){
+                                    alert(data.message);
+                                }else if(data.errorCode == -50){
+                                    alert(data.message);
+                                }
+                            },
+                            error:function(){
+                                alert("转账失败，请稍后重试");
+
+                            }
+
+                        });
+                    });
+
+                    //模态框显示,需完成时调用
+//                    var time;
+//                    function modal(mod){
+//                        $("."+mod).show();
+//                        var timer = 3;
+//                        clearInterval(time);
+//                        var time=setInterval(function(){
+//                            timer--
+//                            if(timer==0){
+//                                $('.'+mod).hide();
+//                                clearInterval(time);
+//                            }
+//                        },1000);
+//                    }
+                </script>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			</div>
+		</div>
+<?php echo \Yii::$app->view->renderFile('@app/views/layouts/bottom.php'); ?>
+<script src="<?php echo $pc_style; ?>js/lib/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="<?php echo $pc_style; ?>js/lib/common.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

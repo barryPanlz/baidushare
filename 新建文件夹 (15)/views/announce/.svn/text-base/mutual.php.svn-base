@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>商品公告(r8)</title>
+		<link rel="stylesheet" type="text/css" href="<?php echo $pc_style; ?>css/announce/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="<?php echo $pc_style; ?>css/announce/shouaffiche.css"/>
+	</head>
+	<body>
+		<div class="w_wrap">
+			<div class="w">
+				<!--面包屑-->
+				<p class="crumbs-bar">
+					<a href="<?php echo Yii::$app->urlManager->createUrl('index/index')?>">首页</a><em>></em>
+					<a class="bar_act_clor" href="###">商城公告</a>
+				</p> 
+				<div class="sf">
+					<div class="sf_left">
+						<h4>三界生活与三界链、R8数字资产交易所</h4>
+						<p class="p_13 ">
+							三界链
+						</p>
+						<p class="p_14">
+							三界链是以区块链技术为底层的全球化、开放式区块链生态系统。系统当中有许多基于区块链的项目。
+						</p>
+						<img class="p_mar" src="<?php echo $pc_style; ?>img/announce/R8_03.jpg"/>
+						<p class="p_13 ">
+							三界生活
+						</p>
+						<p class="p_14 ">
+							三界链生态系统项目之一。集购物、出行、酒店等为一体的综合行生活服务平台。在平台上消费或参与活动获得的三界石（积分）、三界宝（数字资产）可直接在商城兑换商品或到R8数字资产交易所进行交易。
+						</p>
+						<img src="<?php echo $pc_style; ?>img/announce/R8_07.jpg"/>
+						<p class="p_13 ">
+							R8数字资产交易所
+						</p>
+						<p class="p_14 ">
+							以区块链技术为底层架构的独立第三方数字资产交易所。在三界生活获得的三界宝可在该交易所进行交易。
+						</p>
+						<img src="<?php echo $pc_style; ?>img/announce/R8_10.jpg"/>
+					</div>
+					<div class="sf_right">
+						<ul>
+							<li>
+								<h3>最新公告</h3>
+							</li>
+							<li>
+								<a href="<?php echo Yii::$app->urlManager->createUrl('announce/tip')?>">区块链商城项目三界生活震撼上线！</a>
+								<span>2016-11-23  10:17:56</span>
+							</li>
+							<li>
+								<a href="<?php echo Yii::$app->urlManager->createUrl('announce/mutual')?>">三界生活与三界链、R8数字资产交易所</a>
+								<span>2016-11-23  10:17:56</span>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+				
+				
+				
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,417 @@
+.Text{ 
+	margin-left:420px;
+}
+.channel-l{
+	text-align: center;
+}
+.channel-c a{
+	margin:0 25px;
+}
+
+	
+/*内容中心区域*/	
+.pay-cont{
+	width:100%;
+	/*height:700px;*/
+	background: #F6F6F6;
+	padding-top:24px;
+	padding-bottom: 20px;
+}
+
+.pay-box{
+	width:1100px;
+	height:auto;
+	padding:28px 40px;
+	background: #fff;
+}
+.pay-box .tit{
+	border-bottom:1px solid #ddd;
+	font-size:18px;
+	color:#575757;
+	height:32px;
+	font-weight: normal;
+}
+.pay-txt-info{
+	margin-top:20px;
+	height:146px;
+	width:100%;
+	background: #f6f6f6;
+}
+.pay-txt-info ul{
+	padding-top:1px;
+	width:100%;
+	height:146px;
+}
+.pay-txt-info ul li{
+	margin-left:20px;
+	margin-top:20px;
+	font-size:14px;
+	color:#999;
+}
+.pay-txt-info .num,.pay-txt-info .b{
+	color:#575757;
+}
+.pay-txt-info .jewel{
+	display: inline-block;
+	width:60px;
+	height:20px;
+	background:#F3001C;
+	border-radius:2px;
+	color:#fff;
+	text-align: center;
+}
+.pay-txt-info .ratio{
+	color:#5dc540;
+}
+.pay-txt-info .suffix{
+	color:#575757;
+}
+.pay-topUp{
+	margin-top:20px;
+	height:36px;
+	color:#282828;
+	font-size:14px;
+}
+.pay-topUp input{
+	width:140px;
+	padding:8px 0 8px 10px;	
+}
+.pay-hint{
+	margin:28px 0px 10px 0px;
+	font-size:14px;
+	color:#848484;
+}
+.pay-hint .r-text{
+	color:#282828;
+}
+.r-text{
+	display: inline-block;
+	width:78px;
+	text-align: right;
+	margin-right:30px;
+}
+.pay-way .r-text{
+	height:58px;
+	line-height: 58px;
+}
+
+
+
+
+.pay-select{
+	/*margin-left:30px;*/
+}
+
+.pay-select li{
+	margin-top:4px;
+}
+.pay-select li span{
+	color:#999;
+	font-size:12px;
+}
+.pay-select .weixin span{
+	margin-left:22px;
+}
+.pay-select .yinlian span{
+	margin-left:10px;
+}
+
+.pay-select li input{
+	margin-right:40px;
+	vertical-align: middle;
+	cursor:pointer;
+}
+.pay-select li div{
+	vertical-align: middle;
+	display: inline-block;
+	width:144px;
+	height:58px;
+	line-height: 58px;
+	text-align:center;
+}
+
+/*修复ie7bug*/
+.pay-select li {
+	width: 385px;
+	height:58px;
+	margin-top:6px;
+}
+.pay-select li input{
+	float:left;
+	margin-top:24px;
+}
+.pay-select li div{
+	margin-top:6px;
+	float:left;
+	width:144px;
+	height:58px;
+	line-height: 58px;		
+	text-align:center;
+}
+.pay-select li img{
+	*margin-top:10px;
+}
+.pay-select li span{
+	float:right;
+}
+.weixin span{
+	margin-top:35px;
+	margin-right:105px;
+}
+.yinlian span{
+	margin-top:34px;
+}
+.pay-btn a{
+	margin-top:20px;
+}
+/*bug结束*/
+
+
+
+
+
+
+.pay-btn button,.pay-btn a{
+	display: block;
+	width:180px;
+	height:40px;
+	background: #F3001C;
+	line-height: 40px;
+	text-align: center;
+	background: url(../../img/ping-button.png) no-repeat;
+	color:#fff;
+	/*margin:14px 0 0 30px;*/
+	font-size:18px;
+	cursor: pointer;
+	border: 0;
+    margin-top:24px;
+}
+.abcdf{
+	background:url(../../img/xuanzhongkuang.png) no-repeat 100%;
+}
+
+.pay-select .item input[type="radio"]:after{
+	display: inline-block;
+	width:14px;
+	height:14px;
+	background:#fff;
+	border:1px solid #fff;
+	    box-sizing: border-box;
+    content: url(../../img/pay-icon1.png);
+    line-height: 14px;
+    text-align: center;
+}
+.pay-select .item input[type="radio"]:checked::after{
+	content: url(../../img/pay-icon2.png);
+}
+
+/*
+ * 
+ * 
+ * 遮罩弹窗
+ * 
+ * 
+ */
+.pay-mark{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	z-index: 9999999;
+	background:rgba(0,0,0,0.3);
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr=#44000000,endColorstr=#44000000);
+}
+.pay-mbox{
+	position:fixed;
+	_position:absolute;
+	top:50%;
+	left:50%;
+	width:518px;
+	height:228px;
+	margin-left:-259px;
+	margin-top:-114px;
+	background: #fff;
+}
+.pay-mbox .tit{
+	height:52px;
+	width:100%;
+	border-bottom:1px solid #ddd;
+	/*margin-left:30px;*/
+	text-indent:30px;
+	font-size:16px;
+	color:#848484;
+	line-height:52px;
+}
+.pay-mbox p{
+	margin-top:24px;
+	font-size:24px;
+	color:#282828;
+	text-align: center;
+}
+.pay-btn-box a,.rePay-btn a{
+	margin:0 20px;
+	display: inline-block;
+	width:122px;
+	height:38px;
+	text-align: center;
+	line-height: 38px;
+	cursor: pointer;
+}
+.pay-btn-box {
+	margin-top:34px;
+	text-align: center;
+}
+.pay-btn-box .yes{
+	color:#FFFFFF;
+	background: url(../../img/yiwanchengzhifu-button.png) no-repeat;
+}
+.pay-btn-box .no{
+	color:#F3001C;
+	background: url(../../img/quxiao-button.png) no-repeat;
+}
+
+
+/*
+ * 
+ * 
+ * 重复支付
+ * 
+ * 
+ * */
+.pay-fail{
+	margin:0 auto;
+	width:238px;
+	height:166px;
+	text-align: center;
+	
+}
+.pay-fail img{
+	margin-top:40px;
+}
+.pay-fail p{
+	margin-top:12px;
+	font-size:20px;
+	color:#F3001C;
+}
+.pay-fail-box{
+	overflow: hidden;
+	height:146px;
+	width:100%;
+	background: #F6F6F6;
+}
+.pay-fail-box li{
+	margin-left:24px;
+	margin-top:24px;
+}
+
+.pay-fail-txt{
+	font-size:12px;
+	color:#999;
+}
+.pay-fail-txt .item{
+	display: inline-block;
+	width:60px;
+	text-align: right;
+}
+.pay-fail-txt p{
+	display: inline-block;
+	*display:inline;
+	color:#575757;
+}
+.rePay-btn{
+	text-align: center;
+}
+.rePay-btn a{
+	margin-top:40px;
+    color:#FFFFFF;
+	background: url(../../img/yiwanchengzhifu-button.png) no-repeat;
+}
+
+.pay-failBox{
+	height:448px;
+}
+.pay-succ-box{
+	height:226px;
+}
+.pay-succBox{
+	height:514px;
+}
+.pay-fail-h{
+	height:534px;
+}
+
+
+
+
+
+
+
+
+/*模态框*/
+.modal_order{
+	display: none;
+	width: 380px;
+	height: 180px;
+	position: fixed;
+	left: 40%;
+	top: 474px;
+	background: rgba(0,0,0,0.5) url(../../img/baisedegou.png) no-repeat 170px 40px;
+	font-size: 24px;
+	text-align: center;
+	line-height: 240px;
+	color: #FFFFFF;
+}
+.modal_order1{
+	display: none;
+	width: 380px;
+	height: 180px;
+	position: fixed;
+	left: 40%;
+	top: 474px;
+	background: rgba(0,0,0,0.5) url(../../img/yuebuzu.png) no-repeat 170px 40px;
+	font-size: 24px;
+	text-align: center;
+	line-height: 240px;
+	color: #FFFFFF;
+}
+
+/*新增查账列表*/
+.pay-box .pay_list{
+	width: 100%;
+	min-height: 52px;
+	height: auto;
+	overflow:hidden;
+	margin-top:20px ;
+}
+.pay-box .pay_list .pay_list_title{
+	font-size: 18px;
+	height: 60px;
+	line-height: 60px;
+}
+.pay-box .pay_list li{
+	width: 1120px;
+	min-height: 52px;
+	margin: 0 auto;
+	border-bottom: 1px solid #f6f6f6;
+	overflow: hidden;
+}
+.pay-box .pay_list .list_title{
+	background: #f6f6f6;
+}
+.pay-box .pay_list li p{
+	width: 20%;
+	height: 54px;
+	line-height: 54px;
+	float: left;
+	font-size:16px;
+	color: #575757;
+	text-indent: 30px;
+	overflow: hidden;
+	display:block;
+	white-space:nowrap; 
+	overflow:hidden; 
+	text-overflow:ellipsis;
+}
+
+

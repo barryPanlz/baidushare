@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../../css/common/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/common/common.css" />
+ 		<link rel="stylesheet" type="text/css" href="../../css/private/agent.css" />
+	</head>
+	<body>
+		<!--头部用户导航-->
+		<div class="super_userNavi" id="super_userNavi">
+			<div class="userNavi">
+				
+				<div class="fun_location Location" style="position: relative;">
+					<p  class="fun_locationp Location">
+						<span>三界商城：</span><span > 北京 </span>
+						<a href="../../index.html"><img src="../../img/jiant_x.png"/></a>
+					</p>&nbsp; 
+					<ul class="fun_over_china over_China ">
+						 <h2> 已开辟分站 </h2>
+							 <div id="">
+							 	<a href=""> 北京 </a>
+								<a href=""> 上海 </a>
+								<a href=""> 天津 </a>
+								<a href=""> 黑龙江 </a>
+								<a href=""> 河北 </a>
+								<a href=""> 北京 </a>
+								<a href=""> 上海 </a>
+								<a href=""> 天津 </a>
+								<a href=""> 重庆 </a>
+								<a href=""> 河北 </a>  
+							 </div> <br />
+				        <h2> 即将开辟 </h2> 
+							<a href=""> 北京 </a>
+							<a href=""> 上海 </a>
+							<a href=""> 天津 </a>
+							<a href=""> 重庆 </a>
+							<a href=""> 河北 </a>
+							<a href=""> 北京 </a>
+							<a href=""> 上海 </a>
+							<a href=""> 天津 </a>
+							<a href=""> 黑龙江 </a>
+							<a href=""> 河北 </a>
+							<a href=""> 北京 </a>
+							<a href=""> 上海 </a>
+							<a href=""> 天津 </a>
+							<a href=""> 黑龙江 </a>
+							<a href=""> 河北 </a>
+					</ul>
+
+				</div>
+									
+				<div class="navigation" style="margin-right: 0;">
+					<li><a href="">   1031237422  </a></li>
+					<li><a href=""> 退出 </a></li>
+					<li><a href=""> 我的订单 </a></li>
+					<li><a href="" style="cursor: help;"> 帮助中心 </a></li>
+					<li><a href=""> 新手上路 </a></li>
+					<li class="nav_li_wrap">
+						
+						<a class="" id="funLoca" href="">手机版</a>
+						<ul>
+							<li>
+								<p class="nav_li_pleft">
+									<span class="nav_li_pleft_top">三界商城手机APP</span>
+									<span class="nav_li_pleft_bottom">
+										<a href="">
+											<img src="../../img/iphoneshouji.png"/>
+											<span>iphone</span>
+										</a>
+										<a class="nav_li_pleft_bottom1" href="">
+											<img src="../../img/anzhuoshouji.png"/>
+											<span>Android</span>
+										</a>
+									</span>
+								</p>
+								<p class="nav_li_prigh">
+									<img src="../../img/shoujiduanerweima.png"/>
+								</p>
+							</li>
+							<li>
+								<p class="nav_li_pleft nav_li_pleft_word">
+									<span>三界商城微信公众号</span>
+								</p>
+								<p class="nav_li_prigh">
+									<img src="../../img/weiixngongzhonghaoerweima.png"/>
+								</p>
+							</li>
+						</ul>
+						
+						
+					</li>
+				</div>
+				
+			</div>
+		</div>		
+		<!--搜索商品栏-->
+		<div class="super_Search">
+			<div class="Search" href="">				
+				<img style="float: left;" src="../../img/logo.png"/>	
+				<!--<input type="text" class="kuang" id="" placeholder="输入你想查找的商品名字" />
+				<input type="button" class="suoSou" id="" value="搜索" />
+				<a class="shopping_cart_icon">
+					 <img src="../../img/gouwuche.png"/> 我的购物车（ <sapn> 0 </sapn> ）
+				</a>-->
+				<!--<div class="Text">
+					<a href="">秋冬连衣裙</a>
+					<a href=""> 耐克跑步鞋</a>
+					<a href="">婴儿抱被 </a>
+					<a href="">会员特供 </a>
+					<a href="">买一送二</a>
+				</div>				-->
+			</div>
+			
+		 </div>
+			
+		<!--频道跳转栏-->
+		<div class="local-channel fix">
+			<div class="data-width">
+				<div class="channel-box fix">
+					<a class="channel-l">
+						<span>返回商城首页</span>
+					</a>
+					<div class="channel-c">
+						<a href="Diamond_index.html" class="color_title_fist">三界会员</a>
+						<a href="accountant.html">我的账房</a>
+						<a href="myrecommend.html">账户设置</a>				
+					</div>
+					<div class="channel-r">
+						<a href="../others/sanjietong.html">三界石</a>
+						<a href="../others/sanjiebao.html">三界宝</a>
+						<a href="../orders/Share.html" >分享邀请</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--代理商铺的区域-->
+		<div class="agent-cont">
+			<div class="data-with">
+				<div class="agent-main">
+					<div class="tit">
+						<img src="../../img/zuojiantou-zhihui.png" alt="" />
+					    <a href="">返回</a>
+					</div>
+					
+					<div class="agent-top-box fix">
+						<ul class="fl fl-totl">
+							<li class="dian">我辖区的店铺（<span>15</span>）</li>
+							<li class='qian'>总计销售业绩：<span>15000</span>三界石</li>
+						</ul>
+						<div class="fr fl-serach">
+							<input type="text" class="serach-txt" placeholder="输入店铺名称/所在城市等"/>
+							<input type="button" class="serach-btn" value="提交">
+						</div>
+					</div>
+					
+					<!--table列表-->
+					<div class="agent-list-box">
+						<div class="list-tit fix">
+							<ul>
+								<li class="num">序号</li>
+								<li class="info">店铺信息</li>
+								<li class="city">所在城市</li>
+								<li class="stime">注册时间</li>
+								<li class="sum">销售业绩（三界石）</li>
+								<li class="etime">最近成交时间</li>
+							</ul>
+						</div>
+						<div class="list-box fix">
+							<ul class="list-item">
+								<li class="num">50</li>
+								<li class="info">
+									<img src="../../img/cart-list.png" alt="" />
+									<p>河北省邢台市桥东区新骑点桥东区新骑点车业新骑点车业...</p>
+								<li class="city">邢台市</li>
+								<li class="stime">2016-11-11 15:21</li>
+								<li class="sum">￥ 5000</li>
+								<li class="etime">2016-11-11 15:21</li>
+							</ul>
+							
+							<ul class="list-item">
+								<li class="num">50</li>
+								<li class="info">
+									<img src="../../img/cart-list.png" alt="" />
+									<p>河北省邢台市桥东区新骑点桥东区新骑点车业新骑点车业...</p>
+								<li class="city">邢台市</li>
+								<li class="stime">2016-11-11 15:21</li>
+								<li class="sum">5000</li>
+								<li class="etime">2016-11-11 15:21</li>
+							</ul>
+							
+							<ul class="list-item">
+								<li class="num">50</li>
+								<li class="info">
+									<img src="../../img/cart-list.png" alt="" />
+									<p>河北省邢台市桥东区新骑点桥东区新骑点车业新骑点车业...</p>
+								<li class="city">邢台市</li>
+								<li class="stime">2016-11-11 15:21</li>
+								<li class="sum">5000</li>
+								<li class="etime">2016-11-11 15:21</li>
+							</ul>
+							
+							<ul class="list-item">
+								<li class="num">50</li>
+								<li class="info">
+									<img src="../../img/cart-list.png" alt="" />
+									<p>河北省邢台市桥东区新骑点桥东区新骑点车业新骑点车业...</p>
+								<li class="city">邢台市</li>
+								<li class="stime">2016-11-11 15:21</li>
+								<li class="sum">5000</li>
+								<li class="etime">2016-11-11 15:21</li>
+							</ul>
+							
+							<ul class="list-item">
+								<li class="num">50</li>
+								<li class="info">
+									<img src="../../img/cart-list.png" alt="" />
+									<p>河北省邢台市桥东区新骑点桥东区新骑点车业新骑点车业...</p>
+								<li class="city">邢台市</li>
+								<li class="stime">2016-11-11 15:21</li>
+								<li class="sum">5000</li>
+								<li class="etime">2016-11-11 15:21</li>
+							</ul>
+							
+							<ul class="list-item">
+								<li class="num">50</li>
+								<li class="info">
+									<img src="../../img/cart-list.png" alt="" />
+									<p>河北省邢台市桥东区新骑点桥东区新骑点车业新骑点车业...</p>
+								<li class="city">邢台市</li>
+								<li class="stime">2016-11-11 15:21</li>
+								<li class="sum">5000</li>
+								<li class="etime">2016-11-11 15:21</li>
+							</ul>
+						</div>
+					</div>
+					<!--列表分页效果-->
+		            <div class="page_warp fix">
+						<p>
+							<span>
+								<a>上一页</a>&nbsp;&nbsp;
+								<a>1</a>
+								<a>2</a>
+								<a>3</a>
+								<a>4</a>
+								<a>5</a>
+								&nbsp;&nbsp;<a>下一页</a>
+							</span>
+							<span>
+								<span>共</span>
+								<i>20</i>
+								<span>页，</span>
+								<span>跳转到</span>
+								<input class="page_input" type="tel" name="" id="" value="" />
+								<span>页</span>
+								<button>确定</button>
+							</span>
+						</p>
+					</div>
+				</div>
+				<div style="height:40px;"></div>
+			</div>
+		</div>
+		
+		
+		<div class="footer">
+		<div class="data-width">
+			<div class="foot-mid">
+				<ul>
+					<li>
+						<h3>注册登录</h3>
+						<a href="">消费注册</a>
+						<a href="">正品保障</a>
+						<a href="">用户登录</a>
+						<a href="">忘记密码</a>
+						<a href="">商家入驻</a>
+					</li>
+					<li>
+						<h3>消费指南</h3>
+						<a href="">兑换流程</a>
+						<a href="">消费流程</a>
+						<a href="">货币与支付</a>
+						<a href="">配送方式</a>
+						<a href="">配送方式</a>
+						<a href="">物流查询</a>
+					</li>
+					<li>
+						<h3>购物指南</h3>
+						<a href="">7天退换货</a>
+						<a href="">退货流程</a>
+					</li>
+					<li>
+						<h3>订单问题</h3>
+						<a href="">订单查询</a>
+						<a href="">订单取消</a>
+						<a href=""></a>
+					</li>
+					<li class="kefuqu">
+						<h3>联系我们</h3>
+						<a href="">电话客服：9999999</a>
+						<a href="">QQ客服：999999999</a>
+						<a href="">邮箱：888888888</a>
+						<a href="">公众号：0000000000</a>
+					</li>
+				</ul>
+			</div>
+			<div class="foot-top">
+				<ul>
+					<li class="first"><img src="../../img/foot-icon1.png" alt="">
+						<p>闪电发货</p>
+					</li>
+					<li><img src="../../img/foot-icon1.png" alt=""><p>七天退换</p></li>
+					<li><img src="../../img/foot-icon1.png" alt=""><p>正品保证</p></li>
+					<li><img src="../../img/foot-icon1.png" alt=""><p>提供发票</p></li>
+					<li class="end"><img src="../../img/foot-icon1.png" alt=""><p>三界战略合作</p></li>
+				</ul>
+			</div>
+			<div class="foot-btm">
+				<div class="foot-btm-nav">					
+					<a href="">关于我们</a>
+					<a href="">品牌招商</a>
+					<a href="">集团采购</a>
+					<a href="">招贤纳士</a>
+					<a href="">联系我们</a>
+					<a href="">网站地图</a>
+					<a href="">网站资讯</a>
+					<a href="">商家联盟</a>
+					<a href="">友情链接</a>
+				</div>
+				<p>Copyright © 2011-2015 HaiHeShiDai Technology Co., Ltd. 京ICP备09070608号-4 增值电信业务经营许可证：京 B2-20090203 京公网安备：4403101910665</p>
+				<div class="foot-btm-btm"><img src="../../img/foot-icon7.jpg" alt="" /></div>
+			</div>
+		</div>
+	</div>
+		
+		
+		<script src="../../js/lib/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/lib/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/lib/inputs.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

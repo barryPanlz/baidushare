@@ -1,0 +1,142 @@
+@charset "utf-8";
+/*样式重置*/
+body,ol,ul,li,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0}
+body{font:12px "微软雅黑";background:#FFFFFF;-webkit-text-size-adjust:100%}
+a{color:#172c45;text-decoration:none}
+a:hover{color:#cd0200;text-decoration:none}
+em{font-style:normal}
+li{list-style:none}
+img{border:0;vertical-align:middle}
+table{border-collapse:collapse;border-spacing:0}
+input:focus{outline: none;}
+input::-ms-clear{display: none;}
+input::-ms-reveal{display: none;}
+
+/*圆形头像兼容*/
+.photo_naodai{
+	float: left;
+	-moz-border-radius: 50%; /* Firefox */
+  	-webkit-border-radius: 50%; /* Safari 和 Chrome */
+	border-radius: 50%;/* Opera 10.5+ */
+	/*margin: 21px 10px 0 30px;*/
+	position:relative;
+	overflow: hidden;
+}
+.photo_naodai img{
+	-moz-border-radius: 50%; /* Firefox */
+  	-webkit-border-radius: 50%; /* Safari 和 Chrome */
+	border-radius: 50%;/* Opera 10.5+*/
+	height: 100%;
+	width: 100%;
+	float: left;
+	display: block;
+}
+.photo_naodai img.circle_shadow{
+	position:absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;				
+}
+.crumbs-bar a{
+	cursor:default!important;
+}
+
+#navigation .nav_li_wrap ul{
+	display: none;
+	width: 190px;
+    height: 200px!important;
+    display: none;
+	border:1px solid #dddddd ;
+	position: absolute;
+	left: -126px;
+	top: 36px;
+	z-index: 100;
+	overflow: hidden;
+	background: #FFFFFF;
+}
+#navigation .nav_li_wrap .weixin{
+	left: -102px;
+}
+#navigation .nav_li_wrap ul img{
+	width: 80px;
+}
+#navigation .nav_li_wrap ul .img_erweima{
+	width: 180px;
+}
+#navigation .nav_li_wrap .img_erweima img{
+	width: 150px;
+	margin:10px 20px ;
+	margin-bottom:0 ;
+}
+#navigation .nav_li_wrap .img_erweima .erweima_p{
+	width: 100%;
+	height: 30px;
+	text-align: center;
+	color: #F3001D;
+	font-size: 16px;
+	
+}
+/*页码*/
+.page_warp{
+	height: 30px;
+	float: right;
+	padding: 30px 0 60px 0;
+}
+
+.page_warp p{
+	display: block;
+	min-width: 200px;
+	height: 30px;
+	margin: 0 auto;
+    float: left;
+}
+.page_warp span{
+	display: inline-block;
+}
+.page_warp form span{
+	display: inline-block;
+	min-width: 2px;
+}
+.page_warp form{
+	display: inline-block;
+	min-width: 10px;
+    margin-top: -6px;
+    margin-left:16px ;
+}
+
+.page_warp a{
+	font-size: 12px;
+	padding:  8px 12px;
+	border: 1px solid #dddddd;
+}
+.page_warp i{
+	font-style: normal;
+}
+.page_warp a:hover{
+	color: #f3001d;
+}
+.page_input{
+	display: inline-block;
+	width: 30px;
+	height: 26px;
+	border: 1px solid #dddddd;
+	font-size: 12px;
+}
+.page_warp input[type="submit"]{
+	display: inline-block;
+	width: 60px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	background: #f3001d;
+	color: #FFFFFF;
+	border: 0;
+	cursor: pointer;
+	border-radius:5px ;
+	margin-left:10px ;
+}
+.page_warp input[type="text"]{
+	text-align: center;
+
+}

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>转账</title> 
+		  <link href="<?php echo $pc_style; ?>img/bitbug_favicon.ico" rel="shortcut icon" type="image/x-icon" /> 
+		<link rel="stylesheet" type="text/css" href="<?php echo $pc_style; ?>css/common/reset.css" />
+		<link rel="stylesheet" type="text/css" href="<?php echo $pc_style; ?>css/common/common.css" />
+		<link rel="stylesheet" type="text/css" href="<?php echo $pc_style; ?>css/private/centerPay.css" />
+	</head>
+	<body>
+		<!--遮罩充值的的-->
+		<!--<div class="pay-mark">
+			<div class="pay-mbox">
+				<h3 class="tit">
+					提示
+				</h3>
+				<p>请在第三方支付页面完成操作...</p>
+				<div class="pay-btn-box">
+				   <a class="yes">我已完成支付</a>
+			       <a class="no">取消</a>
+				</div>
+			</div>
+		</div>
+	-->		
+		<!--头部用户导航-->
+        <?php echo \Yii::$app->view->renderFile('@app/views/layouts/header.php'); ?>
+        <!--搜索商品栏-->
+        <?php echo \Yii::$app->view->renderFile('@app/views/layouts/top.php'); ?>
+
+		
+		<!--频道跳转栏-->
+        <div class="local-channel fix">
+            <div class="data-width">
+                <div class="channel-box .fix">
+                    <a class="channel-l ta_center" href="<?php echo \Yii::$app->urlManager->createUrl(['index/index']);?>">
+                        <span>返回商城首页</span>
+                    </a>
+                    <div class="channel-c channel-d">
+                        <a  href="<?php echo \Yii::$app->urlManager->createUrl(['user/diamond_index']);?>"> 三界会员 </a>
+                        <a href="<?php echo \Yii::$app->urlManager->createUrl(['user/order']);?>"> 我的订单 </a>
+                        <a class="now_tab_red" href="<?php echo \Yii::$app->urlManager->createUrl(['user/accountant']);?>"> 我的账房 </a>
+                        <a href="<?php echo \Yii::$app->urlManager->createUrl(['user/myrecommend']);?>"> 我的推荐 </a>
+                        <a  href="<?php echo \Yii::$app->urlManager->createUrl(['user/accountsettings']);?>"> 账户设置 </a>
+                    </div>
+                    <div class="channel-r">
+                        <a href="<?php echo \Yii::$app->urlManager->createUrl(['help/san_jie_tong']);?>"> 三界石 </a>
+                        <a href="<?php echo \Yii::$app->urlManager->createUrl(['help/san_jie_bao']);?>"> 三界宝 </a>
+                        <a href="<?php echo \Yii::$app->urlManager->createUrl(['help/share']);?>">分享邀请</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<div class="pay-cont">
+			<div class="data-width">
+				<div class="pay-box">
+					<h3 class="tit">转账三界宝</h3>
+					<div class="pay-txt-info">
+						<ul>
+                            <li>账户余额：<span class="num"><?php echo empty($details1->data->future_treasure) ? "0" : $details1->data->future_treasure?></span><span class="b">三界宝</span></li>
+                            <li>我的身份：<span class="jewel"><?if(!empty($details1->data->user_type)){
+                                        if($details1->data->user_type ==1){
+                                            echo "普通会员";
+                                        }elseif($details1->data->user_type ==2){
+                                            echo "创业会员";
+                                        }elseif($details1->data->user_type ==3){
+                                            echo "店铺";
+                                        }elseif($details1->data->user_type ==4){
+                                            echo "供应商";
+                                        }elseif($details1->data->user_type ==5){
+                                            echo "代理商";
+                                        }
+                                    }?></span></li>
+							<li>转账数额：<!--<span class="ratio">10000</span><span class="suffix">三界宝每次</span>-->不限额</li>
+						</ul>
+					</div>
+					
+					<div class="pay-topUp">
+						<label for="" class="r-text">转账金额</label>
+						<input type="text" id="money" placeholder="请输入数字" />
+						<span>三界宝</span>
+					</div>
+					<div class="pay-topUp">
+						<label for="" class="r-text">接收账户</label>
+						<input type="text" id="revbankaccno" placeholder="请输入账号" />
+						<span style="color:#848484;">没有三界链账户？</span>
+						<a href="" class="sub_zhuce">立即注册</a>
+					</div>
+
+					
+					<div class="pay-btn">
+						<a id="acOrder">确认转账</a>
+					</div>
+					<ul class="pay_list">
+						<div class="pay_list_title">
+							转账记录
+						</div>
+						<li class="list_title">
+							<p>流水账号</p>
+							<p>时间</p>
+							<p>转账数量（SAN）</p>
+                            <p>收款账户</p>
+							<p>状态</p>
+						</li>
+                        <?if(!empty($list)){
+                            foreach($list as $item) { ?>
+                                <li>
+                                    <p><?php echo empty($item->flow_no) ? "" : $item->flow_no ?></p>
+                                    <p><?php echo empty($item->outdate) ? "" : $item->outdate ?></p>
+                                    <p><?php echo empty($item->outamnt) ? "" : $item->outamnt ?></p>
+                                    <p><?php echo empty($item->recipient) ? "" : $item->recipient ?></p>
+                                    <p><?php echo empty($item->status) ? "" : $item->status ?></p>
+                                </li>
+
+                            <?php  } }?>
+					</ul>
+                    <span>
+                             <?php if($page->currentPage >1){ ?>
+                                 <a href="<?php echo \Yii::$app->urlManager->createUrl(['user/transfer_sanjiebao','currentPage' =>$page->currentPage - 1])?>">上一页</a>&nbsp;&nbsp;
+                             <?php } ?>
+
+                        <?php  if ($page->currentPage <= 5 && $page->totalPage <= 5){ for($i=1;$i<= $page->totalPage;$i++) { ?>
+
+
+
+                            <a href="<?php echo \Yii::$app->urlManager->createUrl(['user/transfer_sanjiebao','currentPage' =>$i])?>" <?php if($page->currentPage == $i){echo 'style="color:red;"';} ?>><?php echo $i;?></a>
+
+                        <?php } }elseif($page->currentPage >= 5){ {
+
+                            $startTag = $page->currentPage - 1;
+
+                            $endTag = $startTag + 4;
+                            for ($i = $startTag; $i <= $page->totalPage && $i <= $endTag; $i++) { ?>
+                                <a href="<?php echo \Yii::$app->urlManager->createUrl(['user/transfer_sanjiebao','currentPage' =>$i])?>" <?php if($page->currentPage == $i){echo 'style="color:red;"';} ?>><?php echo $i;?></a>
+
+
+                            <?php  } } }else{
+                            for($i=1;$i<= 5;$i++) { ?>
+                                <a href="<?php echo \Yii::$app->urlManager->createUrl(['user/transfer_sanjiebao','currentPage' =>$i])?>" <?php if($page->currentPage == $i){echo 'style="color:red;"';} ?>><?php echo $i;?></a>
+                            <?php } }?>
+                        <!--							<a>2</a>-->
+                        <!--							<a>3</a>-->
+                        <!--							<a>4</a>-->
+                        <!--							<a>5</a>-->
+                        <?php if($page->currentPage < $page->totalPage){ ?>
+                            &nbsp;&nbsp;<a href="<?php echo \Yii::$app->urlManager->createUrl(['user/transfer_sanjiebao','currentPage' =>$page->currentPage +1])?>">下一页</a>
+                        <?php }?>
+						</span>
+                    <span>
+						<span>共</span>
+						<i><?php echo $page->totalPage;?></i>
+						<span>页</span>
+                             <span style="color:red;">当前是第</span>
+                            <i style="color:red;"><?php echo $page->currentPage;?></i>
+                            <span style="color:red;">页</span>
+                        <?php if($page->totalPage >1){ ?>
+                        <form action="<?php echo \Yii::$app->urlManager->createUrl(['user/transfer_sanjiebao']);?>" method="get" >
+                            <span>跳转到</span>
+                            <input class="page_input" type="text" name="currentPage" value="2"  />
+                            <span>页</span>
+                            <input type="submit" value="确定">
+						</span>
+                    </form>
+                    <?php } ?>
+				</div>				
+			</div>
+		</div>
+		
+        <?php echo \Yii::$app->view->renderFile('@app/views/layouts/bottom.php'); ?>
+		<div class="modal_order">
+			恭喜，转账成功
+		</div>
+		<div class="modal_order1">
+			抱歉，转账失败
+		</div>
+		
+		<script src="<?php echo $pc_style; ?>js/lib/jquery-1.7.1.min.js"></script>
+			<script src="<?php echo $pc_style; ?>js/lib/common.js"></script>
+		<script src="<?php echo $pc_style; ?>js/lib/inputs.js"></script>
+	
+		<script>
+			$(function(){
+				$('.pay-select li input').click(function(){														
+				    $('.pay-select li').children("div").removeClass('abcdf');
+					$(this).next("div").addClass('abcdf');
+				})
+				$('.pay-btn-box').click(function(){
+					$('.pay-mark').hide();
+				})
+			})	
+			   $('.sub_zhuce').click(function(){
+			   	window.open('https://www.sanjielian.com/signup');
+			   })
+
+			
+		   /* $("#acOrder").click(function(){
+//		    	$(".modal_order").css("display","block");
+				modal("modal_order1");
+				return false;
+		    })*/
+
+            $("#acOrder").click(function(){
+//		    	$(".modal_order").css("display","block");
+                $("#acOrder").attr("disabled","disabled");
+                var money = $("#money").val();
+                var revbankaccno = $("#revbankaccno").val();
+                $.ajax({
+                    url:"<?php echo \Yii::$app->urlManager->createUrl(['user/transfer_sanjiebao']);?>",
+                    data:{"money":money,"revbankaccno":revbankaccno},
+                    type:"post",
+                    dataType:"json",
+                    success:function(data){
+                        //$("#acOrder").removeAttr("disabled");
+                        if(data.errorCode == 0){
+                            modal("modal_order");
+                            setTimeout(" location.href='<?php echo \Yii::$app->urlManager->createUrl(['/user/transfer_sanjiebao'])?>'",2000);
+                        }else if(data.errorCode == -2){
+                            alert("登录超时，请重新登录");
+                            setTimeout("location.href='<?php echo \Yii::$app->urlManager->createUrl(['login/login'])?>'",2000);
+                        }else if(data.errorCode ==-34){
+                            alert(data.message);
+                        }else if(data.errorCode ==-40){
+                            alert(data.message);
+                            $("#acOrder").removeAttr("disabled");
+                        }else if(data.errorCode ==-42){
+                            alert(data.message);
+                        }else if(data.errorCode ==-62){
+                            alert(data.message);
+                        }else if(data.errorCode ==-63){
+                            alert(data.message);
+                            alert(data.message);
+                        }else if(data.errorCode == -60){
+                            alert(data.message);
+                        }else if (data.errorCode == -81){
+                            alert(data.message);
+                        }else if(data.errorCode == -18){
+                            alert(data.message);
+                        }else if(data.errorCode == -50){
+                            alert(data.message);
+                        }else if(data.errorCode == -64){
+                            alert(data.message);
+                        }else if(data.errorCode == -65){
+                            alert(data.message);
+                        }
+                    },
+                    error:function(){
+                        alert("转账失败，请稍后重试");
+                        $("#acOrder").removeAttr("disabled");
+                    }
+                });
+                //modal("modal_order1");
+                //return false;
+            })
+		  
+//		     模态框显示,需完成时调用
+			    var time;
+				function modal(mod){
+					$("."+mod).show();
+					var timer = 3;
+					clearInterval(time);
+					var time=setInterval(function(){
+						timer--
+						if(timer==0){
+							$('.'+mod).hide();
+							clearInterval(time);
+						}
+					},1000);
+				}
+				
+		</script>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

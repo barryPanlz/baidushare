@@ -1,0 +1,77 @@
+$(document).ready(function(){
+	
+   // 商品列表的高度 	
+//var hei =  $('.specific2').height();  
+// console.log( hei );
+//$('.jiage1').css('height',hei+'px'); 
+//$('.loca1').css('height',hei+'px');
+//$('.logistics1').css('height',hei+'px'); 
+  
+  function hei( event ){
+  var hei =  event.height();  
+//console.log( hei );
+  event.siblings().css('height',hei+'px');  
+  };
+  
+  
+  for( var i = 0; i < 100; i++ ){
+  	hei( $('.specific').eq(i) );
+  }
+  
+//hei( $('.specific').eq(0) );
+//hei( $('.specific').eq(1) );
+//hei( $('.specific').eq(2) );
+//hei( $('.specific').eq(3) );
+//hei( $('.specific').eq(4) );
+//hei( $('.specific').eq(5) );
+//hei( $('.specific').eq(6) );
+//hei( $('.specific').eq(7) );
+//hei( $('.specific').eq(8) );
+//hei( $('.specific').eq(9) );
+//hei( $('.specific').eq(10) );
+//hei( $('.specific').eq(11) );
+//hei( $('.specific').eq(12) );
+//hei( $('.specific').eq(13) );
+//hei( $('.specific').eq(14) );
+//hei( $('.specific').eq(15) );
+//hei( $('.specific').eq(16) );
+//hei( $('.specific').eq(17) );
+//hei( $('.specific').eq(18) );
+//hei( $('.specific').eq(19) );
+//hei( $('.specific').eq(20) );
+//hei( $('.specific').eq(21) );
+//hei( $('.specific').eq(22) );
+//hei( $('.specific').eq(23) );
+  
+//var hei1 =  $('.specific1').height(); 
+//console.log( hei1 );
+//$('.jiage').css('height',hei1+'px');
+//$('.loca').css('height',hei1+'px');
+//$('.logistics').css('height',hei1+'px');
+  
+  
+    //  点击查询近几个月订单
+    $('.inquire1').click( function() {
+       $('.triangle_down').css('border-top','8px solid #F2021C'); 
+       $('.inquire1').css({"border":"1px solid #F2021C","border-bottom":"0","height":"33px","background":"#fff"});
+       $('.inquire1 dt').css('display','block');
+       
+       function disappear( event ){
+       	    event.click(function(){
+           	 var htmlContent = $(this).html();
+           	  $('.changeContent').html( htmlContent) ;
+           	  $('.inquire1 dt').css('display','none');
+           	  $('.triangle_down').css('border-top','8px solid #575757'); 
+              $('.inquire1').css({"border":"1px solid #ddd","height":"32px","background":"#fff"}); 
+               return false;  
+           });
+       };
+       disappear( $('.liuYue') );
+       disappear( $('.yinian') ); 
+        
+       return false;
+    }); 
+    	
+
+
+});
